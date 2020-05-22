@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef>
+    <defName>NobleApparel</defName>
+    <label>noble apparel</label>
+    <description>Tailor noble-specific apparel like ruffle shirts and royal robes.</description>
+    <baseCost>400</baseCost>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>1.80</researchViewY>
+    <prerequisites>
+      <li>ComplexClothing</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <defName>RoyalApparel</defName>
+    <label>royal apparel</label>
+    <description>Tailor royal apparel of the highest tier, like royal robes and crowns.</description>
+    <baseCost>400</baseCost>
+    <techLevel>Medieval</techLevel>
+    <researchViewX>3.00</researchViewX>
+    <researchViewY>1.80</researchViewY>
+    <prerequisites>
+      <li>NobleApparel</li>
+    </prerequisites>
+    <hiddenPrerequisites>
+      <li>Smithing</li>
+    </hiddenPrerequisites>
+  </ResearchProjectDef>
+</Defs>

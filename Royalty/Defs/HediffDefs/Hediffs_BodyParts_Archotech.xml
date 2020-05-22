@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Psychic silencer -->
+
+  <ThingDef ParentName="BodyPartArchotechBase">
+    <defName>PsychicSilencer</defName>
+    <label>psychic silencer</label>
+    <description>An archotech device that masks unintentional psychic emissions, rendering them undetectable. As a side effect, it also induces chronic pain.\n\nThis kind of implant is used by criminal psycasters, wildcasters, and bladelink users to avoid detection by authorities.</description>
+    <descriptionHyperlinks><RecipeDef>InstallPsychicSilencer</RecipeDef></descriptionHyperlinks>
+    <thingSetMakerTags>
+      <li>RewardStandardHighFreq</li>
+      <li>RewardNonEmpireFactionsOnly</li>
+    </thingSetMakerTags>
+    <statBases>
+      <MarketValue>1200</MarketValue>
+    </statBases>
+    <graphicData>
+      <color>(0.4, 0.4, 0.4)</color>
+    </graphicData>
+  </ThingDef>
+
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>PsychicSilencer</defName>
+    <label>psychic silencer</label>
+    <labelNoun>a psychic silencer</labelNoun>
+    <description>An installed psychic silencer implant.</description>
+    <descriptionHyperlinks><ThingDef>PsychicSilencer</ThingDef></descriptionHyperlinks>
+    <spawnThingOnRemoved>PsychicSilencer</spawnThingOnRemoved>
+    <stages>
+      <li>
+        <painOffset>0.20</painOffset>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>InstallPsychicSilencer</defName>
+    <label>install psychic silencer</label>
+    <description>Install a psychic silencer.</description>
+    <descriptionHyperlinks><ThingDef>PsychicSilencer</ThingDef></descriptionHyperlinks>
+    <jobString>Installing psychic silencer.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>PsychicSilencer</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>PsychicSilencer</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>PsychicSilencer</addsHediff>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>RemovePsychicSilencer</defName>
+    <label>remove psychic silencer</label>
+    <description>Remove psychic silencer.</description>
+    <descriptionHyperlinks><ThingDef>PsychicSilencer</ThingDef></descriptionHyperlinks>
+    <jobString>Removing psychic silencer.</jobString>
+    <removesHediff>PsychicSilencer</removesHediff>
+  </RecipeDef>
+  
+</Defs>

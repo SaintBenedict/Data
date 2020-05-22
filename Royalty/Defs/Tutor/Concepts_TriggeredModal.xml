@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <!--=============== Concepts taught in modal dialogs ===========-->
+
+  <ConceptDef>
+    <defName>RoyalIncapableOfSocial</defName>
+    <label>Royal incapable of social</label>
+    <priority>-1000</priority>
+    <helpText>This quest will reward {FACTION_royalFavorLabel} and thus royal titles for {PAWN_labelShort}. However, {PAWN_labelShort} is incapable of social tasks. Those with royal titles have great need of social skills, so if {PAWN_labelShort} gains a title, {PAWN_pronoun} may have a difficult time.</helpText>
+  </ConceptDef>
+
+  <ConceptDef>
+    <defName>RoyalWithConceitedTrait</defName>
+    <label>Royal with conceited trait</label>
+    <priority>-1000</priority>
+    <helpText>This quest will reward {FACTION_royalFavorLabel} and thus royal titles for {PAWN_labelShort}. However, since {PAWN_labelShort} is {2}, {PAWN_pronoun} will demand that the title's privileges be fully respected. {PAWN_labelShort} may refuse to do certain work types or eat low-class food, and will issue decrees.</helpText>
+  </ConceptDef>
+
+</Defs>

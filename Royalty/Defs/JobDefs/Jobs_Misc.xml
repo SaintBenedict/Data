@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <JobDef>
+    <defName>Reign</defName>
+    <driverClass>JobDriver_Reign</driverClass>
+    <reportString>reigning.</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+    <neverShowWeapon>true</neverShowWeapon>
+  </JobDef>
+</Defs>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Name="BasePsychicWeaponMelee" Abstract="True" ParentName="BaseWeapon">
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_BiocodableWeapon"/>
+    </comps>
+    <burnableByRecipe>true</burnableByRecipe>
+    <thingCategories>
+      <li>WeaponsMelee</li>
+    </thingCategories>
+    <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+  </ThingDef>
+
+  <ThingDef ParentName="BasePsychicWeaponMelee">
+    <defName>MeleeWeapon_PsyfocusStaff</defName>
+    <label>psyfocus staff</label>
+    <description>An ultratech light staff threaded with psychic focusing materials. Though it is relatively ineffective as a weapon, a psycaster wielding this will have greater psychic sensitivity and will dissipate psychic entropy faster.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/PsyfocusStaff</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Ultra</techLevel>
+    <tradeTags>
+      <li>PsychicWeapon</li>
+    </tradeTags>
+    <costStuffCount>50</costStuffCount>
+    <statBases>
+      <MarketValue>1000</MarketValue>
+      <Mass>1.2</Mass>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <equippedStatOffsets>
+      <PsychicSensitivity>0.50</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate>2.5</PsychicEntropyRecoveryRate>
+    </equippedStatOffsets>
+    <tools>
+      <li>
+        <label>head</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+</Defs>

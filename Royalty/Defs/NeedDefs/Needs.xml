@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <NeedDef>
+    <defName>Authority</defName>
+    <needClass>Need_Authority</needClass>
+    <label>authority</label>
+    <description>Authority is a need by holders of certain titles to feel one's stature is respected. Authority is satisfied by reigning in an appropriate throneroom, or by other activities that acknowledge the title-holder's position. This need is greater for those with higher title, and only applies when someone is at a home settlement with others to reign over.</description>
+    <listPriority>90</listPriority>
+    <major>true</major>
+    <showForCaravanMembers>false</showForCaravanMembers>
+    <scaleBar>true</scaleBar>
+    <colonistsOnly>true</colonistsOnly>
+    <titleRequiredAny>
+      <li>Knight</li>
+      <li>Praetor</li>
+      <li>Baron</li>
+      <li>Count</li>
+    </titleRequiredAny>
+  </NeedDef>
+</Defs>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThoughtDef>
+    <defName>NeedAuthority</defName>
+    <workerClass>ThoughtWorker_NeedAuthority</workerClass>
+    <validWhileDespawned>false</validWhileDespawned>
+    <stages>
+      <li>
+        <label>total authority</label>
+        <description>None could possibly think I have anything in common with the lower ranks here. All acknowledge my stature. It is fulfilling.</description>
+        <baseMoodEffect>6</baseMoodEffect>
+      </li>
+      <li>
+        <label>strong authority</label>
+        <description>I'm well-separated from the common folk. It's good to reign so thoroughly.</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+      <li>
+        <label>uncertain authority</label>
+        <description>My position feels like it's not properly acknowledged. I need to reign and establish my stature over the low people.</description>
+        <baseMoodEffect>-6</baseMoodEffect>
+      </li>
+      <li>
+        <label>weak authority</label>
+        <description>I've had almost no opportunity to reign recently. One would barely even know I'm not a commoner. It's a serious problem.</description>
+        <baseMoodEffect>-12</baseMoodEffect>
+      </li>
+      <li>
+        <label>no authority</label>
+        <description>My stature has been totally ignored! I'm forced to act as a commoner day in and day out. This is an outrage!</description>
+        <baseMoodEffect>-18</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

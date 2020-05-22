@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <TipSetDef>
+    <defName>RoyaltyTips</defName>
+    <tips>
+      <!-- Nobles -->
+      <li>Some royal titles allow the holder to call for military aid. This can save you in a tough moment.</li>
+      <li>Higher royal title holders have a special need for authority. They satisfy it by reigning from a throne.</li>
+      <li>Nobles from the Empire will demand all the privileges of their title. Your own titled colonists will be more flexible, unless they are greedy or jealous.</li>
+      <li>Power armor, cataphract armor and psyfocus apparel will satisfy the apparel requirements of royal titles.</li>
+      <li>If a royal title holder dies, their title goes to their chosen heir.</li>
+      <li>You can change the heir of a royal title holder through the comms console. However, this requires completing a ritual.</li>
+
+      <!-- Implants -->
+      <li>The Empire bestows a free psychic amplifier upon anyone who earns the title required to use it.</li>
+      <li>You can extract an installed psychic amplifier through surgery.</li>
+      <li>The Empire restricts usage of certain implants to those with specific royal titles. Using them illegally may lead to diplomatic consequences with the Empire.</li>
+      <li>The psychic silencer implant masks psychic signatures, preventing authorities from detecting illegal psychic powers.</li>
+      <li>Installing a new level of psychic amplifier grants knowledge of one psycast.</li>
+
+      <!-- Psycasts -->
+      <li>Psycasts can give you significant advantage in combat.</li>
+      <li>Performing a psycast on an ally will harm faction relations - but only if the psycast has negative effects.</li>
+      <li>The invisibility psycast's effect doesn't wear off when you attack.</li>
+      <li>Going over your psychic entropy limit can save you in a desperate situation - but the health risks are severe.</li>
+      <li>Creatures with higher psychic sensitivity are affected more by psycasts.</li>
+      <li>Fitting your psycasters with psyfocus gear will increase their psychic entropy limit and regeneration rate.</li>
+
+      <!-- Mech clusters -->
+      <li>When fighting a mech cluster, try shooting their power cells. They explode, dealing heavy damage to surrounding creatures and structures.</li>
+      <li>Some mech clusters remain dormant until disturbed. Use that time to prepare your attack.</li>
+      
+      <!-- Misc -->
+      <li>The Imperial royal tribute collector arrives twice per year, and accepts prisoners and gold in exchange for royal favor.</li>
+
+      <!-- Added misc -->
+      <!-- These can't be reordered because it would break translations -->
+      <li>You can safely walk right past a dormant mech cluster, as long as you don't attack it or trigger a proximity activator.</li>
+
+    </tips>
+  </TipSetDef>
+  
+</Defs>
