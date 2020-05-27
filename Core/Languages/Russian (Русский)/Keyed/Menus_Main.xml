@@ -123,7 +123,7 @@
   
   <!-- Version info -->
   <!-- EN: Version {0} is now available. Check ludeon.com for more info. -->
-  <BuildNowAvailable>Доступна новая версия — {0}. Зайдите на ludeon.com для получения информации.</BuildNowAvailable>
+  <BuildNowAvailable>Доступна новая версия — {0}. Зайдите на ludeon.com для получения информации.</BuildNowAvailable>
   <!-- EN: This is the latest version. -->
   <BuildUpToDate>У вас последняя версия.</BuildUpToDate>
   <!-- EN: Error getting version info: {0} -->
@@ -255,7 +255,7 @@
   <!-- EN: Are you sure you want to upload this to the Steam Workshop?\n\nYou must agree to the Steam Workshop terms of service. Find the full terms here:\n\nhttp://steamcommunity.com/sharedfiles/workshoplegalagreement -->
   <ConfirmSteamWorkshopUpload>Вы уверены, что хотите загрузить выбранное в Мастерскую Steam?\n\nВам будет необходимо принять условия использования Мастерской Steam. Ознакомиться с ними можно по ссылке:\n\nhttp://steamcommunity.com/sharedfiles/workshoplegalagreement</ConfirmSteamWorkshopUpload>
   <!-- EN: Obviously you should only upload content that you created yourself.\n\nDid you create this content yourself? -->
-  <ConfirmContentAuthor>Учтите, вы должны загружать только то, что сделали сами.\n\nВы — автор этого контента?</ConfirmContentAuthor>
+  <ConfirmContentAuthor>Учтите, вы должны загружать только то, что сделали сами.\n\nВы — автор этого контента?</ConfirmContentAuthor>
   <!-- EN: Incompatible -->
   <Incompatible>Несовместимо</Incompatible>
   <!-- EN: Too many (max {0}):  -->
@@ -281,13 +281,13 @@
   <!-- EN: You can save and load the game at any time.\n\nThis is a good choice if you're still learning the game, if it fits your personal playstyle, if you're using mods that may break your game, or if you intend to self-enforce commitment mode. -->
   <ReloadAnytimeModeInfo>Вы можете сохранять и загружать игру в любой момент.\n\nЭто хороший выбор для тех, кто только изучает RimWorld, и для тех, кому по душе такой стиль игры. Этот режим также подойдёт для вас, если, например, вы используете моды, которые могут «сломать» игру, или же если вы только намереваетесь перейти к «ответственному» режиму.</ReloadAnytimeModeInfo>
   <!-- EN: You can only save when quitting the game.\n\nSince RimWorld is a story generator, even losing all but one person is not the end of the game - it's part of the story. The game is designed to allow recovery after losses.\n\nPlaying out these terrible situations makes a story with both tragedy and triumph. It's the way RimWorld was designed to be played.\n\nThere's a reason Luke Skywalker didn't quit and reload when his family got killed - loss and recovery is dramatic. -->
-  <PermadeathModeInfo>Игра сохраняется только при выходе.\n\nRimWorld задумывался как генератор захватывающих историй, в которых за каждым падением следует возрождение. Даже если в живых останется всего один человек — это не конец игры, а лишь часть истории.\n\nПреодоление ужасных ситуаций лишь добавляет истории трагизма и триумфа. Это именно то, ради чего стоит играть в RimWorld.\n\nЛюк Скайуокер, когда погибла его семья, не стал загружать сохранение. Потеря и возрождение — вот, что по-настоящему захватывает!</PermadeathModeInfo>
+  <PermadeathModeInfo>Игра сохраняется только при выходе.\n\nRimWorld задумывался как генератор захватывающих историй, в которых за каждым падением следует возрождение. Даже если в живых останется всего один человек — это не конец игры, а лишь часть истории.\n\nПреодоление ужасных ситуаций лишь добавляет истории трагизма и триумфа. Это именно то, ради чего стоит играть в RimWorld.\n\nЛюк Скайуокер, когда погибла его семья, не стал загружать сохранение. Потеря и возрождение — вот, что по-настоящему захватывает!</PermadeathModeInfo>
   <!-- EN: Storyteller and difficulty can be changed any time. -->
   <CanChangeStorytellerSettingsDuringPlay>Рассказчика и сложность можно будет поменять в любой момент.</CanChangeStorytellerSettingsDuringPlay>
   <!-- EN: Merciless mode -->
   <UnlockExtremeDifficulty>Режим «кошмар»</UnlockExtremeDifficulty>
   <!-- EN: Merciless mode is a special game mode where every challenge is turned up to extreme levels.\n\nMerciless mode unlocks automatically when you reach specific milestones. However, you can unlock it now.\n\nThis option is only recommended once you've played a high-difficulty game or two and want to have a good chance at dying despite your best efforts. -->
-  <ConfirmUnlockExtremeDifficulty>«Кошмар» — особый режим игры, при котором трудность любого испытания выкручена на максимум.\n\nЭтот режим открывается автоматически при достижении определённых этапов прохождения игры. Если хотите, его можно открыть прямо сейчас.\n\nРежим «кошмар» рекомендуется тем, кто прошёл игру на высокой сложности не по одному разу и хочет побывать в ситуациях, когда поселение погибает, несмотря на все усилия.</ConfirmUnlockExtremeDifficulty>
+  <ConfirmUnlockExtremeDifficulty>«Кошмар» — особый режим игры, при котором трудность любого испытания выкручена на максимум.\n\nЭтот режим открывается автоматически при достижении определённых этапов прохождения игры. Если хотите, его можно открыть прямо сейчас.\n\nРежим «кошмар» рекомендуется тем, кто прошёл игру на высокой сложности не по одному разу и хочет побывать в ситуациях, когда поселение погибает, несмотря на все усилия.</ConfirmUnlockExtremeDifficulty>
 
   <!-- Site select -->
   <!-- EN: Select starting site -->
@@ -375,7 +375,7 @@
   <!-- EN: {PAWN_race}, age {PAWN_ageFull} -->
   <PawnSummary>{PAWN_race}, возраст {PAWN_ageFull}</PawnSummary>
   <!-- EN: {PAWN_gender} {PAWN_race}, age {PAWN_ageFull} -->
-  <PawnSummaryWithGender>{PAWN_gender}, {PAWN_race}, возраст {PAWN_ageFull}</PawnSummaryWithGender>
+  <PawnSummaryWithGender>{PAWN_race}, {PAWN_gender}, возраст {PAWN_ageFull}</PawnSummaryWithGender>
   <!-- EN: Backstory -->
   <Backstory>Биография</Backstory>
   <!-- EN: Incapable of -->

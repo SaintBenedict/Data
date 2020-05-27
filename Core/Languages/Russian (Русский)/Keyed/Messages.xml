@@ -45,6 +45,8 @@
 
   <!-- EN: You need a powered orbital trade beacon to trade with a ship. -->
   <MessageNeedBeaconToTradeWithShip>Для торговли с кораблём вам нужен работающий торговый маяк.</MessageNeedBeaconToTradeWithShip>
+  <!-- EN: Caller must have the title of {0} or higher. -->
+  <MessageNeedRoyalTitleToCallWithShip>Вызывающй должен обладать титулом {0} или выше.</MessageNeedRoyalTitleToCallWithShip>
 
   <!-- EN: {0} has been destroyed. -->
   <MessageConditionCauserDespawned>{0} {0_gender ? уничтожен : уничтожена : уничтожено}.</MessageConditionCauserDespawned>
@@ -126,7 +128,7 @@
   <!-- EN: There are no animal beds available. -->
   <MessageNoAnimalBeds>Нет доступных спальных мест для животных.</MessageNoAnimalBeds>
   <!-- EN: Operation requires {0} or better, but {PAWN_labelShort}'s current medical care mode is "{2}". -->
-  <MessageTooLowMedCare>Для операции требуются хотя бы {0}, а текущий режим, в котором {PAWN_labelShort} получает медицинскую помощь — «{2}».</MessageTooLowMedCare>
+  <MessageTooLowMedCare>Для операции требуются хотя бы {0}, а текущий режим, в котором {PAWN_labelShort} получает медицинскую помощь — «{2}».</MessageTooLowMedCare>
   
   <!-- EN: {PAWN_labelShort} has died. Cause: {1}. -->
   <PawnDiedBecauseOf>{PAWN_labelShort} {PAWN_gender ? умер : умерла}. Причина: {1}.</PawnDiedBecauseOf>
@@ -163,7 +165,7 @@
   <!-- EN: {PAWN_labelShort} has lost a {1} implant level due to {2}. -->
   <MessageLostImplantLevelFromHediff>{PAWN_labelShort} {PAWN_gender ? потерял : потеряла} уровень импланта {1} из-за: {2}. </MessageLostImplantLevelFromHediff>
   <!-- EN: {PAWN_labelShort} has suffered {1} points of brain damage due to {2}. -->
-  <MessageReceivedBrainDamageFromHediff>{PAWN_labelShort} {PAWN_gender ? получил : получила} повреждение мозга на ^Number( {1} | '# единицу' | '# единицы' | '# единиц')^ из-за: {2}.</MessageReceivedBrainDamageFromHediff>
+  <MessageReceivedBrainDamageFromHediff>{PAWN_labelShort} {PAWN_gender ? получил : получила} повреждение мозга на ^Number( {1} | '# единицу' | '# единицы' | '# единиц')^ из-за: {2}.</MessageReceivedBrainDamageFromHediff>
   <!-- EN: {PAWN_labelShort} has exceeded the safe limit of psychic entropy. -->
   <MessageWentOverPsychicEntropyLimit>{PAWN_labelShort} {PAWN_gender ? превысил : превысила} безопасный порог пси-энтропии.</MessageWentOverPsychicEntropyLimit>
 
@@ -243,7 +245,7 @@
   <MessageRottedAwayInStorage>{1_label} {1_gender ? сгнил : сгнила : сгнило} на складе.</MessageRottedAwayInStorage>
   
   <!-- EN: {PAWN_labelShort} has gotten food poisoning from: {FOOD_labelShort}. Cause: {2}. -->
-  <MessageFoodPoisoning>Съев {FOOD_labelShort}, {PAWN_labelShort} получает пищевое отравление. Причина — {2}.</MessageFoodPoisoning>
+  <MessageFoodPoisoning>Съев {FOOD_labelShort}, {PAWN_labelShort} получает пищевое отравление. Причина — {2}.</MessageFoodPoisoning>
   
   <!-- EN: {0} has been removed from the caravan. -->
   <MessagePawnLostWhileFormingCaravan>{0} {0_gender ? исключён : исключена} из каравана.</MessagePawnLostWhileFormingCaravan>
@@ -371,8 +373,10 @@
   
   <!-- EN: {0} from {1} are attacking your {2}. -->
   <MessageDefendersAttacking>{0} из фракции {1} нападают на вас.</MessageDefendersAttacking>
-  <!-- EN: Mechanoids have been assembled and are attacking. -->
-  <MessageMechanoidsAssembled>Сборка механоидов завершена, и они нападают.</MessageMechanoidsAssembled>
+  <!-- EN: Mechanoids have been assembled and will defend their cluster. -->
+  <MessageMechanoidsAssembled>Сборка механоидов завершена, и они будут защищать свой кластер.</MessageMechanoidsAssembled>
+  <!-- EN: Remaining mechanoids to assemble -->
+  <MessageMechanoidsLeftToAssemble>Оставшиеся механоиды для сборки</MessageMechanoidsLeftToAssemble>
   <!-- EN: Mech drop beacon has summoned reinforcements in drop pods nearby. -->
   <MessageMechanoidsReinforcementsDrop>Маяк механоидов вызвал подкрепление. Оно прибыло в капсулах.</MessageMechanoidsReinforcementsDrop>
 
@@ -546,7 +550,7 @@
   <MessageCaravanArrivalActionNoLongerValid>{0} не может достичь места назначения.</MessageCaravanArrivalActionNoLongerValid>
 
   <!-- EN: You can't re-enter for another {0} days. -->
-  <MessageEnterCooldownBlocksEntering>Вы не сможете вновь посетить это место ещё ^Number( {0} | '# день' | '# дня' | '# дней')^.</MessageEnterCooldownBlocksEntering>
+  <MessageEnterCooldownBlocksEntering>Вы не сможете вновь посетить это место ещё ^Number( {0} | '# день' | '# дня' | '# дней')^.</MessageEnterCooldownBlocksEntering>
 
   <!-- EN: {0_labelShort} can now freely use "{1}". -->
   <MessagePermitCooldownFinished>{0_labelShort} теперь может свободно пользоваться правом «{1}»</MessagePermitCooldownFinished>

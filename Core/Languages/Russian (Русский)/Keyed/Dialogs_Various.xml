@@ -5,6 +5,8 @@
   <Confirm>Подтвердить</Confirm>
   <!-- EN: Go back -->
   <GoBack>Вернуться</GoBack>
+  <!-- EN: Do you want to continue? -->
+  <WantToContinue>Продолжить?</WantToContinue>
   <!-- EN: OK -->
   <OK>OK</OK>
   <!-- EN: Close -->
@@ -102,9 +104,9 @@
   <!-- EN: (Permadeath) -->
   <PermadeathModeSaveSuffix>(«Ответственный» режим)</PermadeathModeSaveSuffix>
   <!-- EN: We are running version {0} but the save data is from {1}, which is a different version entirely.\n\nTrying to load this data will probably not work. -->
-  <SaveIsFromDifferentGameVersion>Версия запущенной игры — {0}, данное сохранение относится к {1}, совершенно другой версии игры. \n\n Попытка загрузки данного сохранения скорее всего не увенчается успехом.</SaveIsFromDifferentGameVersion>
+  <SaveIsFromDifferentGameVersion>Версия запущенной игры — {0}, данное сохранение относится к {1}, совершенно другой версии игры. \n\n Попытка загрузки данного сохранения скорее всего не увенчается успехом.</SaveIsFromDifferentGameVersion>
   <!-- EN: We are running version {0} but the save data is from {1}, which is a different build.\n\nTrying to load this data should still work. -->
-  <SaveIsFromDifferentGameBuild>Версия запущенной игры — {0}, данное сохранение относится к {1}, другой сборке той же версии. \n\n Попытка загрузки данного сохранения может оказаться успешной.</SaveIsFromDifferentGameBuild>
+  <SaveIsFromDifferentGameBuild>Версия запущенной игры — {0}, данное сохранение относится к {1}, другой сборке той же версии. \n\n Попытка загрузки данного сохранения может оказаться успешной.</SaveIsFromDifferentGameBuild>
   <!-- EN: Save data was saved with our game version and should work without issue. -->
   <SaveIsFromThisGameBuild>Данные сохранены этой версией игры и должны работать без проблем.</SaveIsFromThisGameBuild>
   <!-- EN: Save data is in an unknown format and almost certainly will not load properly. -->
@@ -158,9 +160,9 @@
   
   <!-- Pawn naming -->
   <!-- EN: This person's nickname is now {0}. {PAWN_possessive} title is {PAWN_title}. -->
-  <PawnGainsName>Прозвище поселенца теперь {0}, и {PAWN_pronoun} — {PAWN_title}</PawnGainsName>
+  <PawnGainsName>Прозвище поселенца теперь {0}, и {PAWN_pronoun} — {PAWN_title}</PawnGainsName>
   <!-- EN: The animal's name is now {0}. -->
-  <AnimalGainsName>Новая кличка животного — {0}.</AnimalGainsName>
+  <AnimalGainsName>Новая кличка животного — {0}.</AnimalGainsName>
 
   <!-- Save game incompatible warning -->
   <!-- EN: Version mismatch -->
@@ -255,7 +257,7 @@
   <!-- EN: Note: Small-volume ingredients like gold require {0}x as much. -->
   <BillRequiresMayVary>Заметка: ингредиентов небольшого размера, например, золота, требуется в {0} раз больше.</BillRequiresMayVary>
   <!-- EN: This is a small-volume ingredient. This means that each 'unit' is only 1/{0} as much as a normal-volume ingredient. So, to fill the same ingredient requirement, you'll need {0}x as much as usual. -->
-  <ThisIsSmallVolume>Этот ингредиент имеет небольшой размер. Это значит, что каждый «кусочек» — лишь от 1/{0} размера обычного ингредиента. Чтобы выполнить требования по ингредиентам вам понадобится в {0} раз больше материала.</ThisIsSmallVolume>
+  <ThisIsSmallVolume>Этот ингредиент имеет небольшой размер. Это значит, что каждый «кусочек» — лишь от 1/{0} размера обычного ингредиента. Чтобы выполнить требования по ингредиентам вам понадобится в {0} раз больше материала.</ThisIsSmallVolume>
   <!-- EN: ingredients -->
   <UsableIngredients>ингредиенты</UsableIngredients>
   <!-- EN: To {0} -->
@@ -448,14 +450,16 @@
   <PowerConsumption>Потребление энергии</PowerConsumption>
   <!-- EN: Target -->
   <Target>Цель</Target>
-  <!-- EN: Human -->
-  <TargetHuman>Человек</TargetHuman>
-  <!-- EN: Animal -->
-  <TargetAnimal>Животное</TargetAnimal>
-  <!-- EN: Self -->
-  <TargetSelf>На себя</TargetSelf>
-  <!-- EN: Ground -->
-  <TargetGround>Земля</TargetGround>
+  <!-- EN: The types of targets on which this ability can be used. -->
+  <AbilityTargetDesc>Виды целей, к которым применима эта способность.</AbilityTargetDesc>
+  <!-- EN: human -->
+  <TargetHuman>человек</TargetHuman>
+  <!-- EN: animal -->
+  <TargetAnimal>животное</TargetAnimal>
+  <!-- EN: self -->
+  <TargetSelf>пользователь</TargetSelf>
+  <!-- EN: ground -->
+  <TargetGround>земля</TargetGround>
   <!-- EN: Click to learn more. -->
   <ClickToLearnMore>Нажмите, чтобы узнать больше.</ClickToLearnMore>
   <!-- EN: Click to view factions. -->
@@ -463,7 +467,7 @@
   
   <!-- Trade -->
   <!-- EN: Positive numbers buy.\nNegative numbers sell. -->
-  <PositiveBuysNegativeSells>Положительное число — покупка.\nОтрицательное число — продажа.</PositiveBuysNegativeSells>
+  <PositiveBuysNegativeSells>Положительное число — покупка.\nОтрицательное число — продажа.</PositiveBuysNegativeSells>
   <!-- EN: Price you pay to buy this. -->
   <BuyPriceDesc>Цена, по которой можно купить товар.</BuyPriceDesc>
   <!-- EN: Price you receive for selling this. -->
@@ -527,7 +531,7 @@
   <!-- EN: Final price -->
   <FinalPrice>Итоговая цена</FinalPrice>
   <!-- EN: Gift mode - offer gifts to {0}. -->
-  <GiftModeTip>Режим подарков — предложить подарок фракции {0}.</GiftModeTip>
+  <GiftModeTip>Режим подарков — предложить подарок фракции {0}.</GiftModeTip>
   <!-- EN: Return to trade mode. -->
   <TradeModeTip>Вернуться в режим торговли.</TradeModeTip>
   <!-- EN: {FACTION_name} is not willing to send a caravan because {NEGOTIATOR_nameDef} lacks the required title of {TITLE}. -->
@@ -541,7 +545,7 @@
   <!-- EN: Restocked since your last visit -->
   <TraderRestockedSinceLastVisit>Список товаров обновился с последнего посещения</TraderRestockedSinceLastVisit>
   <!-- EN: Next restock: {0} days -->
-  <NextTraderRestock>Список обновится через ^Number( {0} | '# день' | '# дня' | '# дней')^</NextTraderRestock>
+  <NextTraderRestock>Список обновится через ^Number( {0} | '# день' | '# дня' | '# дней')^</NextTraderRestock>
   <!-- EN: Creatures -->
   <PawnsTabShort>Люди и животные</PawnsTabShort>
   
@@ -585,7 +589,7 @@
   <!-- EN: (only the first waypoint is taken into account) -->
   <DaysWorthOfFoodTooltip_OnlyFirstWaypoint>\n(учитывается только первая точка маршрута)</DaysWorthOfFoodTooltip_OnlyFirstWaypoint>
   <!-- EN: Your caravan only has {0} days worth of food and will become hungry quickly. -->
-  <DaysWorthOfFoodWarningDialog>Вашему каравану хватит еды только на ^Number( {0} | '# день' | '# дня' | '# дней')^. Люди и животные очень скоро начнут голодать.</DaysWorthOfFoodWarningDialog>
+  <DaysWorthOfFoodWarningDialog>Вашему каравану хватит еды только на ^Number( {0} | '# день' | '# дня' | '# дней')^. Люди и животные очень скоро начнут голодать.</DaysWorthOfFoodWarningDialog>
   <!-- EN: Your caravan has no food and will become hungry very quickly. -->
   <DaysWorthOfFoodWarningDialog_NoFood>Без еды люди и животные в караване очень скоро начнут голодать.</DaysWorthOfFoodWarningDialog_NoFood>
   <!-- EN: The average amount of food per day your people will forage. This value will change as you travel across biomes with different forage yield rates. -->
@@ -615,7 +619,7 @@
   <!-- EN: Nutrition foraged per day. The actual amount foraged is also affected by biome forageability.\n\n{0} -->
   <NutritionForagedPerDayTip>Количество добываемой в день еды. Конечное значение зависит от биома.\n\n{0}</NutritionForagedPerDayTip>
   <!-- EN: Nutrition eaten per day. For reference, simple meals have {0} nutrition.\n\nCan eat: {2}\n\nLegend:\n{1} -->
-  <NutritionEatenPerDayTip>Количество потребляемой в день еды. Для справки: простое блюдо эквивалентно {0} ед. питательности.\n\nМожет есть: {2}\n\nЛегенда:\n{1}</NutritionEatenPerDayTip>
+  <NutritionEatenPerDayTip>Количество потребляемой в день еды. Для справки: простое блюдо эквивалентно {0} ед. питательности.\n\nМожет есть: {2}\n\nЛегенда:\n{1}</NutritionEatenPerDayTip>
   <!-- EN: Mass carried -->
   <MassCarriedSimple>Переносимый вес</MassCarriedSimple>
   <!-- EN: Mass capacity -->
@@ -655,13 +659,13 @@
   <!-- EN: Animals can graze -->
   <AnimalsCanGraze>Животные могут пастись</AnimalsCanGraze>
   <!-- EN: (for {0} more days) -->
-  <PossibleToGrazeFor>(ещё в течение ^Number( {0} | '# день' | '# дней' | '# дней')^)</PossibleToGrazeFor>
+  <PossibleToGrazeFor>(ещё в течение ^Number( {0} | '# день' | '# дней' | '# дней')^)</PossibleToGrazeFor>
   <!-- EN: (forever) -->
   <PossibleToGrazeForever>(всегда)</PossibleToGrazeForever>
   <!-- EN: ({0}) -->
   <CantGrazeBecauseOfBiome>({0})</CantGrazeBecauseOfBiome>
   <!-- EN: (too cold for {0} more days) -->
-  <CantGrazeBecauseOfTemp>(будет слишком холодно ещё ^Number( {0} | '# день' | '# дня' | '# дней')^)</CantGrazeBecauseOfTemp>
+  <CantGrazeBecauseOfTemp>(будет слишком холодно ещё ^Number( {0} | '# день' | '# дня' | '# дней')^)</CantGrazeBecauseOfTemp>
   <!-- EN: Total nutrition -->
   <TotalNutrition>Всего еды</TotalNutrition>
   <!-- EN: Not moving -->
@@ -789,9 +793,9 @@
   <!-- EN: Every day -->
   <EveryDay>Каждый день</EveryDay>
   <!-- EN: {0} times per day -->
-  <TimesPerDay>^Number( {0} | '# раз' | '# раза' | '# раз')^ в день</TimesPerDay>
+  <TimesPerDay>^Number( {0} | '# раз' | '# раза' | '# раз')^ в день</TimesPerDay>
   <!-- EN: Every {0} days -->
-  <EveryDays>Каждые ^Number( {0} | '# день' | '# дня' | '# дней')^</EveryDays>
+  <EveryDays>Каждые ^Number( {0} | '# день' | '# дня' | '# дней')^</EveryDays>
   <!-- EN: Any -->
   <NoDrugUseRequirement>Любой</NoDrugUseRequirement>
   <!-- EN: Delete this drug. -->
@@ -889,7 +893,7 @@
 
   <!-- Settle near a faction base -->
   <!-- EN: Since this location is within {0} tiles of another faction base, they will feel you are encroaching on their land and relations with those factions will worsen every {1} days.\n\nSettle here anyways? -->
-  <ConfirmSettleNearFactionBase>Это место отстоит от поселений других фракций всего на {0} или менее клеток, и они будут считать, что вы посягаете на их территорию. Отношения с ними будут ухудшаться каждые ^Number( {1} | '# день' | '# дня' | '# дней')^.\n\nВсё равно высадиться здесь?</ConfirmSettleNearFactionBase>
+  <ConfirmSettleNearFactionBase>Это место отстоит от поселений других фракций всего на {0} или менее клеток, и они будут считать, что вы посягаете на их территорию. Отношения с ними будут ухудшаться каждые ^Number( {1} | '# день' | '# дня' | '# дней')^.\n\nВсё равно высадиться здесь?</ConfirmSettleNearFactionBase>
   
   <!-- Cleanup translation files -->
   <!-- EN: Are you sure you want to cleanup all translation files for language {0}?\n\nThis will:\n  - Add placeholders for missing keyed translations, def-injected translations, and backstories\n  - Add or update comments containing the original, untranslated text\n  - Move all keyed and def-injected translations to the appropriate XML files\n  - Apply automatic formatting to all XML files\n  - Update back-compatible def names\n  - Remove all existing XML comments (except in full-list injections)\n\nNon-XML files will not be removed or modified.\n\nRemember to restart the game after modifying the language files before running this tool in order to reload all data.\n\nMake sure to back up all translation files before using this tool. -->

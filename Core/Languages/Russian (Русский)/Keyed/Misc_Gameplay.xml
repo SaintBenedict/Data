@@ -13,7 +13,7 @@
   <!-- EN: For prisoner use -->
   <ForPrisonerUse>Для пленников</ForPrisonerUse>
   <!-- EN: In prison cell: For prisoner use -->
-  <InPrisonCell>В тюремной камере — для пленников</InPrisonCell>
+  <InPrisonCell>В тюремной камере — для пленников</InPrisonCell>
   <!-- EN: For colonist use -->
   <ForColonistUse>Для поселенцев</ForColonistUse>
   <!-- EN: Medical -->
@@ -67,7 +67,7 @@
   <!-- EN: Immunity -->
   <Immunity>Иммунитет выработан</Immunity>
   <!-- EN: {0} days to recover -->
-  <DaysToRecover>^Number( {0} | '# день' | '# дня' | '# дней')^ до восстановления</DaysToRecover>
+  <DaysToRecover>^Number( {0} | '# день' | '# дня' | '# дней')^ до восстановления</DaysToRecover>
   <!-- EN: Ineffective -->
   <Ineffective>Неэффективно</Ineffective>
   <!-- EN: illegal -->
@@ -153,9 +153,9 @@
   <!-- EN: Fuel -->
   <FuelLevelGizmoLabel>Топливо</FuelLevelGizmoLabel>
   <!-- EN: Set target fuel level to {0} -->
-  <SetTargetFuelLevel>Заправлять топливом до уровня в {0} ед.</SetTargetFuelLevel>
+  <SetTargetFuelLevel>Заправлять топливом до уровня в {0} ед.</SetTargetFuelLevel>
   <!-- EN: Set target fuel level to {0}\nMax distance: {1} tiles -->
-  <SetPodLauncherTargetFuelLevel>Заправлять топливом до уровня в {0} ед.\nМакс. дальность полёта: {1} клеток</SetPodLauncherTargetFuelLevel>
+  <SetPodLauncherTargetFuelLevel>Заправлять топливом до уровня в {0} ед.\nМакс. дальность полёта: {1} клеток</SetPodLauncherTargetFuelLevel>
   <!-- EN: Target fuel level: {0} -->
   <ConfiguredTargetFuelLevel>Назначенный уровень топлива: {0}</ConfiguredTargetFuelLevel>
   <!-- EN: enemies -->
@@ -171,11 +171,11 @@
   <!-- EN: Resting -->
   <CaravanResting>Отдых</CaravanResting>
   <!-- EN: using 1 bedroll -->
-  <UsingBedroll>1 чел. в спальном мешке</UsingBedroll>
+  <UsingBedroll>1 чел. в спальном мешке</UsingBedroll>
   <!-- EN: using {0} bedrolls -->
   <UsingBedrolls>{0} чел. в спальных мешках</UsingBedrolls>
   <!-- EN: Est. time to destination: {0} days -->
-  <CaravanEstimatedTimeToDestination>Расчётное время в пути: ^Number( {0} | '# день' | '# дня' | '# дней')^</CaravanEstimatedTimeToDestination>
+  <CaravanEstimatedTimeToDestination>Расчётное время в пути: ^Number( {0} | '# день' | '# дня' | '# дней')^</CaravanEstimatedTimeToDestination>
   <!-- EN: Estimated days to arrive: {0} -->
   <CaravanEstimatedDaysToDestination>Число дней до прибытия: {0}</CaravanEstimatedDaysToDestination>
   <!-- EN: Immobilized: Too much weight. -->
@@ -183,9 +183,9 @@
   <!-- EN: Out of food. -->
   <CaravanOutOfFood>Нет еды.</CaravanOutOfFood>
   <!-- EN: Days of food: {0} -->
-  <CaravanDaysOfFood>Еды хватит на ^Number( {0} | '# день' | '# дня' | '# дней')^</CaravanDaysOfFood>
+  <CaravanDaysOfFood>Еды хватит на ^Number( {0} | '# день' | '# дня' | '# дней')^</CaravanDaysOfFood>
   <!-- EN: Days of food: {0} (rot in {1} days) -->
-  <CaravanDaysOfFoodRot>Еды хватит на ^Number( {0} | '# день' | '# дня' | '# дней')^, начнёт портиться через ^Number( {1} | '# день' | '# дня' | '# дней')^</CaravanDaysOfFoodRot>
+  <CaravanDaysOfFoodRot>Еды хватит на ^Number( {0} | '# день' | '# дня' | '# дней')^, начнёт портиться через ^Number( {1} | '# день' | '# дня' | '# дней')^</CaravanDaysOfFoodRot>
   <!-- EN: Stopped because: Everyone is downed. -->
   <AllCaravanMembersDowned>Остановка: все члены сражены.</AllCaravanMembersDowned>
   <!-- EN: Stopped because: Everyone is in a mental break. -->
@@ -315,7 +315,7 @@
   <!-- EN: Products -->
   <Products>Результат</Products>
   <!-- EN: {0} of {1} -->
-  <Relationship>для {1} — {0}</Relationship>
+  <Relationship>для {1} — {0}</Relationship>
   <!-- EN: Prisoner -->
   <Prisoner>Пленник</Prisoner>
   <!-- EN: Refugee -->
@@ -365,7 +365,7 @@
   <!-- EN: {0} with {1} -->
   <ProximitySingleGoodwillChange>{0} с фракцией {1}</ProximitySingleGoodwillChange>
   <!-- EN: You can't re-enter for another {0} days. -->
-  <EnterCooldown>Вы не сможете вновь посетить это место ещё ^Number( {0} | '# день' | '# дня' | '# дней')^.</EnterCooldown>
+  <EnterCooldown>Вы не сможете вновь посетить это место ещё ^Number( {0} | '# день' | '# дня' | '# дней')^.</EnterCooldown>
   <!-- EN: Caravan -->
   <Caravan>Караван</Caravan>
   <!-- EN: there may be danger there. -->
@@ -419,7 +419,7 @@
   <!-- EN: View: {0} -->
   <ViewHyperlink>Перейти к: {0}</ViewHyperlink>
   <!-- EN: Detonates in {0} days -->
-  <DetonationCountdown>Взорвётся через ^Number( {0} | '# день' | '# дня' | '# дней')^</DetonationCountdown>
+  <DetonationCountdown>Взорвётся через ^Number( {0} | '# день' | '# дня' | '# дней')^</DetonationCountdown>
   <!-- EN: Large explosion if damaged -->
   <ExplosionOnDamageWarning>При повреждении произойдёт мощный взрыв</ExplosionOnDamageWarning>
   <!-- EN: Mech cluster -->
@@ -753,7 +753,7 @@
   <!-- EN: Not connected to power. -->
   <PowerNotConnected>Не подключено к сети.</PowerNotConnected>
   <!-- EN: Grid excess/stored: {0} W / {1} Wd -->
-  <PowerConnectedRateStored>Запас мощности/аккумулировано: {0} Вт / {1} Вт*дней</PowerConnectedRateStored>
+  <PowerConnectedRateStored>Запас мощности/аккумулировано: {0} Вт / {1} Вт*дней</PowerConnectedRateStored>
   <!-- EN: Power needed -->
   <PowerNeeded>Потребляемая мощность</PowerNeeded>
   <!-- EN: Power output -->
@@ -973,7 +973,7 @@
   <!-- EN: Contains -->
   <CasketContains>Содержит</CasketContains>
   <!-- EN: Warning!\n\n{PAWN_nameDef} is your last free-standing colonist! If you let {PAWN_objective} step into that casket, you may not be able to continue playing. Are you sure you want to proceed? -->
-  <CasketWarning>Внимание!\n\n{PAWN_nameDef} — ваш последний самостоятельный поселенец. Если вы положите {PAWN_possessive} в этот саркофаг, то, возможно, не сможете продолжить игру. Вы точно хотите сделать это?</CasketWarning>
+  <CasketWarning>Внимание!\n\n{PAWN_nameDef} — ваш последний самостоятельный поселенец. Если вы положите {PAWN_possessive} в этот саркофаг, то, возможно, не сможете продолжить игру. Вы точно хотите сделать это?</CasketWarning>
 
   <!-- Ship launch report -->
   <!-- EN: Cannot launch. -->
@@ -1055,7 +1055,7 @@
   <!-- EN: Everyone is dead or gone. This story is over.\n\nPerhaps someone else will find a use for the ruins of this place. -->
   <GameOverEveryoneDead>Все поселенцы либо мертвы, либо ушли. Конец истории.\n\nВозможно, кто-то другой сможет найти применение руинам этого места.</GameOverEveryoneDead>
   <!-- EN: At near-lightspeed, the planetkiller weapon slammed into the ground with the force of a trillion hydrogen bombs. Like a water balloon shot with a rifle, this world liquified under the impact and sprayed its molten guts across the cosmos.\n\nPart of {0} is now a small asteroid belt. The rest is a molten, radioactive hellscape, constantly rippling with kilometers-high planetquakes.\n\nYou did not survive. -->
-  <GameOverPlanetkillerImpact>Со скоростью, близкой к световой, разрушитель планет врезался в поверхность с силой триллиона водородных бомб. Подобно наполненному водой воздушному шарику, простреленному из ружья, этот мир расплавился от столкновения и разбрызгал свои внутренности по космосу.\n\nЧасти {0} теперь составляют пояс астероидов. Всё остальное составляет расплавленный радиоактивный адский пейзаж, весь покрытый волнами землетрясенияй, на километры вздымающих и бросающих вниз породу.\n\nВы не выжили.</GameOverPlanetkillerImpact>
+  <GameOverPlanetkillerImpact>Со скоростью, близкой к световой, разрушитель планет врезался в поверхность с силой триллиона водородных бомб. Подобно наполненному водой воздушному шарику, простреленному из ружья, этот мир расплавился от столкновения и разбрызгал свои внутренности по космосу.\n\nЧасти {0} теперь составляют пояс астероидов. Всё остальное составляет расплавленный радиоактивный адский пейзаж, весь покрытый волнами землетрясенияй, на километры вздымающих и бросающих вниз породу.\n\nВы не выжили.</GameOverPlanetkillerImpact>
   <!-- EN: You've launched the ship! -->
   <GameOverShipLaunchedIntro>Вы запустили корабль!</GameOverShipLaunchedIntro>
   <!-- EN: Your machine persona will now try to guide the ship to a safe place. It might find a prosperous planet in this system. Or, it may undertake a centuries-long journey to another star. It might even decide to hide under ice on an asteroid for a few thousand years, waiting for someone to build a new glitterworld here.\n\nYou'll find out when you wake up. -->

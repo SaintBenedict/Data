@@ -26,7 +26,7 @@
   <!-- EN: Smoke totally prevents turrets from detecting targets, but people can still shoot with reduced accuracy. -->
   <GameplayTips.tips.11>Дым полностью скрывает цели от турелей, но люди могут стрелять, хоть и с пониженной точностью.</GameplayTips.tips.11>
   <!-- EN: When designing defences, assume enemies will get inside using drop pods or tunnels. Build internal defensive positions. -->
-  <GameplayTips.tips.12>При проектировании обороны учитывайте, что враги могут проникнуть внутрь, используя транспортные капсулы или туннели. Стройте внутренние оборонительные позиции.</GameplayTips.tips.12>
+  <GameplayTips.tips.12>При проектировании обороны учитывайте, что враги могут проникнуть внутрь при помощи транспортных капсул или взорвав часть стены. Стройте внутренние оборонительные позиции.</GameplayTips.tips.12>
   <!-- EN: Foggy or rainy weather reduces the accuracy of ranged weapons. -->
   <GameplayTips.tips.13>Туман и дождь снижают точность оружия дальнего боя.</GameplayTips.tips.13>
   <!-- EN: You can analyze the chance a shot will hit by selecting the shooter and placing the mouse over the target. -->
@@ -46,7 +46,7 @@
   <!-- EN: The hunter stealth stat reduces the chance of animal attacks. It is affected by the hunter's animals and shooting skills. -->
   <GameplayTips.tips.21>Скрытность охотника снижает шанс нападения животных. На неё влияют умение охотника обращаться с животными и его навык стрельбы.</GameplayTips.tips.21>
   <!-- EN: Animals are more likely to attack when harmed from close range. Long-range, slow-firing weapons are safest for hunting. -->
-  <GameplayTips.tips.22>Животные чаще нападают, когда их атакуют с близкого расстояния. Дальнобойное и нескорострельное оружие — лучший выбор для охоты.</GameplayTips.tips.22>
+  <GameplayTips.tips.22>Животные чаще нападают, когда их атакуют с близкого расстояния. Дальнобойное и нескорострельное оружие — лучший выбор для охоты.</GameplayTips.tips.22>
   <!-- EN: Entire herds of animals may attack you when you try to hunt them. Accept the risk before hunting, or choose weaker prey. -->
   <GameplayTips.tips.23>Если вы нападёте на одно животное из целой группы, то всё стадо может атаковать вас. Будьте к этому готовы или выбирайте более слабые цели.</GameplayTips.tips.23>
   <!-- EN: If you hunt boomrats and boomalopes when it's raining, their deaths won't cause forest fires. -->
@@ -64,9 +64,9 @@
   <!-- EN: If you have untrained animals in your caravan, you can split them into a separate caravan before attacking an enemy, to keep them out of the fight. -->
   <GameplayTips.tips.30>Если у вас есть необученные животные в караване, то перед атакой на врага их можно выделить в отдельный караван. Это позволит держать их вне боя.</GameplayTips.tips.30>
   <!-- EN: RimWorld is a story generator, not a skill test. A ruined colony is a dramatic tragedy, not a failure. -->
-  <GameplayTips.tips.31>RimWorld — это генератор историй, а не проверка навыков. Разрушенное поселение — лишь трагедия, но не провал.</GameplayTips.tips.31>
+  <GameplayTips.tips.31>RimWorld — это генератор историй, а не проверка навыков. Разрушенное поселение — лишь трагедия, но не провал.</GameplayTips.tips.31>
   <!-- EN: Some colonists are worse than useless. Bad allies are part of the challenge. -->
-  <GameplayTips.tips.32>Некоторые поселенцы более чем бесполезны. Плохие союзники — серьёзная проблема.</GameplayTips.tips.32>
+  <GameplayTips.tips.32>Некоторые поселенцы более чем бесполезны. Плохие союзники — серьёзная проблема.</GameplayTips.tips.32>
   <!-- EN: If you can't defend against a threat, make a caravan and run. You may lose your home, but your story can continue. -->
   <GameplayTips.tips.33>Если вы не можете защититься от угрозы, создайте караван и бегите. Вы потеряете дом, но ваша история продолжится.</GameplayTips.tips.33>
   <!-- EN: Avoid using stone for doors. They open very slowly, which wastes your colonists' time. -->
@@ -84,17 +84,17 @@
   <!-- EN: Terrain affects movement speed. Build floors to help your colonists get around quicker. -->
   <GameplayTips.tips.40>Рельеф местности влияет на скорость передвижения. Укладывайте полы, чтобы поселенцы передвигались быстрее.</GameplayTips.tips.40>
   <!-- EN: Different terrain has different inherent cleanliness levels. Tiles are inherently clean; dirt is inherently dirty. -->
-  <GameplayTips.tips.41>Вид покрытия пола влияет на чистоту в помещении. Плитка по своей природе чиста, а земля — грязна.</GameplayTips.tips.41>
+  <GameplayTips.tips.41>Вид покрытия пола влияет на чистоту в помещении. Плитка по своей природе чистая, а земля — грязная.</GameplayTips.tips.41>
   <!-- EN: You can give prisoners as gifts. Giving a prisoner back to his own faction will be highly appreciated. -->
   <GameplayTips.tips.42>Вы можете дарить заключённых в качестве подарков. Возвращение пленника его собственной фракции будет высоко оценено.</GameplayTips.tips.42>
   <!-- EN: You can request specific types of trade caravans using the comms console. -->
   <GameplayTips.tips.43>Вы можете запросить определённые типы торговых караванов, используя консоль связи.</GameplayTips.tips.43>
   <!-- EN: You can use transport pods to send gifts directly to other factions' bases - even your enemies. This improves faction relations. -->
-  <GameplayTips.tips.44>Вы можете использовать транспортные капсулы для отправки подарков на базы других фракций — даже вашим врагам. Это улучшает отношения между фракциями.</GameplayTips.tips.44>
+  <GameplayTips.tips.44>Вы можете использовать транспортные капсулы для отправки подарков на базы других фракций — даже вашим врагам. Это улучшает отношения между фракциями.</GameplayTips.tips.44>
   <!-- EN: Keeping prisoners together saves space. However, prisoners kept together will try to break out together. -->
   <GameplayTips.tips.45>Совместное содержание заключённых экономит место. Однако заключённые, удерживаемые вместе, будут предпринимать совместные попытки побега.</GameplayTips.tips.45>
   <!-- EN: Enemy faction bases are very well-defended. You don't need to attack them - but be well-prepared if you choose to try. -->
-  <GameplayTips.tips.46>Базы вражеских фракций очень хорошо защищены. Вам не нужно на них нападать, а если решитесь — хорошо подготовьтесь.</GameplayTips.tips.46>
+  <GameplayTips.tips.46>Базы вражеских фракций очень хорошо защищены. Вам не нужно на них нападать, а если решитесь — хорошо подготовьтесь.</GameplayTips.tips.46>
   <!-- EN: Cute tame animals will nuzzle your colonists, improving their mood. -->
   <GameplayTips.tips.47>Милые ручные животные будут ласкаться к вашим поселенцам, улучшая их настроение.</GameplayTips.tips.47>
   <!-- EN: Assign your herbivorous animals to areas with lots of grass. They'll eat the grass and spare you the need to feed them. -->
@@ -120,7 +120,7 @@
   <!-- EN: Explosions extinguish fires in their blast radius. This makes artillery shells useful for stopping fires when there is no other choice. -->
   <GameplayTips.tips.58>Взрывами можно тушить пожары. Если другого выбора нет, артиллерийские снаряды сгодятся для остановки огня.</GameplayTips.tips.58>
   <!-- EN: Even serious setbacks don't mean the game has to end. Try playing out a lost battle - often the best stories come from the darkest situations. -->
-  <GameplayTips.tips.59>Даже серьёзные неудачи не означают конец игры. Попробуйте продолжить после проигранной битвы — часто лучшие истории получаются из самых тяжёлых ситуаций.</GameplayTips.tips.59>
+  <GameplayTips.tips.59>Даже серьёзные неудачи не означают конец игры. Попробуйте продолжить после проигранной битвы — часто лучшие истории получаются из самых тяжёлых ситуаций.</GameplayTips.tips.59>
   <!-- EN: Clean labs with sterile tile give research speed bonuses. -->
   <GameplayTips.tips.60>Чистые лаборатории со стерильной плиткой дают прирост к скорости исследования.</GameplayTips.tips.60>
   <!-- EN: You can change storyteller and difficulty at any time through the options menu. -->

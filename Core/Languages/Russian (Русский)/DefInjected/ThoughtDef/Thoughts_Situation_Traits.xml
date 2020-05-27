@@ -24,23 +24,23 @@
   <!-- EN: ascetic has impressive bedroom -->
   <Ascetic.stages.ascetic_has_impressive_bedroom-2.label>вычурная спальня</Ascetic.stages.ascetic_has_impressive_bedroom-2.label>
   <!-- EN: I don't like having an impressive bedroom. -->
-  <Ascetic.stages.ascetic_has_impressive_bedroom-2.description>Эта спальня — слишком вычурная! Это излишество.</Ascetic.stages.ascetic_has_impressive_bedroom-2.description>
+  <Ascetic.stages.ascetic_has_impressive_bedroom-2.description>Эта спальня — слишком вычурная! Это излишество.</Ascetic.stages.ascetic_has_impressive_bedroom-2.description>
   <!-- EN: ascetic has impressive bedroom -->
   <Ascetic.stages.ascetic_has_impressive_bedroom-3.label>вычурная спальня</Ascetic.stages.ascetic_has_impressive_bedroom-3.label>
   <!-- EN: I don't like having an impressive bedroom. -->
-  <Ascetic.stages.ascetic_has_impressive_bedroom-3.description>Эта спальня — слишком вычурная! Это излишество.</Ascetic.stages.ascetic_has_impressive_bedroom-3.description>
+  <Ascetic.stages.ascetic_has_impressive_bedroom-3.description>Эта спальня — слишком вычурная! Это излишество.</Ascetic.stages.ascetic_has_impressive_bedroom-3.description>
   <!-- EN: ascetic has impressive bedroom -->
   <Ascetic.stages.ascetic_has_impressive_bedroom-4.label>излишне роскошная спальня</Ascetic.stages.ascetic_has_impressive_bedroom-4.label>
   <!-- EN: I don't like having an impressive bedroom. -->
-  <Ascetic.stages.ascetic_has_impressive_bedroom-4.description>Эта спальня — слишком роскошная! Зачем всё это?!</Ascetic.stages.ascetic_has_impressive_bedroom-4.description>
+  <Ascetic.stages.ascetic_has_impressive_bedroom-4.description>Эта спальня — слишком роскошная! Зачем всё это?!</Ascetic.stages.ascetic_has_impressive_bedroom-4.description>
   <!-- EN: ascetic has impressive bedroom -->
   <Ascetic.stages.ascetic_has_impressive_bedroom-5.label>излишне роскошная спальня</Ascetic.stages.ascetic_has_impressive_bedroom-5.label>
   <!-- EN: I don't like having an impressive bedroom. -->
-  <Ascetic.stages.ascetic_has_impressive_bedroom-5.description>Эта спальня — слишком роскошная! Зачем всё это?!</Ascetic.stages.ascetic_has_impressive_bedroom-5.description>
+  <Ascetic.stages.ascetic_has_impressive_bedroom-5.description>Эта спальня — слишком роскошная! Зачем всё это?!</Ascetic.stages.ascetic_has_impressive_bedroom-5.description>
   <!-- EN: ascetic has impressive bedroom -->
   <Ascetic.stages.ascetic_has_impressive_bedroom-6.label>излишне роскошная спальня</Ascetic.stages.ascetic_has_impressive_bedroom-6.label>
   <!-- EN: I don't like having an impressive bedroom. -->
-  <Ascetic.stages.ascetic_has_impressive_bedroom-6.description>Эта спальня — слишком роскошная! Зачем всё это?!</Ascetic.stages.ascetic_has_impressive_bedroom-6.description>
+  <Ascetic.stages.ascetic_has_impressive_bedroom-6.description>Эта спальня — слишком роскошная! Зачем всё это?!</Ascetic.stages.ascetic_has_impressive_bedroom-6.description>
   
   <!-- EN: brawler has ranged weapon -->
   <BrawlerUnhappy.stages.brawler_has_ranged_weapon.label>с оружием дальнего боя</BrawlerUnhappy.stages.brawler_has_ranged_weapon.label>
@@ -50,7 +50,7 @@
   <!-- EN: constraining clothes -->
   <ClothedNudist.stages.constraining_clothes.label>неудобная одежда</ClothedNudist.stages.constraining_clothes.label>
   <!-- EN: I'm a nudist but I have to wear these clothes. It's not unbearable - but I still feel constrained and uncomfortable. -->
-  <ClothedNudist.stages.constraining_clothes.description>Я нудист, но мне приходится носить одежду. Это переносимо, но я всё равно чувствую себя скованно и неуютно.</ClothedNudist.stages.constraining_clothes.description>
+  <ClothedNudist.stages.constraining_clothes.description>Я нудист, но мне приходится носить одежду. Это терпимо, но я всё равно чувствую себя скованно и неуютно.</ClothedNudist.stages.constraining_clothes.description>
   
   <!-- EN: greedy for impressive bedroom -->
   <Greedy.stages.greedy_for_impressive_bedroom-0.label>спальни нет</Greedy.stages.greedy_for_impressive_bedroom-0.label>
@@ -113,11 +113,11 @@
   <!-- EN: transhumanist pleased -->
   <ProsthophileHappy.stages.transhumanist_pleased.label>удовлетворение трансгуманиста</ProsthophileHappy.stages.transhumanist_pleased.label>
   <!-- EN: This artificial part is cool. I want more. -->
-  <ProsthophileHappy.stages.transhumanist_pleased.description>Искусственная часть тела — это здорово. Хочу ещё.</ProsthophileHappy.stages.transhumanist_pleased.description>
+  <ProsthophileHappy.stages.transhumanist_pleased.description>Искусственная часть тела — это здорово. Хочу ещё.</ProsthophileHappy.stages.transhumanist_pleased.description>
   <!-- EN: transhumanist quite pleased -->
   <ProsthophileHappy.stages.transhumanist_quite_pleased.label>радость трансгуманиста</ProsthophileHappy.stages.transhumanist_quite_pleased.label>
   <!-- EN: Two artificial parts are better than one. I wish I had more. -->
-  <ProsthophileHappy.stages.transhumanist_quite_pleased.description>Две искусственные части — лучше, чем одна. Но хочу ещё.</ProsthophileHappy.stages.transhumanist_quite_pleased.description>
+  <ProsthophileHappy.stages.transhumanist_quite_pleased.description>Две искусственные части — лучше, чем одна. Но хочу ещё.</ProsthophileHappy.stages.transhumanist_quite_pleased.description>
   <!-- EN: transhumanist delighted -->
   <ProsthophileHappy.stages.transhumanist_delighted.label>восторг трансгуманиста</ProsthophileHappy.stages.transhumanist_delighted.label>
   <!-- EN: Three artificial parts, and my weak human flesh is receding. But I still want more machine power. -->

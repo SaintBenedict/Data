@@ -39,7 +39,7 @@
   <!-- EN: go-juice production -->
   <GoJuiceProduction.label>производство Go-сока</GoJuiceProduction.label>
   <!-- EN: Produce go-juice, a synthetic combat-performance-enhancing drug which improves shooting, melee, and movement ability, and dulls pain. -->
-  <GoJuiceProduction.description>Обучение изготовлению Go-сока — синтетического наркотика, усиливающего боевые способности, ускоряющего передвижение и притупляющего боль.</GoJuiceProduction.description>
+  <GoJuiceProduction.description>Обучение изготовлению Go-сока — синтетического наркотика, усиливающего боевые способности, ускоряющего передвижение и притупляющего боль.</GoJuiceProduction.description>
   
   <!-- EN: greatbow -->
   <Greatbow.label>длинные луки</Greatbow.label>
@@ -54,17 +54,17 @@
   <!-- EN: passive cooler -->
   <PassiveCooler.label>испарительный охладитель</PassiveCooler.label>
   <!-- EN: Make passive coolers, to cool indoor spaces without using electricity. -->
-  <PassiveCooler.description>Испарительные охладители охлаждают помещения без использования электричества.</PassiveCooler.description>
+  <PassiveCooler.description>Испарительные охладители охлаждают помещения без использования электричества.</PassiveCooler.description>
   
   <!-- EN: pemmican -->
   <Pemmican.label>пеммикан</Pemmican.label>
   <!-- EN: Make pemmican, a preserved mixture of meat and plant matter that doesn't go bad for a long time. Great for traveling. -->
-  <Pemmican.description>Пеммикан — смесь мяса, жира и ингредиентов растительного происхождения, которая не портится в течение длительного времени. Идеально подходит для путешествий.</Pemmican.description>
+  <Pemmican.description>Пеммикан — смесь мяса, жира и ингредиентов растительного происхождения, которая не портится в течение длительного времени. Идеально подходит для путешествий.</Pemmican.description>
   
   <!-- EN: penoxycyline production -->
   <PenoxycylineProduction.label>производство пеноксицилина</PenoxycylineProduction.label>
   <!-- EN: Produce penoxycyline, a disease prevention drug which blocks plague, malaria, and more before they start. -->
-  <PenoxycylineProduction.description>Обучение изготовлению пеноксицилина — препарата, предупреждающего появление чумы, малярии и сонной болезни.</PenoxycylineProduction.description>
+  <PenoxycylineProduction.description>Обучение изготовлению пеноксицилина — препарата, предупреждающего появление чумы, малярии и сонной болезни.</PenoxycylineProduction.description>
   
   <!-- EN: plate armor -->
   <PlateArmor.label>пластинчатые доспехи</PlateArmor.label>
@@ -74,12 +74,12 @@
   <!-- EN: psychite refining -->
   <PsychiteRefining.label>переработка психина</PsychiteRefining.label>
   <!-- EN: Refine psychoid leaves into flake and yayo, different forms of the euphoric psychite drug. -->
-  <PsychiteRefining.description>Переработка психолистьев в хлопья и порошок — различные формы эйфорического наркотика психина.</PsychiteRefining.description>
+  <PsychiteRefining.description>Переработка психолистьев в хлопья и порошок — различные формы эйфорического наркотика психина.</PsychiteRefining.description>
   
   <!-- EN: psychoid brewing -->
   <PsychoidBrewing.label>заваривание психолиста</PsychoidBrewing.label>
   <!-- EN: Prepare psychoid leaves into a mildly euphoria-inducing and addictive tea at the campfire or cooking stove. -->
-  <PsychoidBrewing.description>После должной обработки психолистья можно заваривать в воде — получившийся «чай» будет вызывать умеренные эффекты эйфории и привыкания.</PsychoidBrewing.description>
+  <PsychoidBrewing.description>После должной обработки психолистья можно заваривать в воде — получившийся «чай» будет вызывать умеренные эффекты эйфории и привыкания.</PsychoidBrewing.description>
   
   <!-- EN: recurve bow -->
   <RecurveBow.label>рекурсивный лук</RecurveBow.label>
@@ -104,6 +104,6 @@
   <!-- EN: wake-up production -->
   <WakeUpProduction.label>производство бодрина</WakeUpProduction.label>
   <!-- EN: Synthesize wake-up, a work performance-enhancing drug which replaces the need for sleep. -->
-  <WakeUpProduction.description>Ваши химики узнают формулу и технологию синтеза бодрина — наркотика, повышающего работоспособность и общую выносливость организма.</WakeUpProduction.description>
+  <WakeUpProduction.description>Ваши химики узнают формулу и технологию синтеза бодрина — наркотика, повышающего работоспособность и общую выносливость организма.</WakeUpProduction.description>
   
 </LanguageData>
