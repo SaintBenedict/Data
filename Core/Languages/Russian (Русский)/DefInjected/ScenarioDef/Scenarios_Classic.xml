@@ -10,7 +10,7 @@
   <!-- EN: Crashlanded -->
   <Crashlanded.scenario.name>Аварийная посадка</Crashlanded.scenario.name>
   <!-- EN: Three crashlanded survivors - the classic RimWorld experience. -->
-  <Crashlanded.scenario.summary>Трое выживших, совершивших аварийную посадку, — классический сценарий RimWorld.</Crashlanded.scenario.summary>
+  <Crashlanded.scenario.summary>Трое выживших, совершивших аварийную посадку, — классический сценарий RimWorld.</Crashlanded.scenario.summary>
   
   <!-- EN: Lost Tribe -->
   <LostTribe.label>потерянное племя</LostTribe.label>
@@ -28,13 +28,13 @@
   <!-- EN: Naked Brutality -->
   <NakedBrutality.label>неприкрытая жестокость</NakedBrutality.label>
   <!-- EN: You went under anesthetic for a minor surgery. Now you've awoken in a drop pod crashing into a distant planet. You're naked, alone, and totally unprepared. Can you survive?\n\nWarning: There is nothing fair about this scenario - it is extremely difficult and death can happen for any reason. -->
-  <NakedBrutality.description>Последнее, что вы помните, — это как вас вводят в наркоз перед лёгкой операцией. А теперь вы просыпаетесь в капсуле, мчащейся к поверхности далёкой планеты, в одиночестве, без снаряжения и даже без одежды. Удастся ли вам выжить?\n\nВнимание: этот сценарий имеет крайне высокую сложность, смерть может произойти по любой причине.</NakedBrutality.description>
+  <NakedBrutality.description>Последнее, что вы помните, — это как вас вводят в наркоз перед лёгкой операцией. А теперь вы просыпаетесь в капсуле, мчащейся к поверхности далёкой планеты, в одиночестве, без снаряжения и даже без одежды. Удастся ли вам выжить?\n\nВнимание: этот сценарий имеет крайне высокую сложность, смерть может произойти по любой причине.</NakedBrutality.description>
   <!-- EN: You went under anesthetic for a minor surgery. Now you've awoken in a drop pod crashing into a distant planet. You're naked, alone, and totally unprepared. Can you survive?\n\nWarning: There is nothing fair about this scenario - it is extremely difficult and death can happen for any reason. -->
-  <NakedBrutality.scenario.description>Последнее, что вы помните, — это как вас вводят в наркоз перед лёгкой операцией. А теперь вы просыпаетесь в капсуле, мчащейся к поверхности далёкой планеты, в одиночестве, без снаряжения и даже без одежды. Удастся ли вам выжить?\n\nВнимание: этот сценарий имеет крайне высокую сложность, смерть может произойти по любой причине.</NakedBrutality.scenario.description>
+  <NakedBrutality.scenario.description>Последнее, что вы помните, — это как вас вводят в наркоз перед лёгкой операцией. А теперь вы просыпаетесь в капсуле, мчащейся к поверхности далёкой планеты, в одиночестве, без снаряжения и даже без одежды. Удастся ли вам выжить?\n\nВнимание: этот сценарий имеет крайне высокую сложность, смерть может произойти по любой причине.</NakedBrutality.scenario.description>
   <!-- EN: Naked Brutality -->
   <NakedBrutality.scenario.name>Неприкрытая жестокость</NakedBrutality.scenario.name>
   <!-- EN: It was supposed to be a minor surgery. Just an hour under anesthetic. You felt totally safe.\n\nNow you've awoken inside a drop pod punching through the atmosphere of a distant rimworld.\n\nAside from a slick of mysterious goo all over your body, you are totally naked. With no preparation, no supplies, and no tools, can you survive? -->
-  <NakedBrutality.scenario.parts.GameStartDialog.text>Предполагалось, что операция будет лёгкой: всего час под общим наркозом. Вы чувствовали себя в безопасности.\n\nА теперь вы просыпаетесь внутри спасательной капсулы, пробивающейся сквозь плотные слои атмосферы какого-то окраинного мира.\n\nЕсли не брать в расчёт странную жижу, покрывающую всё ваше тело, на вас абсолютно ничего нет. Без подготовки, без припасов, без инструментов — как выжить?</NakedBrutality.scenario.parts.GameStartDialog.text>
+  <NakedBrutality.scenario.parts.GameStartDialog.text>Предполагалось, что операция будет лёгкой: всего час под общим наркозом. Вы чувствовали себя в безопасности.\n\nА теперь вы просыпаетесь внутри спасательной капсулы, пробивающейся сквозь плотные слои атмосферы какого-то окраинного мира.\n\nЕсли не брать в расчёт странную жижу, покрывающую всё ваше тело, на вас абсолютно ничего нет. Без подготовки, без припасов, без инструментов — как выжить?</NakedBrutality.scenario.parts.GameStartDialog.text>
   <!-- EN: Naked, alone, and utterly unprepared. Can you survive? Extremely difficult and unfair. -->
   <NakedBrutality.scenario.summary>В одиночестве, без одежды, без ресурсов. Выживете ли вы? Скорее всего, нет. Экстремально сложный сценарий.</NakedBrutality.scenario.summary>
   
@@ -47,7 +47,7 @@
   <!-- EN: The Rich Explorer -->
   <TheRichExplorer.scenario.name>Богатый исследователь</TheRichExplorer.scenario.name>
   <!-- EN: The neurosimulations, holo-games, and free-orgies were never enough for you. You wanted more - the grit and consequence of real life, like they talk about in the history books. You wanted to know what real challenge and consequence feel like.\n\nNow, after a journey of decades in cryptosleep, you're landing on this unknown rimworld. Real consequences await you. -->
-  <TheRichExplorer.scenario.parts.GameStartDialog.text>Нейросимуляторы, голографические игры и оргии наскучили вам. Вы хотели большего — тягот и лишений реальной жизни, о которой читали в книгах по истории. Вы хотели на своей шкуре прочувствовать настоящие суровые испытания.\n\nНаконец, после десятилетий в криптосне, вы приземляетесь на неизвестный окраинный мир. Суровые испытания ждут вас.</TheRichExplorer.scenario.parts.GameStartDialog.text>
+  <TheRichExplorer.scenario.parts.GameStartDialog.text>Нейросимуляторы, голографические игры и оргии наскучили вам. Вы хотели большего — тягот и лишений реальной жизни, о которой читали в книгах по истории. Вы хотели на своей шкуре прочувствовать настоящие суровые испытания.\n\nНаконец, после десятилетий в криптосне, вы приземляетесь на неизвестный окраинный мир. Суровые испытания ждут вас.</TheRichExplorer.scenario.parts.GameStartDialog.text>
   <!-- EN: One rich explorer out to experience the universe. Extra difficult. -->
   <TheRichExplorer.scenario.summary>Богатый исследователь, путешествующий по Вселенной. Очень сложный сценарий.</TheRichExplorer.scenario.summary>
   
@@ -60,6 +60,6 @@
   <!-- EN: tutorial -->
   <Tutorial.scenario.name>Обучение</Tutorial.scenario.name>
   <!-- EN: Three crashlanded survivors - the classic RimWorld experience. -->
-  <Tutorial.scenario.summary>Трое выживших, совершивших аварийную посадку, — классический сценарий RimWorld.</Tutorial.scenario.summary>
+  <Tutorial.scenario.summary>Трое выживших, совершивших аварийную посадку, — классический сценарий RimWorld.</Tutorial.scenario.summary>
   
 </LanguageData>

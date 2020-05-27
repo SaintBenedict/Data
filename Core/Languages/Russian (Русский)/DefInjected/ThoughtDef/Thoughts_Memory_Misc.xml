@@ -107,7 +107,7 @@
   <!-- EN: observed corpse -->
   <ObservedLayingCorpse.stages.observed_corpse.label>вид трупа</ObservedLayingCorpse.stages.observed_corpse.label>
   <!-- EN: I saw a dead body laying on the ground. It was disturbing. -->
-  <ObservedLayingCorpse.stages.observed_corpse.description>Труп человека, лежащий на земле, — не самое приятное зрелище.</ObservedLayingCorpse.stages.observed_corpse.description>
+  <ObservedLayingCorpse.stages.observed_corpse.description>Труп человека, лежащий на земле, — не самое приятное зрелище.</ObservedLayingCorpse.stages.observed_corpse.description>
   
   <!-- EN: observed rotting corpse -->
   <ObservedLayingRottingCorpse.stages.observed_rotting_corpse.label>вид гниющего трупа</ObservedLayingRottingCorpse.stages.observed_rotting_corpse.label>
@@ -177,7 +177,7 @@
   <!-- EN: witnessed death with bloodlust -->
   <WitnessedDeathBloodlust.stages.witnessed_death_with_bloodlust.label>свидетель кровавой смерти</WitnessedDeathBloodlust.stages.witnessed_death_with_bloodlust.label>
   <!-- EN: I saw someone die! That was intense! -->
-  <WitnessedDeathBloodlust.stages.witnessed_death_with_bloodlust.description>Смерть человека — вот это зрелище!</WitnessedDeathBloodlust.stages.witnessed_death_with_bloodlust.description>
+  <WitnessedDeathBloodlust.stages.witnessed_death_with_bloodlust.description>Смерть человека — вот это зрелище!</WitnessedDeathBloodlust.stages.witnessed_death_with_bloodlust.description>
   
   <!-- EN: witnessed family member's death -->
   <WitnessedDeathFamily.stages.witnessed_family_members_death.label>свидетель смерти члена семьи</WitnessedDeathFamily.stages.witnessed_family_members_death.label>

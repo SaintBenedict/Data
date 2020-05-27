@@ -4,7 +4,7 @@
   <!-- EN: dromedary -->
   <Dromedary.label>верблюд</Dromedary.label>
   <!-- EN: A large land mammal adapted to arid environments. Domesticated since ancient times, its wool and leather are both exceptionally good at insulating against the desert heat, and its milk is quite nourishing. It can be used as a pack animal, but its bouncing gait makes it too uncomfortable to ride for any distance.\n\nBy storing water in its large humps and reclaiming moisture from its breath as it exhales, it can go weeks without drinking. -->
-  <Dromedary.description>Крупное млекопитающее, приспособленное для жизни в пустынях. Это животное одомашнено человеком с древних времён. Его шерсть и шкура отлично защищают от дневного зноя и ночного холода, а молоко весьма питательно. Верблюды могут быть использованы в качестве вьючных животных, но из-за их прыгучего аллюра их почти невозможно оседлать.\n\nВерблюды собирают влагу, выделяемую при дыхании, а их горб представляет собой жировые отложения — всё это позволяет им неделями обходиться без воды.</Dromedary.description>
+  <Dromedary.description>Крупное млекопитающее, приспособленное для жизни в пустынях. Это животное одомашнено человеком с древних времён. Его шерсть и шкура отлично защищают от дневного зноя и ночного холода, а молоко весьма питательно. Верблюды могут быть использованы в качестве вьючных животных, но из-за их прыгучего аллюра их почти невозможно оседлать.\n\nВерблюды собирают влагу, выделяемую при дыхании, а их горб представляет собой жировые отложения — всё это позволяет им неделями обходиться без воды.</Dromedary.description>
   <!-- EN: left hoof -->
   <Dromedary.tools.left_hoof.label>левое копыто</Dromedary.tools.left_hoof.label>
   <!-- EN: right hoof -->
@@ -26,7 +26,7 @@
   <!-- EN: iguana -->
   <Iguana.label>игуана</Iguana.label>
   <!-- EN: These large lizards normally feed on plant matter. However, when angered, their tough hide and sharp claws make them quite dangerous.\n\nResting iguanas hold their heads high, giving them an amusing 'proud' look. But they're not proud; they're just trying to see predators so they don't get eaten. -->
-  <Iguana.description>Эти большие ящерицы обычно питаются растениями. Однако в гневе, благодаря твёрдой шкуре и острым когтям, они способны серьёзно навредить противнику.\n\nОтдыхающая игуана высоко держит голову, что придаёт ей забавный «гордый» вид. Но эти животные вовсе не гордые — они просто хотят вовремя увидеть хищника, чтобы не быть съеденными.</Iguana.description>
+  <Iguana.description>Эти большие ящерицы обычно питаются растениями. Однако в гневе, благодаря твёрдой шкуре и острым когтям, они способны серьёзно навредить противнику.\n\nОтдыхающая игуана высоко держит голову, что придаёт ей забавный «гордый» вид. Но эти животные вовсе не гордые — они просто хотят вовремя увидеть хищника, чтобы не быть съеденными.</Iguana.description>
   <!-- EN: left claw -->
   <Iguana.tools.left_claw.label>левая лапа</Iguana.tools.left_claw.label>
   <!-- EN: right claw -->
