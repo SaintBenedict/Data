@@ -90,6 +90,8 @@
             </capacities>
             <power>14</power>
             <cooldownTime>2</cooldownTime>
+            <soundMeleeHit>MeleeHit_BionicPunch</soundMeleeHit>
+            <soundMeleeMiss>MeleeMiss_BionicPunch</soundMeleeMiss>
           </li>
         </tools>
       </li>

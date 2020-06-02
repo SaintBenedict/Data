@@ -30,7 +30,7 @@
 
   <PawnTableDef>
     <defName>Restrict</defName>
-    <workerClass>PawnTable_PlayerPawns</workerClass>
+    <workerClass>PawnTable_PlayerPawnsTimetable</workerClass>
     <columns>
       <li>Label</li>
       <li>CopyPasteTimetable</li>

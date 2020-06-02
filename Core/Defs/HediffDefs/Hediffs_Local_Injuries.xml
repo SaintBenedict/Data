@@ -211,6 +211,16 @@
   </HediffDef>
 
   <HediffDef ParentName="InjuryBase">
+    <defName>ExecutionCut</defName>
+    <label>cut</label>
+    <labelNoun>a cut</labelNoun>
+    <description>A cut made during execution.</description>
+    <injuryProps>
+      <canMerge>false</canMerge>
+    </injuryProps>
+  </HediffDef>
+
+  <HediffDef ParentName="InjuryBase">
     <defName>Scratch</defName>
     <label>scratch</label>
     <labelNoun>a scratch</labelNoun>

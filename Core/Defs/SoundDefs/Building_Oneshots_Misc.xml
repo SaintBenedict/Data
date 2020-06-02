@@ -51,40 +51,6 @@
       </li>
     </subSounds>
   </SoundDef>
-  
-  <SoundDef>
-    <defName>BulletShieldGenerator_Reactivate</defName>
-    <context>MapOnly</context>
-    <maxSimultaneous>1</maxSimultaneous>
-    <subSounds>
-      <li>
-        <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Misc/BulletShieldGenerator/Reactivate</clipFolderPath>
-          </li>
-        </grains>
-        <volumeRange>40~40</volumeRange>
-        <distRange>10~40</distRange>
-      </li>
-    </subSounds>
-  </SoundDef>
-
-  <SoundDef>
-    <defName>MortarShieldGenerator_Reactivate</defName>
-    <context>MapOnly</context>
-    <maxSimultaneous>1</maxSimultaneous>
-    <subSounds>
-      <li>
-        <grains>
-          <li Class="AudioGrain_Folder">
-            <clipFolderPath>Misc/MortarShieldGenerator/Reactivate</clipFolderPath>
-          </li>
-        </grains>
-        <volumeRange>40~40</volumeRange>
-        <distRange>10~40</distRange>
-      </li>
-    </subSounds>
-  </SoundDef>
 
   <SoundDef>
     <defName>MechanoidsWakeUp</defName>

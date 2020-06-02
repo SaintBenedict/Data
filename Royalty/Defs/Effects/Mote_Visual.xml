@@ -95,6 +95,29 @@
   </ThingDef>
 
   <ThingDef ParentName="MoteGlowDistorted">
+    <defName>Mote_PsyfocusPulse</defName>
+    <thingClass>MoteAttached</thingClass>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <fadeInTime>0.2</fadeInTime>
+      <fadeOutTime>0.5</fadeOutTime>
+      <solidTime>999999</solidTime>
+      <needsMaintenance>True</needsMaintenance>
+    </mote>
+    <graphicData>
+      <graphicClass>Graphic_MotePulse</graphicClass>
+      <shaderType>PsyfocusMeditationPulse</shaderType>
+      <texPath>Things/Mote/Transparent</texPath>
+      <shaderParameters>
+        <_distortionIntensity>0.0055</_distortionIntensity>
+        <_brightnessMultiplier>1.15</_brightnessMultiplier>
+        <_pulseSpeed>0.75</_pulseSpeed>
+      </shaderParameters>
+      <drawSize>2.35</drawSize>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef ParentName="MoteGlowDistorted">
     <defName>Mote_PsychicLinkLine</defName>
     <thingClass>MoteDualAttached</thingClass>
     <altitudeLayer>MoteLow</altitudeLayer>
@@ -215,6 +238,24 @@
       <solidTime>1.4</solidTime>
       <fadeOutTime>1.5</fadeOutTime>
     </mote>
+  </ThingDef>
+
+  <ThingDef ParentName="MoteBase">
+    <defName>Mote_WaterskipSplashParticles</defName>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <thingClass>MoteThrown</thingClass>
+    <mote>
+      <solidTime>0.05</solidTime>
+      <fadeOutTime>0.55</fadeOutTime>
+      <acceleration>(0,0,-0.03)</acceleration>
+      <growthRate>0.37</growthRate>
+    </mote>
+    <graphicData>
+      <texPath>Things/Mote/WaterSplash</texPath>
+      <drawSize>3.5</drawSize>
+      <drawOffset>(0.0, 0, 0.65)</drawOffset>
+      <shaderType>Mote</shaderType>
+    </graphicData>
   </ThingDef>
   
 </Defs>

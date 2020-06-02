@@ -15,6 +15,9 @@
       <Beauty>-15</Beauty>
       <Cleanliness>-5</Cleanliness>
     </statBases>
+    <filth>
+      <cleaningSound>Interact_CleanFilth</cleaningSound>
+    </filth>
   </ThingDef>
 
   <ThingDef ParentName="BaseFilth">
@@ -28,8 +31,10 @@
       <placementMask>
         <li>Terrain</li>
       </placementMask>
+      <disappearsInDays>45~50</disappearsInDays>
       <cleaningWorkToReduceThickness>35</cleaningWorkToReduceThickness>
       <canFilthAttach>true</canFilthAttach>
+      <cleaningSound>Interact_CleanFilth_Dirt</cleaningSound>
     </filth>
   </ThingDef>
 
@@ -44,6 +49,7 @@
       <placementMask>
         <li>Terrain</li>
       </placementMask>
+      <disappearsInDays>45~50</disappearsInDays>
       <cleaningWorkToReduceThickness>35</cleaningWorkToReduceThickness>
       <canFilthAttach>true</canFilthAttach>
     </filth>
@@ -61,8 +67,10 @@
         <li>Terrain</li>
         <li>Unnatural</li>
       </placementMask>
+      <disappearsInDays>45~50</disappearsInDays>
       <cleaningWorkToReduceThickness>35</cleaningWorkToReduceThickness>
       <canFilthAttach>true</canFilthAttach>
+      <cleaningSound>Interact_CleanFilth_Scattered</cleaningSound>
     </filth>
   </ThingDef>
   
@@ -77,8 +85,10 @@
       <placementMask>
         <li>Terrain</li>
       </placementMask>
+      <disappearsInDays>45~50</disappearsInDays>
       <cleaningWorkToReduceThickness>35</cleaningWorkToReduceThickness>
       <canFilthAttach>true</canFilthAttach>
+      <cleaningSound>Interact_CleanFilth_Dirt</cleaningSound>
     </filth>
   </ThingDef>
 
@@ -89,6 +99,7 @@
       <texPath>Things/Filth/RubbleRock</texPath>
     </graphicData>
     <filth>
+      <disappearsInDays>45~50</disappearsInDays>
       <cleaningWorkToReduceThickness>35</cleaningWorkToReduceThickness>
     </filth>
   </ThingDef>
@@ -100,6 +111,7 @@
       <texPath>Things/Filth/RubbleBuilding</texPath>
     </graphicData>
     <filth>
+      <disappearsInDays>45~50</disappearsInDays>
       <cleaningWorkToReduceThickness>35</cleaningWorkToReduceThickness>
     </filth>
   </ThingDef>
@@ -111,6 +123,7 @@
       <texPath>Things/Filth/RubbleSlag</texPath>
     </graphicData>
     <filth>
+      <disappearsInDays>45~50</disappearsInDays>
       <cleaningWorkToReduceThickness>35</cleaningWorkToReduceThickness>
     </filth>
   </ThingDef>
@@ -122,7 +135,9 @@
       <texPath>Things/Filth/RubbleSandbags</texPath>
     </graphicData>
     <filth>
+      <disappearsInDays>45~50</disappearsInDays>
       <cleaningWorkToReduceThickness>35</cleaningWorkToReduceThickness>
+      <cleaningSound>Interact_CleanFilth_Dirt</cleaningSound>
     </filth>
   </ThingDef>
 
@@ -143,9 +158,11 @@
       <color>(131, 34, 34, 180)</color>
     </graphicData>
     <filth>
+      <disappearsInDays>35~40</disappearsInDays>
       <rainWashes>true</rainWashes>
       <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
       <canFilthAttach>true</canFilthAttach>
+      <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
     </filth>
   </ThingDef>
 
@@ -161,9 +178,11 @@
       <color>(132, 138, 114, 180)</color>
     </graphicData>
     <filth>
+      <disappearsInDays>35~40</disappearsInDays>
       <rainWashes>true</rainWashes>
       <cleaningWorkToReduceThickness>80</cleaningWorkToReduceThickness>
       <canFilthAttach>true</canFilthAttach>
+      <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
     </filth>
   </ThingDef>
 
@@ -178,7 +197,9 @@
       <texPath>Things/Filth/MachineBits</texPath>
     </graphicData>
     <filth>
+      <disappearsInDays>45~50</disappearsInDays>
       <cleaningWorkToReduceThickness>35</cleaningWorkToReduceThickness>
+      <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
     </filth>
   </ThingDef>
 
@@ -194,9 +215,11 @@
       <color>(200, 200, 140, 50)</color>
     </graphicData>
     <filth>
+      <disappearsInDays>35~40</disappearsInDays>
       <rainWashes>true</rainWashes>
       <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
       <canFilthAttach>true</canFilthAttach>
+      <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
     </filth>
   </ThingDef>
 
@@ -212,9 +235,11 @@
       <color>(130, 142, 120, 170)</color>
     </graphicData>
     <filth>
+      <disappearsInDays>35~40</disappearsInDays>
       <rainWashes>true</rainWashes>
       <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
       <canFilthAttach>true</canFilthAttach>
+      <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
     </filth>
   </ThingDef>
 
@@ -230,9 +255,11 @@
       <color>(179, 185, 73, 180)</color>
     </graphicData>
     <filth>
+      <disappearsInDays>35~40</disappearsInDays>
       <rainWashes>true</rainWashes>
       <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
       <canFilthAttach>true</canFilthAttach>
+      <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
     </filth>
   </ThingDef>
 
@@ -250,10 +277,12 @@
     </graphicData>
     <pathCost>5</pathCost>
     <filth>
+      <disappearsInDays>5~10</disappearsInDays>
       <rainWashes>true</rainWashes>
       <cleaningWorkToReduceThickness>100</cleaningWorkToReduceThickness>
       <canFilthAttach>true</canFilthAttach>
       <allowsFire>false</allowsFire>
+      <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
     </filth>
   </ThingDef>
   
@@ -274,10 +303,12 @@
       <texPath>Things/Filth/LiquidFuel</texPath>
     </graphicData>
     <filth>
+      <disappearsInDays>35~40</disappearsInDays>
       <rainWashes>true</rainWashes>
       <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
       <canFilthAttach>true</canFilthAttach>
       <maxThickness>1</maxThickness>
+      <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
     </filth>
   </ThingDef>
   
@@ -292,9 +323,11 @@
       <texPath>Things/Filth/CorpseBile</texPath>
     </graphicData>
     <filth>
+      <disappearsInDays>35~40</disappearsInDays>
       <rainWashes>true</rainWashes>
       <cleaningWorkToReduceThickness>80</cleaningWorkToReduceThickness>
       <canFilthAttach>true</canFilthAttach>
+      <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
     </filth>
   </ThingDef>
   
@@ -314,6 +347,27 @@
       <disappearsInDays>10~15</disappearsInDays>
       <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
       <canFilthAttach>true</canFilthAttach>
+    </filth>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseFilth">
+    <defName>Filth_Water</defName>
+    <label>water puddle</label>
+    <statBases>
+      <Beauty>-10</Beauty>
+      <Cleanliness>-5</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/PoolSoft</texPath>
+      <color>(120, 146, 185, 180)</color>
+      <drawSize>2</drawSize>
+    </graphicData>
+    <filth>
+      <disappearsInDays>0.2~0.4</disappearsInDays>
+      <cleaningWorkToReduceThickness>30</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <allowsFire>false</allowsFire>
+      <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
     </filth>
   </ThingDef>
 

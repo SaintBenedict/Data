@@ -610,4 +610,20 @@
     </stages>
   </ThoughtDef>
 
+  <!-- Helper pawns -->
+  <ThoughtDef>
+    <defName>OnDuty</defName>
+    <durationDays>15</durationDays>
+    <stackLimit>1</stackLimit>
+    <showBubble>true</showBubble>
+    <stages>
+      <li>
+        <label>on duty</label>
+        <description>I have a job to do.</description>
+        <baseMoodEffect>12</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+
 </Defs>

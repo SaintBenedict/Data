@@ -29,7 +29,7 @@
       <foodType>Processed</foodType>
       <joyKind>Chemical</joyKind>
       <joy>0.70</joy>
-      <baseIngestTicks>720</baseIngestTicks>
+      <baseIngestTicks>650</baseIngestTicks>
       <nurseable>true</nurseable>
       <drugCategory>Hard</drugCategory>
       <ingestSound>Ingest_Smoke</ingestSound>
@@ -77,7 +77,7 @@
         <addictiveness>0.20</addictiveness>
         <minToleranceToAddict>0.00</minToleranceToAddict>
         <existingAddictionSeverityOffset>0.30</existingAddictionSeverityOffset>
-        <needLevelOffset>1</needLevelOffset>
+        <needLevelOffset>0.9</needLevelOffset>
         <listOrder>110</listOrder>
         <overdoseSeverityOffset>0.18~0.35</overdoseSeverityOffset>
         <largeOverdoseChance>0.015</largeOverdoseChance>
@@ -90,7 +90,7 @@
     <label>high on flake</label>
     <labelNoun>a flake high</labelNoun>
     <description>Active flake in the bloodstream. Generates a euphoric, debilitating high.</description>
-    <hediffClass>HediffWithComps</hediffClass>
+    <hediffClass>Hediff_High</hediffClass>
     <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
     <scenarioCanAdd>true</scenarioCanAdd>
     <maxSeverity>1.0</maxSeverity>
@@ -98,6 +98,7 @@
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
         <severityPerDay>-3.0</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
       </li>
     </comps>
       <stages>

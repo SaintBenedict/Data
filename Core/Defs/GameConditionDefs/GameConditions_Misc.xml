@@ -121,6 +121,7 @@
     <letterDef>NegativeEvent</letterDef>
     <preventRain>true</preventRain>
     <canBePermanent>true</canBePermanent>
+    <jumpToSourceKey>ClickToJumpToFlashstorm</jumpToSourceKey>
   </GameConditionDef>
 
   <GameConditionDef>

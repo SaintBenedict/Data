@@ -63,7 +63,7 @@
         <addictiveness>0.010</addictiveness>
         <minToleranceToAddict>0.25</minToleranceToAddict>
         <existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
-        <needLevelOffset>1</needLevelOffset>
+        <needLevelOffset>0.9</needLevelOffset>
         <listOrder>10</listOrder>
       </li>
       <li>
@@ -168,6 +168,7 @@
       </li>
       <li Class="HediffCompProperties_SeverityPerDay">
         <severityPerDay>-0.75</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
       </li>
     </comps>
       <stages>
@@ -431,6 +432,7 @@
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
         <severityPerDay>-0.0333</severityPerDay>
+        <showDaysToRecover>true</showDaysToRecover>
       </li>
     </comps>
     <stages>

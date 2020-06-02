@@ -25,7 +25,7 @@
     </statBases>
     <techLevel>Neolithic</techLevel>
     <ingestible>
-      <baseIngestTicks>100</baseIngestTicks>
+      <baseIngestTicks>80</baseIngestTicks>
       <chairSearchRadius>4</chairSearchRadius>
       <preferability>DesperateOnly</preferability>
       <tasteThought></tasteThought>
@@ -57,7 +57,7 @@
         <addictiveness>0.010</addictiveness>
         <minToleranceToAddict>0.15</minToleranceToAddict>
         <existingAddictionSeverityOffset>0.1</existingAddictionSeverityOffset>
-        <needLevelOffset>1</needLevelOffset>
+        <needLevelOffset>0.9</needLevelOffset>
         <listOrder>30</listOrder>
       </li>
     </comps>
@@ -67,7 +67,7 @@
     <defName>AmbrosiaHigh</defName>
     <label>ambrosia warmth</label>
     <description>Ambrosia chemicals in the bloodstream. It lifts the mood.</description>
-    <hediffClass>HediffWithComps</hediffClass>
+    <hediffClass>Hediff_High</hediffClass>
     <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
     <scenarioCanAdd>true</scenarioCanAdd>
     <maxSeverity>1.0</maxSeverity>
@@ -75,6 +75,7 @@
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
         <severityPerDay>-0.75</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
       </li>
     </comps>
     <stages>
@@ -138,6 +139,7 @@
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
         <severityPerDay>-0.1</severityPerDay>
+        <showDaysToRecover>true</showDaysToRecover>
       </li>
     </comps>
     <stages>

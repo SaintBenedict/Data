@@ -15,13 +15,13 @@
   
   <ThingDef ParentName="PsychicApparelBase">
     <defName>Apparel_PsyfocusHelmet</defName>
-    <label>psyfocus helmet</label>
-    <description>A lightweight helmet designed for psychic focusing. While it provides little physical protection, its special materials enhance the wearer's psychic sensitivity and dissipate psychic entropy.</description>
+    <label>eltex helmet</label>
+    <description>A lightweight helmet designed for psychic focusing. While it provides little physical protection, its special materials enhance the wearer's psychic sensitivity and dissipate neural heat.</description>
     <thingCategories>
       <li>Headgear</li>
     </thingCategories>
     <graphicData>
-      <texPath>Things/Pawn/Humanlike/Apparel/PsyfocusHelmet/PsyfocusHelmet</texPath>
+      <texPath>Things/Pawn/Humanlike/Apparel/EltexHelmet/EltexHelmet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
@@ -37,13 +37,13 @@
     </statBases>
     <equippedStatOffsets>
       <PsychicSensitivity>0.15</PsychicSensitivity>
-      <PsychicEntropyRecoveryRate>2</PsychicEntropyRecoveryRate>
+      <PsychicEntropyRecoveryRate>0.066</PsychicEntropyRecoveryRate>
     </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
         <li>UpperHead</li>
       </bodyPartGroups>
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/PsyfocusHelmet/PsyfocusHelmet</wornGraphicPath>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/EltexHelmet/EltexHelmet</wornGraphicPath>
       <layers>
         <li>Overhead</li>
       </layers>
@@ -65,10 +65,10 @@
 
   <ThingDef ParentName="PsychicApparelBase">
     <defName>Apparel_PsyfocusShirt</defName>
-    <label>psyfocus shirt</label>
-    <description>A shirt embedded with special psychic focusing materials. These enhance psychic sensitivity and help dissipate psychic entropy.</description>
+    <label>eltex shirt</label>
+    <description>A shirt embedded with special psychic focusing materials. These enhance psychic sensitivity and help dissipate neural heat.</description>
     <graphicData>
-      <texPath>Things/Pawn/Humanlike/Apparel/PsyfocusShirt/PsyfocusShirt</texPath>
+      <texPath>Things/Pawn/Humanlike/Apparel/EltexShirt/EltexShirt</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <thingCategories>
@@ -87,14 +87,14 @@
     </statBases>
     <equippedStatOffsets>
       <PsychicSensitivity>0.10</PsychicSensitivity>
-      <PsychicEntropyRecoveryRate>1</PsychicEntropyRecoveryRate>
+      <PsychicEntropyRecoveryRate>0.033</PsychicEntropyRecoveryRate>
     </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
         <li>Torso</li>
         <li>Shoulders</li>
       </bodyPartGroups>
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/PsyfocusShirt/PsyfocusShirt</wornGraphicPath>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/EltexShirt/EltexShirt</wornGraphicPath>
       <layers>
         <li>OnSkin</li>
       </layers>
@@ -116,10 +116,10 @@
 
   <ThingDef ParentName="PsychicApparelBase">
     <defName>Apparel_PsyfocusVest</defName>
-    <label>psyfocus vest</label>
-    <description>A thin vest embedded with special psychic focusing materials. These enhance psychic sensitivity and help dissipate psychic entropy.</description>
+    <label>eltex vest</label>
+    <description>A thin vest embedded with special psychic focusing materials. These enhance psychic sensitivity and help dissipate neural heat.</description>
     <graphicData>
-      <texPath>Things/Pawn/Humanlike/Apparel/PsyfocusVest/PsyfocusVest</texPath>
+      <texPath>Things/Pawn/Humanlike/Apparel/EltexVest/EltexVest</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <thingCategories>
@@ -138,7 +138,7 @@
     </statBases>
     <equippedStatOffsets>
       <PsychicSensitivity>0.15</PsychicSensitivity>
-      <PsychicEntropyRecoveryRate>1.5</PsychicEntropyRecoveryRate>
+      <PsychicEntropyRecoveryRate>0.05</PsychicEntropyRecoveryRate>
     </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
@@ -146,7 +146,7 @@
         <li>Neck</li>
         <li>Shoulders</li>
       </bodyPartGroups>
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/PsyfocusVest/PsyfocusVest</wornGraphicPath>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/EltexVest/EltexVest</wornGraphicPath>
       <layers>
         <li>Middle</li>
       </layers>
@@ -168,10 +168,10 @@
 
   <ThingDef ParentName="PsychicApparelBase">
     <defName>Apparel_PsyfocusRobe</defName>
-    <description>A long robe embedded with special psychic focusing materials. These enhance psychic sensitivity and help dissipate psychic entropy.</description>
-    <label>psyfocus robe</label>
+    <description>A long robe embedded with special psychic focusing materials. These enhance psychic sensitivity and help dissipate neural heat.</description>
+    <label>eltex robe</label>
     <graphicData>
-      <texPath>Things/Pawn/Humanlike/Apparel/PsyfocusRobe/PsyfocusRobe</texPath>
+      <texPath>Things/Pawn/Humanlike/Apparel/EltexRobe/EltexRobe</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <thingCategories>
@@ -190,7 +190,7 @@
     </statBases>
     <equippedStatOffsets>
       <PsychicSensitivity>0.20</PsychicSensitivity>
-      <PsychicEntropyRecoveryRate>2.5</PsychicEntropyRecoveryRate>
+      <PsychicEntropyRecoveryRate>0.083</PsychicEntropyRecoveryRate>
     </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
@@ -200,7 +200,7 @@
         <li>Arms</li>
         <li>Legs</li>
       </bodyPartGroups>
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/PsyfocusRobe/PsyfocusRobe</wornGraphicPath>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/EltexRobe/EltexRobe</wornGraphicPath>
       <layers>
         <li>Shell</li>
       </layers>

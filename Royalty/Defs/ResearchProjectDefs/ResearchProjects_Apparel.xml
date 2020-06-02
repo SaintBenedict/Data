@@ -29,4 +29,28 @@
       <li>Smithing</li>
     </hiddenPrerequisites>
   </ResearchProjectDef>
+
+  <ResearchProjectDef>
+    <defName>CataphractArmor</defName>
+    <label>cataphract armor</label>
+    <description>Craft cataphract armor, heavy powered armor that slows the user but which can absorb extreme punishment. Note that these also require advanced components.</description>
+    <baseCost>6000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>PoweredArmor</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>17.00</researchViewX>
+    <researchViewY>1.50</researchViewY>
+    <techprintCount>2</techprintCount>
+    <techprintCommonality>3</techprintCommonality>
+    <techprintMarketValue>3000</techprintMarketValue>
+    <heldByFactionCategoryTags>
+      <li>Empire</li>
+    </heldByFactionCategoryTags>
+  </ResearchProjectDef>
+  
 </Defs>

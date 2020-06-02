@@ -29,7 +29,7 @@
     <killedLeavings>
       <Steel>100</Steel>
       <Plasteel>35</Plasteel>
-      <ChunkSlagSteel>8</ChunkSlagSteel>
+      <ChunkSlagSteel>4</ChunkSlagSteel>
       <ComponentIndustrial>4</ComponentIndustrial>
       <ComponentSpacer>1</ComponentSpacer>
     </killedLeavings>
@@ -40,8 +40,10 @@
     <drawerType>MapMeshOnly</drawerType>
     <repairEffect>ConstructMetal</repairEffect>
     <forceDebugSpawnable>true</forceDebugSpawnable>
+    <uiIconScale>1.4</uiIconScale>
     <building>
       <claimable>false</claimable>
+      <soundAmbient>ShuttleIdle_Ambience</soundAmbient>
     </building>
     <inspectorTabs>
       <li>ITab_ContentsTransporter</li>
@@ -54,6 +56,7 @@
         <canChangeAssignedThingsAfterStarting>true</canChangeAssignedThingsAfterStarting>
         <showOverallStats>false</showOverallStats>
         <pawnLoadedSound>Shuttle_PawnLoaded</pawnLoadedSound>
+        <pawnExitSound>Shuttle_PawnExit</pawnExitSound>
       </li>
     </comps>
   </ThingDef>

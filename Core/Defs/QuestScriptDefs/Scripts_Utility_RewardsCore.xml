@@ -40,6 +40,8 @@
           <customLetterText>$customLetterText</customLetterText>
           <customLetterLabelRules>$customLetterLabelRules</customLetterLabelRules>
           <customLetterTextRules>$customLetterTextRules</customLetterTextRules>
+          <isSingleReward>true</isSingleReward>
+          <rewardDetailsHidden>true</rewardDetailsHidden>
         </li>
       </nodes>
     </root>

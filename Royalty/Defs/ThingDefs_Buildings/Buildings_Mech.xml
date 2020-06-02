@@ -122,7 +122,9 @@
     <isMechClusterThreat>true</isMechClusterThreat>
     <killedLeavings>    <!-- Same as defoliator ship part -->
       <ChunkSlagSteel>4</ChunkSlagSteel>
+      <Steel>60</Steel>
       <ComponentIndustrial>1</ComponentIndustrial>
+      <Plasteel>10</Plasteel>
     </killedLeavings>
     <rotatable>true</rotatable>
     <selectable>true</selectable>

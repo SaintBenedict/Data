@@ -65,6 +65,9 @@
     <category>ThreatBig</category>
     <pointsScaleable>true</pointsScaleable>
     <tale>ManhunterPack</tale>
+    <letterHyperlinkHediffDefs>
+      <li>Scaria</li>
+    </letterHyperlinkHediffDefs>
   </IncidentDef>
 
   <IncidentDef>

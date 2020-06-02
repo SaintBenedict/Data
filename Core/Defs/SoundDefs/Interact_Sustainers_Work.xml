@@ -353,6 +353,73 @@
   </SoundDef>
 
   <SoundDef>
+    <defName>Interact_CleanFilth_Scattered</defName>
+    <sustain>True</sustain>
+    <context>MapOnly</context>
+    <maxVoices>2</maxVoices>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <muteWhenPaused>True</muteWhenPaused>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Interact/Work/Clean/Cleaning_Scattered</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>4</volumeRange>
+        <pitchRange>1~1.1</pitchRange>
+        <distRange>0~40</distRange>
+        <repeatMode>NeverTwice</repeatMode>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Interact_CleanFilth_Fluid</defName>
+    <sustain>True</sustain>
+    <context>MapOnly</context>
+    <maxVoices>2</maxVoices>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <muteWhenPaused>True</muteWhenPaused>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Interact/Work/Clean/Cleaning_Fluid</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>5</volumeRange>
+        <pitchRange>1~1.1</pitchRange>
+        <distRange>0~40</distRange>
+        <repeatMode>NeverTwice</repeatMode>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Interact_CleanFilth_Dirt</defName>
+    <sustain>True</sustain>
+    <context>MapOnly</context>
+    <maxVoices>2</maxVoices>
+    <priorityMode>PrioritizeNearest</priorityMode>
+    <subSounds>
+      <li>
+        <muteWhenPaused>True</muteWhenPaused>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Interact/Work/Clean/Cleaning_Dirt</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>5</volumeRange>
+        <pitchRange>1~1.1</pitchRange>
+        <distRange>0~40</distRange>
+        <repeatMode>NeverTwice</repeatMode>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
     <defName>Recipe_MakeStoneBlocks</defName>  
     <sustain>True</sustain>  
     <context>MapOnly</context>

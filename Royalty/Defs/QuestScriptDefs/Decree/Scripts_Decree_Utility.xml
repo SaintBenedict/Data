@@ -29,8 +29,8 @@
           <node Class="QuestNode_Sequence">
             <nodes>
               <li Class="QuestNode_Letter">
-                <text>[asker_nameDef] has forgotten about [asker_possessive] decree.</text>
-                <label>[asker_nameDef]'s decree forgotten</label>
+                <text TKey="LetterTextDecreeForgotten">[asker_nameDef] has forgotten about [asker_possessive] decree.</text>
+                <label TKey="LetterLabelDecreeForgotten">[asker_nameDef]'s decree forgotten</label>
               </li>
               <li Class="QuestNode_End">
                 <outcome>Fail</outcome>
@@ -45,8 +45,8 @@
           <node Class="QuestNode_Sequence">
             <nodes>
               <li Class="QuestNode_Letter">
-                <label>Decree cancelled</label>
-                <text>[asker_nameDef] has grudgingly cancelled the decree '[resolvedQuestName]' since it cannot be completed.</text>
+                <label TKey="LetterLabelDecreeCancelled">Decree cancelled</label>
+                <text TKey="LetterTextDecreeCancelled">[asker_nameDef] has grudgingly cancelled the decree '[resolvedQuestName]' since it cannot be completed.</text>
               </li>
               <li Class="QuestNode_End">
                 <outcome>Fail</outcome>
@@ -97,13 +97,8 @@
     <root Class="QuestNode_Sequence">
       <nodes>
         <li Class="QuestNode_AddMemoryThought">
-          <pawn>$asker</pawn>
+          <pawns>$asker</pawns>
           <def>DecreeMet</def>
-        </li>
-        <li Class="QuestNode_ChangeNeed">
-          <pawn>$asker</pawn>
-          <need>Authority</need>
-          <offset>0.5</offset>
         </li>
       </nodes>
     </root>

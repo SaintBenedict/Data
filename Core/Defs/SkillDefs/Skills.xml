@@ -6,6 +6,8 @@
     <description>Ranged combat, with both high-tech and low-tech weapons.</description>
     <skillLabel>shooting</skillLabel>
     <pawnCreatorSummaryVisible>true</pawnCreatorSummaryVisible>
+    <disablingWorkTags>Violent</disablingWorkTags>
+    <neverDisabledBasedOnWorkTypes>true</neverDisabledBasedOnWorkTypes>
     <listOrder>120</listOrder>
   </SkillDef>
 

@@ -178,7 +178,7 @@
             <value>$customLetterTextRules</value>
             <node Class="QuestNode_Set">
               <name>customLetterText</name>
-              <value>[defaultSiteAppearedLetterText]</value>
+              <value TKey="LetterLabelSiteAppeared">[defaultSiteAppearedLetterText]</value>
             </node>
           </node>
         </li>
@@ -188,7 +188,7 @@
             <value>$customLetterLabelRules</value>
             <node Class="QuestNode_Set">
               <name>customLetterLabel</name>
-              <value>[defaultSiteAppearedLetterLabel]</value>
+              <value TKey="LetterTextSiteAppeared">[defaultSiteAppearedLetterLabel]</value>
             </node>
           </node>
         </li>

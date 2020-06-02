@@ -5,38 +5,37 @@
     <defName>QuestHospitalityCommon</defName>
     <rulePack>
       <rulesStrings>
-        <li>allLodgerInfo->[healthInfo] [specialSkillsInfo] [minMoodInfo]</li>
+        <li>allLodgerInfo->[healthInfo][minMoodInfo][workInfo]</li>
 
         <li>lodgersLabelSingOrPlural(lodgersCount==1)->[lodgers0_nameDef]</li>
         <li>lodgersLabelSingOrPlural(lodgersCount>=2)->[lodgersLabelPlural]</li>
         <li>lodgersLabelSingOrPluralDef(lodgersCount==1)->[lodgers0_nameDef]</li>
         <li>lodgersLabelSingOrPluralDef(lodgersCount>=2)->the [lodgersLabelPlural]</li>
 
-        <li>healthInfo(lodgersAreDowned==true,lodgersCount==1,priority=1)->[lodgers0_nameDef] is injured and may not be able to walk.</li>
-        <li>healthInfo(lodgersAreDowned==true,lodgersCount>=2,priority=1)->the [lodgersLabelPlural] are injured and may not be able to walk.</li>
-        <li>healthInfo(lodgersAreSick==true,lodgersCount==1,priority=1)->[lodgers0_nameDef] is sick with [lodgersDisease_label].</li>
-        <li>healthInfo(lodgersAreSick==true,lodgersCount>=2,priority=1)->the [lodgersLabelPlural] are sick with [lodgersDisease_label].</li>
         <li>healthInfo-></li>
+        <li>healthInfo(lodgersHaveBloodRotAndParalysis==true,priority=1)->\n\n[paralyzedInfo]\n\n[bloodRotInfo]</li>
+        <li>healthInfo(lodgersAreParalyzed==true,priority=1)->\n\n[paralyzedInfo]</li>
+        <li>healthInfo(lodgersHaveBloodRot==true,priority=1)->\n\n[bloodRotInfo]</li>
+        <li>paralyzedInfo->[lodgersLabelSingOrPluralDef] [areIs] suffering from paralytic abasia and must be kept in bed.</li>
+        <li>bloodRotInfo->[lodgersLabelSingOrPluralDef] [areIs] sick with blood rot and will require daily treatment. The disease can be slowed with high-quality care and medicine, but generally cannot be cured outright. If the disease becomes severe [lodgersLabelSingOrPluralDef] will die, so ensure you have the necessary medical supplies.</li>
 
-        <li>specialSkillsInfo(lodgersSpecialRequest==ExpertFighter,lodgersCount==1,priority=1)->[lodgers0_nameDef] is an expert fighter.</li>
-        <li>specialSkillsInfo(lodgersSpecialRequest==ExpertFighter,lodgersCount>=2,priority=1)->the [lodgersLabelPlural] are expert fighters.</li>
-        <li>specialSkillsInfo-></li>
-
-        <li>minMoodInfo(priority=1)->You must keep [asker_nameDef]'s mood above [lodgersMoodThreshold_percent].</li>
         <li>minMoodInfo-></li>
+        <li>minMoodInfo(lodgersCountWithMoodThreshold>0,priority=1)->\n\nyou must keep the mood of [lodgersLabelSingOrPluralDef] above [lodgersMoodThreshold_percent].</li>
 
-        <li>commonDescEnding->[helpersParagraph][shuttleWillComeParagraph]</li>
+        <li>workInfo-></li>
+        <li>workInfo(lodgersWillNotWork==true,priority=1)->\n\n[lodgersLabelSingOrPluralDef] will not do any work.</li>
+
+        <li>commonDescEnding->[helpersParagraph]</li>
     
         <li>enemyGroupsParagraph->[threatDescriptionParagraph]</li>
-        <li>threatDescriptionParagraph(threatType==Raids,threatCount==1)->there will be [threatCount] raid of roughly this size:\n\n[threatExample]</li>
-        <li>threatDescriptionParagraph(threatType==Raids,threatCount>1)->there will be [threatCount] raids of roughly this size:\n\n[threatExample]</li>
+        <li>threatDescriptionParagraph(threatType==Raids,threatCount==1,threatSize==1)->there will be a raid of roughly this size:\n\n[threatExample]</li>
+        <li>threatDescriptionParagraph(threatType==Raids,threatCount==1,threatSize>1)->there will be a raid of strength [threatSize]x and roughly this size:\n\n[threatExample]</li>
+        <li>threatDescriptionParagraph(threatType==Raids,threatCount>1,threatSize==1)->there will be [threatCount] raids of roughly this size:\n\n[threatExample]</li>
+        <li>threatDescriptionParagraph(threatType==Raids,threatCount>1,threatSize>1)->there will be [threatCount] raids of strength [threatSize]x and roughly this size:\n\n[threatExample]</li>
         <li>threatDescriptionParagraph(threatType==MechClusters,threatCount==1,threatSize==1)->a mech cluster will deploy nearby.</li>
         <li>threatDescriptionParagraph(threatType==MechClusters,threatCount==2,threatSize==1)->two mech clusters will deploy nearby.</li>
         <li>threatDescriptionParagraph(threatType==MechClusters,threatCount==1,threatSize>1)->a mech cluster of [threatSize]x size will deploy nearby.</li>
         <li>threatDescriptionParagraph(threatType==MechClusters,threatCount==2,threatSize>1)->two mech clusters of [threatSize]x size will deploy nearby.</li>
-        
-        <li>shuttleWillComeParagraph(lodgersCount==1)->After [shuttleDelayTicks_duration], a shuttle will arrive to collect [lodgers0_nameDef]. If you get [lodgers0_objective] onto the shuttle alive, [allRewardsDescriptions]</li>
-        <li>shuttleWillComeParagraph(lodgersCount>=2)->After [shuttleDelayTicks_duration], a shuttle will arrive to collect the [lodgersLabelPlural]. If you get them onto the shuttle alive, [allRewardsDescriptions]</li>
 
         <!-- misc content -->
         <li>threatsInfoMechClustersSingleHuman->[lodgers0_nameDef] recently [mechViolation], and has been targeted by an orbiting mechanoid swarm.</li>
@@ -51,6 +50,11 @@
         <li>letterSubject->{SUBJECT_definite}</li>
         <li>lodgersHasHave(lodgersCount==1)->has</li>
         <li>lodgersHasHave(lodgersCount>=2)->have</li>
+        <li>lodgersObjective(lodgersCount==1)->[lodgers0_objective]</li>
+        <li>lodgersObjective(lodgersCount>=2)->them</li>
+        <li>areIs(lodgersCount==1)->is</li>
+        <li>areIs(lodgersCount>=2)->are</li>
+        
 
         <!-- failure -->
         <li>remainingWillNowLeave(lodgersCount==1)-></li>

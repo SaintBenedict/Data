@@ -28,7 +28,7 @@
       <foodType>Fluid, Processed</foodType>
       <joyKind>Chemical</joyKind>
       <joy>0.40</joy>
-      <baseIngestTicks>240</baseIngestTicks>
+      <baseIngestTicks>210</baseIngestTicks>
       <nurseable>true</nurseable>
       <drugCategory>Social</drugCategory>
       <ingestSound>Ingest_Drink</ingestSound>
@@ -81,7 +81,7 @@
         <addictiveness>0.02</addictiveness>
         <minToleranceToAddict>0.10</minToleranceToAddict>
         <existingAddictionSeverityOffset>0.15</existingAddictionSeverityOffset>
-        <needLevelOffset>1</needLevelOffset>
+        <needLevelOffset>0.9</needLevelOffset>
         <listOrder>110</listOrder>
       </li>
     </comps>
@@ -92,7 +92,7 @@
     <label>high on psychite tea</label>
     <labelNoun>a psychite tea high</labelNoun>
     <description>Active psychite tea in the bloodstream. Generates a mild euphoric effect.</description>
-    <hediffClass>HediffWithComps</hediffClass>
+    <hediffClass>Hediff_High</hediffClass>
     <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
     <scenarioCanAdd>true</scenarioCanAdd>
     <maxSeverity>1.0</maxSeverity>
@@ -100,6 +100,7 @@
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
         <severityPerDay>-3.0</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
       </li>
     </comps>
       <stages>

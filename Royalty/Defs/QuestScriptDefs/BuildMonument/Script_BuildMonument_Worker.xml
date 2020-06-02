@@ -141,7 +141,7 @@
                       </node>
                     </li>
                     <li Class="QuestNode_Message">
-                      <text>The monument for the quest '[resolvedQuestName]' has been violated. Consequences will follow.</text>
+                      <text TKey="MessageMonumentViolated">The monument for the quest '[resolvedQuestName]' has been violated. Consequences will follow.</text>
                       <lookTargets>monumentMarker</lookTargets>
                       <messageType>NegativeEvent</messageType>
                     </li>
@@ -156,9 +156,9 @@
               <li Class="QuestNode_Delay">
                 <inSignalEnable>monumentMarker.MonumentCompleted</inSignalEnable>
                 <delayTicks>$haveToProtectForTicks</delayTicks>
-                <expiryInfoPart>Protect the monument for {0}</expiryInfoPart>
-                <expiryInfoPartTip>Protect the monument until {0}</expiryInfoPartTip>
-                <inspectString>Protect for {0}</inspectString>
+                <expiryInfoPart TKey="ProtectMonumentForDays">Protect the monument for {0}</expiryInfoPart>
+                <expiryInfoPartTip TKey="ProtectMonumentForDaysTip">Protect the monument until {0}</expiryInfoPartTip>
+                <inspectString TKey="ProtectMonument">Protect for {0}</inspectString>
                 <inspectStringTargets>$monumentMarker</inspectStringTargets>
                 <node Class="QuestNode_End">
                   <outcome>Success</outcome>
@@ -168,41 +168,56 @@
             </nodes>
           </node>
           <elseNode Class="QuestNode_IsNull">
-              <value>$asker</value>
-              <node Class="QuestNode_End">
-                <inSignal>monumentMarker.MonumentCompleted</inSignal>
-                <outcome>Success</outcome>
-                <sendStandardLetter>true</sendStandardLetter>
-              </node>
-              <elseNode Class="QuestNode_Sequence">
-                <nodes>
-                  <li Class="QuestNode_GetFactionOf">
+            <value>$asker</value>
+            <node Class="QuestNode_End">
+              <inSignal>monumentMarker.MonumentCompleted</inSignal>
+              <outcome>Success</outcome>
+              <sendStandardLetter>true</sendStandardLetter>
+            </node>
+            <elseNode Class="QuestNode_Sequence">
+              <nodes>
+                <li Class="QuestNode_GetFactionOf">
+                  <thing>$asker</thing>
+                  <storeAs>askerFaction</storeAs>
+                </li>
+                <li Class="QuestNode_IsNull">
+                  <value>$askerFaction</value>
+                  <node Class="QuestNode_End">
+                    <inSignal>monumentMarker.MonumentCompleted</inSignal>
+                    <outcome>Success</outcome>
+                    <sendStandardLetter>true</sendStandardLetter>
+                  </node>
+                  <elseNode Class="QuestNode_IsPermanentEnemy">
                     <thing>$asker</thing>
-                    <storeAs>askerFaction</storeAs>
-                  </li>
-                  <li Class="QuestNode_IsNull">
-                    <value>$askerFaction</value>
-                    <node Class="QuestNode_End">
-                      <inSignal>monumentMarker.MonumentCompleted</inSignal>
-                      <outcome>Success</outcome>
-                      <sendStandardLetter>true</sendStandardLetter>
+                    <node Class="QuestNode_Sequence">
+                      <nodes>
+                        <!-- Unset to use empty fallback for dontDestroyMonument. -->
+                        <li Class="QuestNode_UnSet">
+                          <name>goodwillChangeIfMonumentDestroyed</name>
+                        </li>
+                        <li Class="QuestNode_End">
+                          <inSignal>monumentMarker.MonumentCompleted</inSignal>
+                          <outcome>Success</outcome>
+                          <sendStandardLetter>true</sendStandardLetter>
+                        </li>
+                      </nodes>
                     </node>
                     <elseNode Class="QuestNode_Signal">
                       <inSignal>monumentMarker.MonumentCompleted</inSignal>
                       <node Class="QuestNode_Sequence">
                         <nodes>
                           <li Class="QuestNode_Letter">
-                            <label>Monument completed</label>
+                            <label TKey="LetterLabelMonumentConstructed">Monument completed</label>
                             <letterDef>PositiveEvent</letterDef>
-                            <text>You completed construction of the monument.\n\nYou must not destroy it for at least [keepMonumentTicks_duration] days, otherwise you will anger [asker_factionName] ([goodwillChangeIfMonumentDestroyed] goodwill).</text>
+                            <text TKey="LetterTextMonumentConstructed">You completed construction of the monument.\n\nYou must not destroy it for at least [keepMonumentTicks_duration], otherwise you will anger [asker_factionName] ([goodwillChangeIfMonumentDestroyed] goodwill).</text>
                           </li>
                           <li Class="QuestNode_Signal">
                             <inSignal>monumentMarker.MonumentDestroyed</inSignal>
                             <node Class="QuestNode_Sequence">
                               <nodes>
                                 <li Class="QuestNode_Letter">
-                                  <text>[asker_nameDef] is offended that you allowed the monument to be ruined so soon after completion.\n\nYour relations with [asker_faction_name] have fallen by [goodwillChangeIfMonumentDestroyed].</text>
-                                  <label>Monument destroyed</label>
+                                  <text TKey="LetterTextMonumentRuined">[asker_nameDef] is offended that you allowed the monument to be ruined so soon after completion.\n\nYour relations with [asker_faction_name] have fallen by [goodwillChangeIfMonumentDestroyed].</text>
+                                  <label TKey="LetterLabelMonumentRuined">Monument destroyed</label>
                                 </li>
                                 <li Class="QuestNode_ChangeFactionGoodwill">
                                   <change>$goodwillChangeIfMonumentDestroyed</change>
@@ -217,9 +232,9 @@
                           <!-- Wait for monument to survive -->
                           <li Class="QuestNode_Delay">
                             <delayTicks>$keepMonumentTicks</delayTicks>
-                            <expiryInfoPart>Do not destroy the monument for {0}</expiryInfoPart>
-                            <expiryInfoPartTip>Do not destroy the monument for {0}</expiryInfoPartTip>
-                            <inspectString>Keep monument {0}</inspectString>
+                            <expiryInfoPart TKey="DontDestroyMonumentForDays">Do not destroy the monument for {0}</expiryInfoPart>
+                            <expiryInfoPartTip TKey="DontDestroyMonumentForDaysTip">Do not destroy the monument for {0}</expiryInfoPartTip>
+                            <inspectString TKey="KeepMonument">Keep monument {0}</inspectString>
                             <inspectStringTargets>$monumentMarker</inspectStringTargets>
                             <node Class="QuestNode_Sequence">
                               <nodes>
@@ -232,9 +247,10 @@
                         </nodes>
                       </node>
                     </elseNode>
-                  </li>
-                </nodes>
-              </elseNode>
+                  </elseNode>
+                </li>
+              </nodes>
+            </elseNode>
           </elseNode>
         </li>
 
@@ -248,8 +264,8 @@
               </li>
               <li Class="QuestNode_Letter">
                 <inSignal>DroppedMonumentMarkerCopy</inSignal>
-                <label>New monument marker arrived</label>
-                <text>Since the monument marker has been destroyed, a new one has been sent.</text>
+                <label TKey="LetterLabelMonumentMarkerArrived">New monument marker arrived</label>
+                <text TKey="LetterTextMonumentMarkerArrived">Since the monument marker has been destroyed, a new one has been sent.</text>
               </li>
             </nodes>
           </node>
@@ -289,8 +305,8 @@
               </li>
               <!-- Minor problem: This can send at the same moment as the quest completion letter. -->
               <li Class="QuestNode_Letter">
-                <label>Monument time expired</label>
-                <text>Your time limit to construct the monument has expired. [failLetterEndingCommon]</text>
+                <label TKey="LetterLabelTimeExpired">Monument time expired</label>
+                <text TKey="LetterTextTimeExpired">Your time limit to construct the monument has expired. [failLetterEndingCommon]</text>
               </li>
               <li Class="QuestNode_End">
                 <outcome>Fail</outcome>

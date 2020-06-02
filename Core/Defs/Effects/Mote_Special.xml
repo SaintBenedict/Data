@@ -86,7 +86,7 @@
     <thingClass>MoteProgressBar</thingClass>
     <altitudeLayer>MetaOverlays</altitudeLayer>
     <mote>
-      <solidTime>240</solidTime>
+      <solidTime>999</solidTime>
     </mote>
   </ThingDef>
   

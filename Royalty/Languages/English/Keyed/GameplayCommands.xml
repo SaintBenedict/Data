@@ -17,10 +17,14 @@
   <CommandCallRoyalAidFavorOption>{0} days left, costs {1} {FACTION_royalFavorLabel}</CommandCallRoyalAidFavorOption>
 
   <!-- Abilities -->
-  <CommandPsycastWouldExceedEntropy>Psychic entropy would overflow.</CommandPsycastWouldExceedEntropy>
-  <CommandPsycastNoAmplifier>Psychic amplifier brain implant needed.</CommandPsycastNoAmplifier>
-  <CommandPsycastHigherLevelAmplifierRequired>{0}x level psychic amplifier needed.</CommandPsycastHigherLevelAmplifierRequired>
+  <CommandPsycastWouldExceedEntropy>Neural heat would overflow. Disable the neural heat limiter to cast.</CommandPsycastWouldExceedEntropy>
+  <CommandPsycastNotEnoughPsyfocus>{PSYCASTNAME} consumes {0} psyfocus but {CASTERNAME} only has {1}.</CommandPsycastNotEnoughPsyfocus>
+  <CommandPsycastHigherLevelPsylinkRequired>level {0} psylink is required.</CommandPsycastHigherLevelPsylinkRequired>
+  <CommandPsycastZeroPsychicSensitivity>Zero psychic sensitivity.</CommandPsycastZeroPsychicSensitivity>
   <CommandPsycastPawnIsUnconscious>Ability user is unconscious.</CommandPsycastPawnIsUnconscious>
+  <CommandPsycastLowPsyfocus>Need at least {0} psyfocus to cast this.</CommandPsycastLowPsyfocus>
+  <NeuralHeatLetter>H</NeuralHeatLetter>
+  <PsyfocusLetter>P</PsyfocusLetter>
 
   <!-- Select monument marker -->
   <CommandSelectMonumentMarker>Select monument</CommandSelectMonumentMarker>

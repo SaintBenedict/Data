@@ -120,14 +120,20 @@
           <node Class="QuestNode_Sequence">
             <nodes>
               <li Class="QuestNode_Letter">
-                <label>Quest expired: [resolvedQuestName]</label>
-                <text>[refugee_nameDef]'s signal has been lost, and [refugee_pronoun] can no longer be rescued. The quest [resolvedQuestName] has expired.</text>
+                <label TKey="LetterLabelQuestExpired">Quest expired: [resolvedQuestName]</label>
+                <text TKey="LetterTextQuestExpired">[refugee_nameDef]'s signal has been lost, and [refugee_pronoun] can no longer be rescued. The quest [resolvedQuestName] has expired.</text>
               </li>
               <li Class="QuestNode_End">
                 <outcome>Fail</outcome>
               </li>
             </nodes>
           </node>
+        </li>
+
+        <li Class="QuestNode_AddPawnReward">
+          <pawn>$refugee</pawn>
+          <inSignalChoiceUsed>site.MapGenerated</inSignalChoiceUsed>
+          <rewardDetailsHidden>true</rewardDetailsHidden>
         </li>
 
         <li Class="QuestNode_NoWorldObject">

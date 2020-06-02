@@ -6,7 +6,7 @@
     <label>cremate corpse</label>
     <description>Cremate a corpse to completely destroy it.</description>
     <jobString>Cremating.</jobString>
-    <workAmount>300</workAmount>
+    <workAmount>180</workAmount>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cremate</effectWorking>
     <soundWorking>Recipe_Cremate</soundWorking>

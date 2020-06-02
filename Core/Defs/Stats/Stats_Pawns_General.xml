@@ -49,7 +49,7 @@
   <StatDef>
     <defName>PsychicSensitivity</defName>
     <label>psychic sensitivity</label>
-    <description>More sensitive people suffer more from negative psychic effects, and benefit more from positive ones. Higher psychic sensitivity also increases psychic entropy limit.</description>
+    <description>More sensitive people suffer more from negative psychic effects, and benefit more from positive ones. Higher psychic sensitivity also increases neural heat limit.</description>
     <category>BasicsPawn</category>
     <defaultBaseValue>1</defaultBaseValue>
     <toStringStyle>PercentZero</toStringStyle>
@@ -57,56 +57,6 @@
     <minValue>0</minValue>
     <displayPriorityInCategory>3500</displayPriorityInCategory>
     <scenarioRandomizable>true</scenarioRandomizable>
-  </StatDef>
-
-  <StatDef>
-    <defName>PsychicEntropyMax</defName>
-    <label>psychic entropy limit</label>
-    <description>The maximum amount of psychic entropy individual can tolerate safely.</description>
-    <category>BasicsPawn</category>
-    <defaultBaseValue>30</defaultBaseValue>
-    <minValue>0</minValue>
-    <hideAtValue>0</hideAtValue>
-    <toStringStyle>FloatOne</toStringStyle>
-    <showOnAnimals>false</showOnAnimals>
-    <showOnMechanoids>false</showOnMechanoids>
-    <showIfModsLoaded><li>ludeon.rimworld.royalty</li></showIfModsLoaded>
-    <displayPriorityInCategory>3500</displayPriorityInCategory>
-    <scenarioRandomizable>true</scenarioRandomizable>
-    <statFactors>
-      <li>PsychicSensitivity</li>
-    </statFactors>
-  </StatDef>
-
-  <StatDef>
-    <defName>PsychicEntropyRecoveryRate</defName>
-    <label>psychic entropy recovery rate</label>
-    <description>The rate at which this person reduces psychic entropy.</description>
-    <category>BasicsPawn</category>
-    <minValue>0</minValue>
-    <hideAtValue>0</hideAtValue>
-    <defaultBaseValue>8</defaultBaseValue>
-    <toStringStyle>FloatOne</toStringStyle>
-    <formatString>{0}/30s</formatString>
-    <showOnAnimals>false</showOnAnimals>
-    <showOnMechanoids>false</showOnMechanoids>
-    <showIfModsLoaded><li>ludeon.rimworld.royalty</li></showIfModsLoaded>
-    <displayPriorityInCategory>4000</displayPriorityInCategory>
-  </StatDef>
-
-  <StatDef>
-    <defName>PsychicEntropyGain</defName>
-    <label>psychic entropy gain</label>
-    <description>A multiplier on psychic entropy gained from any source.</description>
-    <category>BasicsPawn</category>
-    <minValue>0</minValue>
-    <hideAtValue>1</hideAtValue>
-    <defaultBaseValue>1</defaultBaseValue>
-    <toStringStyle>PercentZero</toStringStyle>
-    <showOnAnimals>false</showOnAnimals>
-    <showOnMechanoids>false</showOnMechanoids>
-    <showIfModsLoaded><li>ludeon.rimworld.royalty</li></showIfModsLoaded>
-    <displayPriorityInCategory>4000</displayPriorityInCategory>
   </StatDef>
   
   <StatDef>
@@ -318,6 +268,9 @@
     <parts>
       <li Class="StatPart_BodySize" />
       <li Class="StatPart_NaturalNotMissingBodyPartsCoverage" />
+      <li Class="StatPart_Slaughtered">
+        <factor>1.5</factor>
+      </li>
     </parts>
     <postProcessCurve>
       <points>
@@ -343,6 +296,9 @@
     <parts>
       <li Class="StatPart_BodySize" />
       <li Class="StatPart_NaturalNotMissingBodyPartsCoverage" />
+      <li Class="StatPart_Slaughtered">
+        <factor>1.5</factor>
+      </li>
     </parts>
     <postProcessCurve>
       <points>

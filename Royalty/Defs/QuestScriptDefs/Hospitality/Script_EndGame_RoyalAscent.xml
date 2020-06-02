@@ -77,8 +77,8 @@
 
         <li Class="QuestNode_Letter">
           <inSignal>faction.BecameHostileToPlayer</inSignal>
-          <label>Quest failed: [resolvedQuestName]</label>
-          <text>[faction_name] became hostile to you. </text>
+          <label TKey="LetterLabelFactionBecameHostile">Quest failed: [resolvedQuestName]</label>
+          <text TKey="LetterTextFactionBecameHostile">[faction_name] became hostile to you. </text>
         </li>
         <li Class="QuestNode_End">
           <inSignal>faction.BecameHostileToPlayer</inSignal>
@@ -87,7 +87,7 @@
 
         <li Class="QuestNode_End">
           <inSignal>faction.BecameHostileToPlayer</inSignal>
-          <outcome>Unknown</outcome>
+          <outcome>InvalidPreAcceptance</outcome>
           <signalListenMode>NotYetAcceptedOnly</signalListenMode>
         </li>
 
@@ -144,6 +144,11 @@
         <li Class="QuestNode_SetAllApparelLocked">
           <pawns>$lodgers</pawns>
         </li>
+        
+        <!-- Allow asker to issue decrees -->
+        <li Class="QuestNode_AllowDecreesForLodger">
+          <lodger>$asker</lodger>
+        </li>
 
         <!-- Make everyone leave on cleanup -->
         <li Class="QuestNode_LeaveOnCleanup">
@@ -161,6 +166,11 @@
         <li Class="QuestNode_RequirementsToAcceptBedroom">
           <pawns>$lodgers</pawns>
         </li>        
+
+        <!-- Add reward info -->
+        <li Class="QuestNode_AddPassageOffworldReward">
+          <inSignalChoiceUsed>shuttle.Sent</inSignalChoiceUsed>
+        </li>
         
         <!-- Lodgers arrive by shuttle -->        
         <li Class="QuestNode_SubScript">
@@ -169,9 +179,9 @@
             <joiningPawns>$lodgers</joiningPawns>
             <arrivingPawns>$lodgers</arrivingPawns>
             <joinPlayer>true</joinPlayer>
-            <customLetterLabel>[asker_faction_leaderTitle] arrived</customLetterLabel>
-            <customLetterText>The [asker_faction_leaderTitle] of [asker_faction_name], has arrived.\n\nProtect him and satisfy his royal needs until the shuttle arrives in [shuttleDelayTicks_duration].\n\nAll of you can accompany the [asker_faction_leaderTitle] on the shuttle and travel to the Imperial flotilla to begin a new life.</customLetterText>
-            <arrivingPawnsLabelDef>[asker_nameDef]</arrivingPawnsLabelDef>
+            <customLetterLabel TKey="LetterLabelAskerArrived">[asker_faction_leaderTitle] arrived</customLetterLabel>
+            <customLetterText TKey="LetterTextAskerArrived">The [asker_faction_leaderTitle] of [asker_faction_name], has arrived.\n\nProtect him and satisfy his royal needs until the shuttle arrives in [shuttleDelayTicks_duration].\n\nAll of you can accompany the [asker_faction_leaderTitle] on the shuttle and travel to the Imperial flotilla to begin a new life.</customLetterText>
+            <arrivingPawnsLabelDef TKey="ArrivingPawnsDefiniteLabel">[asker_nameDef]</arrivingPawnsLabelDef>
           </parms>
         </li>
 
@@ -202,11 +212,11 @@
               </li>
               <li Class="QuestNode_InspectString">
                 <targets>$asker</targets>
-                <inspectString>Should depart on shuttle</inspectString>
+                <inspectString TKey="InspectStringDepartShuttle">Should depart on shuttle</inspectString>
               </li>
               <li Class="QuestNode_Letter">
-                <label>Shuttle arrived</label>
-                <text>The shuttle has arrived to collect the [asker_faction_leaderTitle].\n\nAll of you can accompany the [asker_faction_leaderTitle] on the shuttle and travel to the Imperial flotilla to begin a new life.</text>
+                <label TKey="LetterLabelShuttleArrived">Shuttle arrived</label>
+                <text TKey="LetterTextShuttleArrived">The shuttle has arrived to collect the [asker_faction_leaderTitle].\n\nAll of you can accompany the [asker_faction_leaderTitle] on the shuttle and travel to the Imperial flotilla to begin a new life.</text>
                 <lookTargets>$shuttle</lookTargets>
               </li>
               <li Class="QuestNode_ShuttleLeaveDelay">
@@ -228,8 +238,8 @@
               <li Class="QuestNode_EndGame">
                 <inSignal>shuttle.SentWithExtraColonists</inSignal>
                 <signalListenMode>Always</signalListenMode> <!-- This happens after the quest has concluded -->
-                <introText>You've escaped on the Imperial shuttle!</introText>
-                <endingText>The high stellarch will now welcome you into the Imperial flotilla as an honored noble party.\n\nYou might stay in the Imperial court and jockey for political power. Perhaps you'll avoid the drama and focus on enjoying ultratech luxuries. Or, you might even buy a ship and set a course for your long-lost home.\n\nThe choice is up to you.</endingText>
+                <introText TKey="EndGameIntroText">You've escaped on the Imperial shuttle!</introText>
+                <endingText TKey="EndGameEndingText">The high stellarch will now welcome you into the Imperial flotilla as an honored noble party.\n\nYou might stay in the Imperial court and jockey for political power. Perhaps you'll avoid the drama and focus on enjoying ultratech luxuries. Or, you might even buy a ship and set a course for your long-lost home.\n\nThe choice is up to you.</endingText>
               </li>
             </nodes>
           </node>
@@ -272,9 +282,9 @@
           <node Class="QuestNode_Sequence">
             <nodes>
               <li Class="QuestNode_Letter">
-                <label>{SUBJECT_bestRoyalTitle} unhappy</label>
+                <label TKey="LetterLabelSubjectUnhappy">{SUBJECT_bestRoyalTitle} unhappy</label>
                 <letterDef>NegativeEvent</letterDef>
-                <text>{SUBJECT_definite}, who you were charged to protect and keep happy, has been below the minimum mood of [lodgersMoodThreshold] too long. [failLetterEndingCommon]</text>
+                <text TKey="LetterTextSubjectUnhappy">{SUBJECT_definite}, who you were charged to protect and keep happy, has been below the minimum mood of [lodgersMoodThreshold] too long. [failLetterEndingCommon]</text>
               </li>
               <li Class="QuestNode_End">
                 <outcome>Fail</outcome>
@@ -291,9 +301,9 @@
           <node Class="QuestNode_Sequence">
             <nodes>
               <li Class="QuestNode_Letter">
-                <label>Guest died: {SUBJECT_definite}</label>
+                <label TKey="LetterLabelGuestDied">Guest died: {SUBJECT_definite}</label>
                 <letterDef>NegativeEvent</letterDef>
-                <text>{SUBJECT_definite}, who you were charged to protect, has died. [failLetterEndingCommon]</text>
+                <text TKey="LetterTextGuestDied">{SUBJECT_definite}, who you were charged to protect, has died. [failLetterEndingCommon]</text>
                 <signalListenMode>OngoingOrNotYetAccepted</signalListenMode>
               </li>
               <li Class="QuestNode_End">
@@ -312,9 +322,9 @@
           <node Class="QuestNode_Sequence">
             <nodes>
               <li Class="QuestNode_Letter">
-                <label>Guest captured: {SUBJECT_definite}</label>
+                <label TKey="LetterLabelGuestCaptured">Guest captured: {SUBJECT_definite}</label>
                 <letterDef>NegativeEvent</letterDef>
-                <text>{SUBJECT_definite}, who you were charged to protect, has been arrested. [failLetterEndingCommon]</text>
+                <text TKey="LetterTextGuestCaptured">{SUBJECT_definite}, who you were charged to protect, has been arrested. [failLetterEndingCommon]</text>
               </li>
               <li Class="QuestNode_End">
                 <outcome>Fail</outcome>
@@ -331,9 +341,9 @@
           <node Class="QuestNode_Sequence">
             <nodes>
               <li Class="QuestNode_Letter">
-                <label>Unauthorized surgery: {SUBJECT_definite}</label>
+                <label TKey="LetterLabelUnauthorizedSurgery">Unauthorized surgery: {SUBJECT_definite}</label>
                 <letterDef>NegativeEvent</letterDef>
-                <text>Unauthorized, violating surgery has been performed on {SUBJECT_definite}, who you were charged to protect. [failLetterEndingCommon]</text>
+                <text TKey="LetterTextUnauthorizedSurgery">Unauthorized, violating surgery has been performed on {SUBJECT_definite}, who you were charged to protect. [failLetterEndingCommon]</text>
               </li>
               <li Class="QuestNode_End">
                 <outcome>Fail</outcome>
@@ -350,9 +360,9 @@
           <node Class="QuestNode_Sequence">
             <nodes>
               <li Class="QuestNode_Letter">
-                <label>Guest lost: {SUBJECT_definite}</label>
+                <label TKey="LetterLabelGuestLost">Guest lost: {SUBJECT_definite}</label>
                 <letterDef>NegativeEvent</letterDef>
-                <text>{SUBJECT_definite}, who you were charged to protect, has left the assigned settlement. [failLetterEndingCommon]</text>
+                <text TKey="LetterTextGuestLost">{SUBJECT_definite}, who you were charged to protect, has left the assigned settlement. [failLetterEndingCommon]</text>
               </li>
               <li Class="QuestNode_End">
                 <outcome>Fail</outcome>
@@ -369,9 +379,9 @@
           <node Class="QuestNode_Sequence">
             <nodes>
               <li Class="QuestNode_Letter">
-                <label>Shuttle destroyed</label>
+                <label TKey="LetterLabelShuttleDestroyed">Shuttle destroyed</label>
                 <letterDef>NegativeEvent</letterDef>
-                <text>The shuttle sent to collect the [asker_faction_leaderTitle] has been destroyed. [failLetterEndingCommon]</text>
+                <text TKey="LetterTextShuttleDestroyed">The shuttle sent to collect the [asker_faction_leaderTitle] has been destroyed. [failLetterEndingCommon]</text>
               </li>
               <li Class="QuestNode_End">
                 <outcome>Fail</outcome>
@@ -395,9 +405,9 @@
           <node Class="QuestNode_Sequence">
             <nodes>
               <li Class="QuestNode_Letter">
-                <label>Quest failed: [resolvedQuestName]</label>
+                <label TKey="LetterLabelShuttleSentUnsatisfied">Quest failed: [resolvedQuestName]</label>
                 <letterDef>NegativeEvent</letterDef>
-                <text>The shuttle sent to collect the [asker_faction_leaderTitle] has departed without him. He will now leave on foot. [failLetterEndingCommon]</text>
+                <text TKey="LetterTextShuttleSentUnsatisfied">The shuttle sent to collect the [asker_faction_leaderTitle] has departed without him. He will now leave on foot. [failLetterEndingCommon]</text>
               </li>
               <li Class="QuestNode_End">
                 <outcome>Fail</outcome>

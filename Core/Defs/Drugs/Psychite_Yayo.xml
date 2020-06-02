@@ -29,7 +29,7 @@
       <joyKind>Chemical</joyKind>
       <joy>0.80</joy>
       <drugCategory>Hard</drugCategory>
-      <baseIngestTicks>240</baseIngestTicks>
+      <baseIngestTicks>150</baseIngestTicks>
       <ingestSound>Ingest_Snort</ingestSound>
       <ingestHoldOffsetStanding>
         <northDefault>
@@ -73,7 +73,7 @@
         <addictiveness>0.10</addictiveness>
         <minToleranceToAddict>0.04</minToleranceToAddict>
         <existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
-        <needLevelOffset>1</needLevelOffset>
+        <needLevelOffset>0.9</needLevelOffset>
         <isCombatEnhancingDrug>true</isCombatEnhancingDrug>
         <listOrder>100</listOrder>
         <overdoseSeverityOffset>0.18~0.35</overdoseSeverityOffset>
@@ -87,7 +87,7 @@
     <label>high on yayo</label>
     <labelNoun>a yayo high</labelNoun>
     <description>Active yayo in the bloodstream. Generates an intense euphoric high.</description>
-    <hediffClass>HediffWithComps</hediffClass>
+    <hediffClass>Hediff_High</hediffClass>
     <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
     <scenarioCanAdd>true</scenarioCanAdd>
     <maxSeverity>1.0</maxSeverity>
@@ -95,6 +95,7 @@
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
         <severityPerDay>-1.5</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
       </li>
     </comps>
       <stages>
@@ -186,6 +187,7 @@
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
         <severityPerDay>-0.0333</severityPerDay>
+        <showDaysToRecover>true</showDaysToRecover>
       </li>
     </comps>
     <stages>

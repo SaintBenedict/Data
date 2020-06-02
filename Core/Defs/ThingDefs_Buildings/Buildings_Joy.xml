@@ -42,6 +42,7 @@
       <watchBuildingStandDistanceRange>5~5</watchBuildingStandDistanceRange>
       <watchBuildingStandRectWidth>3</watchBuildingStandRectWidth>
       <watchBuildingInSameRoom>true</watchBuildingInSameRoom>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
     </building>
     <costStuffCount>10</costStuffCount>
     <pathCost>10</pathCost>
@@ -94,6 +95,7 @@
       <watchBuildingStandDistanceRange>5~5</watchBuildingStandDistanceRange>
       <watchBuildingStandRectWidth>3</watchBuildingStandRectWidth>
       <watchBuildingInSameRoom>true</watchBuildingInSameRoom>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
     </building>
     <costStuffCount>20</costStuffCount>
     <pathCost>10</pathCost>

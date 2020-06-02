@@ -145,6 +145,7 @@
         <pawnsLeftToSpawnKey>MessageMechanoidsLeftToAssemble</pawnsLeftToSpawnKey>
         <noPawnsLeftToSpawnKey>ShutDown</noPawnsLeftToSpawnKey>
         <nextSpawnInspectStringKey>MechAssemblyCompleteIn</nextSpawnInspectStringKey>
+        <nextSpawnInspectStringKeyDormant>MechAssemblyNextType</nextSpawnInspectStringKeyDormant>
         <maxPawnsToSpawn>4</maxPawnsToSpawn>
         <spawnSound>MechAssembler_Spawn</spawnSound>
         <showNextSpawnInInspect>true</showNextSpawnInInspect>

@@ -8,7 +8,7 @@
     <workerClass>SitePartWorker_Manhunters</workerClass>
     <siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
     <expandingIconTexture>World/WorldObjects/Expanding/Sites/Manhunters</expandingIconTexture>
-    <arrivedLetter>There are manhunting animals in this area.</arrivedLetter>
+    <arrivedLetter>There are scaria-infected manhunting animals in this area.</arrivedLetter>
     <arrivedLetterDef>NegativeEvent</arrivedLetterDef>
     <wantsThreatPoints>true</wantsThreatPoints>
     <tags>
@@ -19,6 +19,9 @@
       <li>QuestActiveThreatDefenseNoHidden</li>
       <li>Manhunters</li>
     </tags>
+    <arrivedLetterHediffHyperlinks>
+      <li>Scaria</li>
+    </arrivedLetterHediffHyperlinks>
   </SitePartDef>
 
   <GenStepDef>

@@ -320,6 +320,8 @@
             <power>22</power>
             <cooldownTime>2</cooldownTime>
             <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+            <soundMeleeHit>Pawn_Melee_PowerClaw_Hit</soundMeleeHit>
+            <soundMeleeMiss>Pawn_Melee_PowerClaw_Miss</soundMeleeMiss>
           </li>
         </tools>
       </li>

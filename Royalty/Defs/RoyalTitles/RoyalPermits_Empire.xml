@@ -26,6 +26,7 @@
       <favorCost>4</favorCost>
       <pawnKindDef>Empire_Fighter_Trooper</pawnKindDef>
       <pawnCount>4</pawnCount>
+      <targetingRange>40</targetingRange>
     </royalAid>
     <cooldownDays>45</cooldownDays>
   </RoyalTitlePermitDef>
@@ -38,6 +39,7 @@
       <favorCost>6</favorCost>
       <pawnKindDef>Empire_Fighter_Janissary</pawnKindDef>
       <pawnCount>4</pawnCount>
+      <targetingRange>40</targetingRange>
     </royalAid>
     <cooldownDays>45</cooldownDays>
   </RoyalTitlePermitDef>
@@ -47,9 +49,10 @@
     <label>call cataphract squad</label>
     <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
     <royalAid>
-      <favorCost>12</favorCost>
+      <favorCost>8</favorCost>
       <pawnKindDef>Empire_Fighter_Cataphract</pawnKindDef>
       <pawnCount>4</pawnCount>
+      <targetingRange>40</targetingRange>
     </royalAid>
     <cooldownDays>45</cooldownDays>
   </RoyalTitlePermitDef>

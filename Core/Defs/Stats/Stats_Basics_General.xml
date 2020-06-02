@@ -45,9 +45,8 @@
     <description>The market value of an object.\n\nThe actual trade price will be adjusted by negotiation skill, relationship status, and other contextual factors.</description>
     <category>BasicsImportant</category>
     <minValue>0</minValue>
-    <toStringStyle>FloatTwo</toStringStyle>
+    <toStringStyle>Money</toStringStyle>
     <roundToFiveOver>200</roundToFiveOver>
-    <formatString>${0}</formatString>
     <displayPriorityInCategory>2510</displayPriorityInCategory>
     <minifiedThingInherits>true</minifiedThingInherits>
     <showOnUntradeables>false</showOnUntradeables>
@@ -102,7 +101,7 @@
     <category>BasicsImportant</category>
     <defaultBaseValue>0</defaultBaseValue>
     <minValue>0</minValue>
-    <toStringStyle>FloatTwo</toStringStyle>
+    <toStringStyle>FloatMaxThree</toStringStyle>
     <showIfUndefined>false</showIfUndefined>
     <showIfModsLoaded><li>ludeon.rimworld.royalty</li></showIfModsLoaded>
     <displayPriorityInCategory>2508</displayPriorityInCategory>

@@ -240,7 +240,7 @@
 
   <ThingCategoryDef>
     <defName>WeaponsMeleeBladelink</defName>
-    <label>bladelink weapons</label>
+    <label>persona weapons</label>
     <parent>Weapons</parent>
   </ThingCategoryDef>
 

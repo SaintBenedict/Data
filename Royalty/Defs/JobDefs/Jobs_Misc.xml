@@ -3,8 +3,16 @@
   <JobDef>
     <defName>Reign</defName>
     <driverClass>JobDriver_Reign</driverClass>
-    <reportString>reigning.</reportString>
+    <reportString>meditating royally at</reportString>
     <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+    <neverShowWeapon>true</neverShowWeapon>
+    <joyDuration>12500</joyDuration>
+    <joyKind>Meditative</joyKind>
+  </JobDef>
+  <JobDef>
+    <defName>LinkPsylinkable</defName>
+    <driverClass>JobDriver_LinkPsylinkable</driverClass>
+    <reportString>linking at TargetA</reportString>
     <neverShowWeapon>true</neverShowWeapon>
   </JobDef>
 </Defs>

@@ -87,14 +87,14 @@ In order to consecrate making [titleHeir_nameFull] the heir of [titleHolder_name
         <li Class="QuestNode_Delay">
           <delayTicks>$(20*60000)</delayTicks>
           <isQuestTimeout>true</isQuestTimeout>
-          <inspectString>Time left: {0}</inspectString>
+          <inspectString TKey="InspectStringTimeLeft">Time left: {0}</inspectString>
           <inspectStringTargets>$monumentMarker</inspectStringTargets>
           <inSignalDisable>monumentMarker.MonumentCompleted</inSignalDisable> <!-- Disable timeout when monument was constructed -->
           <node Class="QuestNode_Sequence">
             <nodes>
               <li Class="QuestNode_Letter">
-                <text>[asker_nameDef] is offended that you promised to consecrate the new inheritance, but did not build the monument within the prescribed time.\n\nYou lost 25 goodwill with [asker_faction_name].</text>
-                <label>[titleHolder_nameDef]'s heir change failed</label>
+                <text TKey="LetterLabelAskerOffended">[asker_nameDef] is offended that you promised to consecrate the new inheritance, but did not build the monument within the prescribed time.\n\nYou lost 25 goodwill with [asker_faction_name].</text>
+                <label TKey="LetterTextAskerOffended">[titleHolder_nameDef]'s heir change failed</label>
               </li>
               <li Class="QuestNode_ChangeFactionGoodwill">
                 <change>-25</change>
@@ -118,8 +118,8 @@ In order to consecrate making [titleHeir_nameFull] the heir of [titleHolder_name
           <node Class="QuestNode_Sequence">
             <nodes>
               <li Class="QuestNode_Letter">
-                <label>Title holder died: {SUBJECT_definite}</label>
-                <text>{SUBJECT_definite}, whose heir was in the process of being changed, has died.</text>
+                <label TKey="LetterLabelTitleHolderDied">Title holder died: {SUBJECT_definite}</label>
+                <text TKey="LetterTextTitleHolderDied">{SUBJECT_definite}, whose heir was in the process of being changed, has died.</text>
               </li>
               <li Class="QuestNode_End">
                 <outcome>Unknown</outcome>
@@ -135,8 +135,8 @@ In order to consecrate making [titleHeir_nameFull] the heir of [titleHolder_name
           <node Class="QuestNode_Sequence">
             <nodes>
               <li Class="QuestNode_Letter">
-                <label>Designated heir died: {SUBJECT_definite}</label>
-                <text>{SUBJECT_definite}, who was supposed to become heir to a title, has died.</text>
+                <label TKey="LetterLabelDesignatedHeirDied">Designated heir died: {SUBJECT_definite}</label>
+                <text TKey="LetterTextDesignatedHeirDied">{SUBJECT_definite}, who was supposed to become heir to a title, has died.</text>
               </li>
               <li Class="QuestNode_End">
                 <outcome>Unknown</outcome>
@@ -151,8 +151,8 @@ In order to consecrate making [titleHeir_nameFull] the heir of [titleHolder_name
           <node Class="QuestNode_Sequence">
             <nodes>
               <li Class="QuestNode_Letter">
-                <text>[asker_nameDef] is offended that you promised to consecrate the new inheritance, but allowed the monument to be ruined soon after completion.\n\nYour relations with [asker_faction_name] have fallen by [goodwillChangeIfMonumentDestroyed].</text>
-                <label>Monument destroyed</label>
+                <text TKey="LetterTextMonumentDestroyed">[asker_nameDef] is offended that you promised to consecrate the new inheritance, but allowed the monument to be ruined soon after completion.\n\nYour relations with [asker_faction_name] have fallen by [goodwillChangeIfMonumentDestroyed].</text>
+                <label TKey="LetterLabelMonumentDestroyed">Monument destroyed</label>
               </li>
               <li Class="QuestNode_ChangeFactionGoodwill">
                 <change>$goodwillChangeIfMonumentDestroyed</change>
@@ -177,21 +177,21 @@ In order to consecrate making [titleHeir_nameFull] the heir of [titleHolder_name
               </li>
               <li Class="QuestNode_AddMemoryThought">
                 <def>Disinherited</def>
-                <pawn>$titlePreviousHeir</pawn>
+                <pawns>$titlePreviousHeir</pawns>
                 <otherPawn>$titleHolder</otherPawn>
                 <addToLookTargets>False</addToLookTargets>
               </li>
               <li Class="QuestNode_Letter">
-                <label>New heir: [titleHeir_nameDef]</label>
-                <text>[titleHeir_nameDef] is the new heir of [titleHolder_nameDef].</text>
+                <label TKey="LetterLabelNewHeir">New heir: [titleHeir_nameDef]</label>
+                <text TKey="LetterTextNewHeir">[titleHeir_nameDef] is the new heir of [titleHolder_nameDef].</text>
                 <letterDef>PositiveEvent</letterDef>
               </li>
               <!-- Wait for monument to survive -->
               <li Class="QuestNode_Delay">
                 <delayTicks>$keepMonumentTicks</delayTicks>
-                <expiryInfoPart>Do not destroy the monument for {0}</expiryInfoPart>
-                <expiryInfoPartTip>Do not destroy the monument for {0}</expiryInfoPartTip>
-                <inspectString>Keep monument {0}</inspectString>
+                <expiryInfoPart TKey="DontDestroyMonumentForDays">Do not destroy the monument for {0}</expiryInfoPart>
+                <expiryInfoPartTip TKey="DontDestroyMonumentForDaysTip">Do not destroy the monument for {0}</expiryInfoPartTip>
+                <inspectString TKey="KeepMonument">Keep monument {0}</inspectString>
                 <inspectStringTargets>$monumentMarker</inspectStringTargets>
                 <node Class="QuestNode_Sequence">
                   <nodes>

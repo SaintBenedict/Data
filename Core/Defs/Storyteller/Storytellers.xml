@@ -134,6 +134,15 @@
           <li>Ludeon.RimWorld.Royalty</li>
         </enableIfAnyModActive>
       </li>
+      <li Class="StorytellerCompProperties_OnOffCycle">
+        <incident MayRequire="Ludeon.RimWorld.Royalty">AnimaTreeSpawn</incident>
+        <onDays>20.0</onDays>
+        <offDays>20.0</offDays>
+        <numIncidentsRange>1~1</numIncidentsRange>
+        <allowedTargetTags>
+          <li>Map_PlayerHome</li>
+        </allowedTargetTags>
+      </li>
     </comps>
   </StorytellerDef>
 

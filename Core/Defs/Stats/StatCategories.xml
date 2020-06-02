@@ -73,6 +73,12 @@
     <label>Ability</label>
     <displayOrder>60</displayOrder>
   </StatCategoryDef>
+
+  <StatCategoryDef>
+    <defName>Drug</defName>
+    <label>Drug</label>
+    <displayOrder>30</displayOrder>
+  </StatCategoryDef>
   
   <!--=============== Virtual categories ==============-->
   <StatCategoryDef>
@@ -145,6 +151,13 @@
     <displayOrder>140</displayOrder>
   </StatCategoryDef>
   
+  <!--================ Misc ================-->
 
+  <StatCategoryDef>
+    <defName>Meditation</defName>
+    <label>Meditation</label>
+    <displayOrder>13</displayOrder>
+    <displayAllByDefault>True</displayAllByDefault>
+  </StatCategoryDef>
 
 </Defs>

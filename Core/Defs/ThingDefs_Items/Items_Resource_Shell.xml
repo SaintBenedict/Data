@@ -195,6 +195,58 @@
     </projectile>
   </ThingDef>
 
+    <!-- Smoke -->
+
+  <ThingDef ParentName="MakeableShellBase">
+    <defName>Shell_Smoke</defName>
+    <label>Smoke shell</label>
+    <description>A shell that generates a cloud of smoke when detonated, obscuring incoming shots and preventing turrets from locking on. Can be fired from mortars or installed as a trap. Explodes when damaged.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Shell/Shell_Smoke</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveDamageType>Smoke</explosiveDamageType>
+        <explosiveRadius>11</explosiveRadius>
+        <postExplosionSpawnThingDef>Gas_Smoke</postExplosionSpawnThingDef>
+        <postExplosionSpawnChance>1</postExplosionSpawnChance>
+        <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+        <wickTicks>30~60</wickTicks>
+      </li>
+    </comps>
+    <projectileWhenLoaded>Bullet_Shell_Smoke</projectileWhenLoaded>
+    <costList>
+      <Steel>35</Steel>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>Mortars</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_Shell_Smoke</defName>
+    <label>Smoke shell</label>
+    <graphicData>
+      <texPath>Things/Projectile/ShellSmoke</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData>
+    <thingClass>Projectile_Explosive</thingClass>
+    <projectile>
+      <damageDef>Smoke</damageDef>
+      <speed>41</speed>
+      <explosionRadius>7.2</explosionRadius>
+      <flyOverhead>true</flyOverhead>
+      <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+      <soundExplode>Explosion_Smoke</soundExplode>
+      <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+      <soundAmbient>MortarRound_Ambient</soundAmbient>
+      <postExplosionSpawnThingDef>Gas_Smoke</postExplosionSpawnThingDef>
+      <postExplosionSpawnChance>1</postExplosionSpawnChance>
+    </projectile>
+  </ThingDef>
+
   <!-- Firefoam -->
 
   <ThingDef ParentName="MakeableShellBase">

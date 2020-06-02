@@ -94,6 +94,7 @@
 
   <NoCryptosleepCasket>No available cryptosleep casket.</NoCryptosleepCasket>
   <CryptosleepCasketGuestsNotAllowed>Temporary faction members not allowed.</CryptosleepCasketGuestsNotAllowed>
+  <CryptosleepCasketGuestPrisonersNotAllowed>Hosted prisoners not allowed.</CryptosleepCasketGuestPrisonersNotAllowed>
   <NoPrisonerBed>No reachable, un-reserved, enclosed prisoner-marked bed in safe temperature.</NoPrisonerBed>
   <NoNonPrisonerBed>No reachable, un-reserved non-prisoner bed in safe temperature.</NoNonPrisonerBed>
   <NoAnimalBed>No reachable, un-reserved animal bed in safe temperature.</NoAnimalBed>
@@ -123,7 +124,7 @@
   <PickUpSome>Pick up {1_labelShort}...</PickUpSome>
   <PickUpCount>Pick up {1_labelShort} x{{0}}</PickUpCount>
   
-  <CannotGiveToPackAnimal>Load {1_label} onto pack animal</CannotGiveToPackAnimal>
+  <CannotGiveToPackAnimal>Cannot load {1_label} onto pack animal</CannotGiveToPackAnimal>
   <CannotGiveToPackAnimalAll>Cannot load {1_label} (all) onto pack animal</CannotGiveToPackAnimalAll>
   <GiveToPackAnimal>Load {1_label} onto pack animal</GiveToPackAnimal>
   <GiveToPackAnimalAll>Load {1_label} (all) onto pack animal</GiveToPackAnimalAll>

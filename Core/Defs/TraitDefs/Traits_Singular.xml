@@ -20,6 +20,7 @@
         <label>bloodlust</label>
         <description>{PAWN_nameDef} gets a rush from hurting people, and never minds the sight of blood or death. {PAWN_pronoun} is four times as likely to start a social fight as others.</description>
         <socialFightChanceFactor>4</socialFightChanceFactor>
+        <allowedMeditationFocusTypes><li>Morbid</li></allowedMeditationFocusTypes>
       </li>
     </degreeDatas>
     <requiredWorkTags>
@@ -48,6 +49,7 @@
       <li>
         <label>psychopath</label>
         <description>{PAWN_nameDef} has no empathy. The suffering of others doesn't bother {PAWN_objective} at all. {PAWN_pronoun} doesn't mind if others are butchered, left unburied, imprisoned, or sold to slavery - unless it affects {PAWN_objective}. {PAWN_pronoun} also feels no mood boost from socializing.</description>
+        <allowedMeditationFocusTypes><li>Morbid</li></allowedMeditationFocusTypes>
       </li>
     </degreeDatas>
   </TraitDef>
@@ -59,6 +61,7 @@
       <li>
         <label>cannibal</label>
         <description>{PAWN_nameDef} was taught that eating human meat is wrong and horrible. But one time, long ago, {PAWN_pronoun} tried it... and {PAWN_pronoun} liked it.</description>
+        <allowedMeditationFocusTypes><li>Morbid</li></allowedMeditationFocusTypes>
       </li>
     </degreeDatas>
   </TraitDef>
@@ -141,6 +144,7 @@
       <li>
         <label>masochist</label>
         <description>For {PAWN_nameDef}, there's something exciting about getting hurt. {PAWN_pronoun} doesn't know why, {PAWN_pronoun}'s just wired differently.</description>
+        <allowedMeditationFocusTypes><li>Morbid</li></allowedMeditationFocusTypes>
       </li>
     </degreeDatas>
   </TraitDef>
@@ -176,6 +180,7 @@
       <li>
         <label>jealous</label>
         <description>For {PAWN_nameDef}, it's degrading to have a less impressive bedroom than someone else. {PAWN_pronoun} gets a mood loss if any colonist has a more impressive bedroom.</description>
+        <allowedMeditationFocusTypes><li>Morbid</li></allowedMeditationFocusTypes>
       </li>
     </degreeDatas>
     <conflictingTraits>
@@ -191,6 +196,8 @@
       <li>
         <label>ascetic</label>
         <description>{PAWN_nameDef} has forsaken physical comforts and enjoyments in favor of a simple, pure lifestyle. {PAWN_pronoun} will become unhappy if if {PAWN_pronoun} has a bedroom that's too impressive. {PAWN_pronoun} also dislikes fancy food and prefers to eat raw. {PAWN_pronoun} never judges others by their appearance.</description>
+        <allowedMeditationFocusTypes><li>Minimal</li></allowedMeditationFocusTypes>
+        <disallowedMeditationFocusTypes><li>Artistic</li></disallowedMeditationFocusTypes>
       </li>
     </degreeDatas>
     <conflictingTraits>
@@ -364,6 +371,7 @@
       <li>
         <label>undergrounder</label>
         <description>{PAWN_nameDef} has no need to experience the outdoors or light. {PAWN_pronoun} will never feel cooped up or get cabin fever, no matter how long {PAWN_pronoun} stays inside, and is not bothered by darkness.</description>
+        <allowedMeditationFocusTypes><li>Morbid</li></allowedMeditationFocusTypes>
       </li>
     </degreeDatas>
   </TraitDef>
@@ -460,7 +468,9 @@
         <mentalBreakInspirationGainSet>
           <li>Inspired_Creativity</li>
         </mentalBreakInspirationGainSet>
+        <mentalBreakInspirationGainReasonText>As a suffering tortured artist, [PAWN_nameIndef] has experienced an inspiration.</mentalBreakInspirationGainReasonText>
         <mentalBreakInspirationGainChance>0.5</mentalBreakInspirationGainChance>
+        <allowedMeditationFocusTypes><li>Morbid</li></allowedMeditationFocusTypes>
       </li>
     </degreeDatas>
   </TraitDef>
@@ -487,9 +497,7 @@
             <value>4</value>
           </li>
         </skillGains>
-        <statOffsets>
-          <HungerRateMultiplier>0.50</HungerRateMultiplier>
-        </statOffsets>
+        <hungerRateFactor>1.5</hungerRateFactor>
       </li>
     </degreeDatas>
     <conflictingTraits>

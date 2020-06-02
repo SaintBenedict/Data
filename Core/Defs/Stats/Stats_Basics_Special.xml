@@ -38,4 +38,19 @@
     <displayPriorityInCategory>2500</displayPriorityInCategory>
   </StatDef>
 
+  <StatDef>
+    <defName>MeditationFocusStrength</defName>
+    <label>meditation focus strength</label>
+    <description>The amount of extra psyfocus someone gains by focusing on this object during meditation. For some objects, this number can change depending on the surroundings and the person doing the meditating.</description>
+    <workerClass>StatWorker_PossibleCompOffsets</workerClass>
+    <category>Meditation</category>
+    <defaultBaseValue>0</defaultBaseValue>
+    <minValue>0.0</minValue>
+    <toStringStyle>PercentZero</toStringStyle>
+    <formatString>{0}/d</formatString>
+    <showIfUndefined>false</showIfUndefined>
+    <showIfModsLoaded><li>ludeon.rimworld.royalty</li></showIfModsLoaded>
+    <displayPriorityInCategory>4010</displayPriorityInCategory>
+  </StatDef>
+
 </Defs>

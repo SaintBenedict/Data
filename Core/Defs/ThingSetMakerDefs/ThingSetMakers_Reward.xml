@@ -133,43 +133,6 @@
                 </thingSetMaker>
               </li>
 
-              <!-- Special anti-Empire items -->
-              <!-- If you're enemy of Empire, you don't have normal access to some special items, so 
-                   we increase the probability of getting them. -->
-              <li>
-                <weight>12</weight> 
-                <thingSetMaker Class="ThingSetMaker_Conditional_FactionRelation">
-                  <factionDef MayRequire="Ludeon.RimWorld.Royalty">Empire</factionDef>
-                  <allowHostile>true</allowHostile>
-                  <thingSetMaker Class="ThingSetMaker_MarketValue">
-                    <fixedParams>
-                      <filter>
-                        <thingDefs>
-                          <li MayRequire="Ludeon.RimWorld.Royalty">PsychicAmplifier</li>
-                        </thingDefs>
-                      </filter>
-                    </fixedParams>
-                  </thingSetMaker>
-                </thingSetMaker>
-              </li>
-              <li>
-                <weight>2</weight> 
-                <thingSetMaker Class="ThingSetMaker_Conditional_FactionRelation">
-                  <factionDef MayRequire="Ludeon.RimWorld.Royalty">Empire</factionDef>
-                  <allowHostile>true</allowHostile>
-                  <thingSetMaker Class="ThingSetMaker_MarketValue">
-                    <fixedParams>
-                      <filter>
-                        <thingDefs>
-                          <li MayRequire="Ludeon.RimWorld.Royalty">PsychicSilencer</li>
-                        </thingDefs>
-                      </filter>
-                    </fixedParams>
-                  </thingSetMaker>
-                </thingSetMaker>
-              </li>
-
-
 
               <!-- Special royal items -->
               <!-- Most factions can't make these, so if we're using a faction that can we want
@@ -197,6 +160,25 @@
                           <li>PsychicWeapon</li>
                           <li>PsychicApparel</li>
                         </tradeTagsToAllow>
+                      </filter>
+                    </fixedParams>
+                  </thingSetMaker>
+                </thingSetMaker>
+              </li>
+
+              <!-- Special tribal items -->
+              <!-- todo: Stop giving anima stones if you already have one -->
+              <li>
+                <weight>10</weight> <!-- High chance for tribal asker since you don't get quests from them often -->
+                <thingSetMaker Class="ThingSetMaker_Conditional_MakingFaction">
+                  <makingFactionCategories><li>Tribal</li></makingFactionCategories>
+                  <requireNonNull>true</requireNonNull>
+                  <thingSetMaker Class="ThingSetMaker_MarketValue">
+                    <fixedParams>
+                      <filter>
+                        <thingDefs>
+                          <li MayRequire="Ludeon.RimWorld.Royalty">AnimusStone</li>
+                        </thingDefs>
                       </filter>
                     </fixedParams>
                   </thingSetMaker>

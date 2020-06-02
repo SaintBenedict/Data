@@ -5,7 +5,6 @@
     <abilityClass>Psycast</abilityClass>
     <statBases>
       <Ability_Duration>0</Ability_Duration>
-      <Ability_DetectChancePerEntropy>0.005</Ability_DetectChancePerEntropy>
     </statBases>
     <verbProperties>
       <verbClass>Verb_CastPsycast</verbClass>
@@ -29,11 +28,13 @@
     <iconPath>UI/Abilities/Painblock</iconPath>
     <hotKey>Misc1</hotKey>
     <statBases>
-      <Ability_EntropyGain>10</Ability_EntropyGain>
+      <Ability_EntropyGain>8</Ability_EntropyGain>
+      <Ability_PsyfocusCost>0.02</Ability_PsyfocusCost>
       <Ability_Duration>120</Ability_Duration>
     </statBases>
     <verbProperties>
       <warmupTime>0.25</warmupTime>
+      <range>24.9</range>
       <targetParams>
         <canTargetSelf>True</canTargetSelf>
         <canTargetAnimals>True</canTargetAnimals>
@@ -59,11 +60,12 @@
     <hotKey>Misc3</hotKey>
     <statBases>
       <Ability_EntropyGain>12</Ability_EntropyGain>
+      <Ability_PsyfocusCost>0.01</Ability_PsyfocusCost>
       <Ability_Duration>3</Ability_Duration>
     </statBases>
     <verbProperties>
       <warmupTime>0.25</warmupTime>
-      <range>19.9</range>
+      <range>24.9</range>
       <targetParams>
         <canTargetAnimals>True</canTargetAnimals>
       </targetParams>
@@ -87,6 +89,7 @@
     <hotKey>Misc4</hotKey>
     <statBases>
       <Ability_EntropyGain>8</Ability_EntropyGain>
+      <Ability_PsyfocusCost>0.01</Ability_PsyfocusCost>
       <Ability_Duration>20</Ability_Duration>
     </statBases>
     <verbProperties>
@@ -115,12 +118,13 @@
     <hotKey>Misc5</hotKey>
     <statBases>
       <Ability_EntropyGain>20</Ability_EntropyGain>
+      <Ability_PsyfocusCost>0.01</Ability_PsyfocusCost>
       <Ability_Duration>30</Ability_Duration>
       <Ability_EffectRadius>3.9</Ability_EffectRadius>
     </statBases>
     <verbProperties>
       <warmupTime>1</warmupTime>
-      <range>19.9</range>
+      <range>24.9</range>
       <targetParams>
         <canTargetSelf>True</canTargetSelf>
         <canTargetAnimals>True</canTargetAnimals>
@@ -139,10 +143,11 @@
     </comps>
   </AbilityDef>
 
+  <!--
   <AbilityDef ParentName="PsycastBase">
     <defName>EntropyLink</defName>
     <label>entropy link</label>
-    <description>Form a psychic link between caster and target, so that gain and loss of psychic entropy is shared between both equally. The link lasts for some time, but will break if the two move far apart.</description>
+    <description>Form a psychic link between caster and target, so that gain and loss of neural heat is shared between both equally. The link lasts for some time, but will break if the two move far apart.</description>
     <level>2</level>
     <iconPath>UI/Abilities/EntropyLink</iconPath>
     <hotKey>Misc12</hotKey>
@@ -168,6 +173,39 @@
       </li>
     </comps>
   </AbilityDef>
+  -->
+
+  <AbilityDef ParentName="PsycastBase">
+    <defName>EntropyDump</defName>
+    <label>neural heat dump</label>
+    <description>Instantly dump all your neural heat into someone else. As a side-effect, the target will fall into a debilitating but non-damaging coma for about a day. The target must actively accept the psychic invasion, so only conscious allies can be targeted.</description>
+    <level>2</level>
+    <iconPath>UI/Abilities/EntropyDump</iconPath>
+    <hotKey>Misc12</hotKey>
+    <statBases>
+      <Ability_EntropyGain>0</Ability_EntropyGain>
+      <Ability_Duration>1000</Ability_Duration>
+    </statBases>
+    <verbProperties>
+      <warmupTime>1</warmupTime>
+      <range>24.9</range>
+      <targetParams>
+        <onlyTargetColonists>True</onlyTargetColonists>
+        <neverTargetIncapacitated>True</neverTargetIncapacitated>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>PsychicShock</hediffDef>
+      </li>
+      <li Class="CompProperties_AbilityTransferEntropy">
+        <psychic>True</psychic>
+        <targetReceivesEntropy>False</targetReceivesEntropy>
+        <goodwillImpact>-15</goodwillImpact>
+      </li>
+    </comps>
+  </AbilityDef>
 
   <AbilityDef ParentName="PsycastBase">
     <defName>Beckon</defName>
@@ -178,6 +216,7 @@
     <hotKey>Misc6</hotKey>
     <statBases>
       <Ability_EntropyGain>20</Ability_EntropyGain>
+      <Ability_PsyfocusCost>0.01</Ability_PsyfocusCost>
       <Ability_Duration>8</Ability_Duration>
     </statBases>
     <verbProperties>
@@ -208,12 +247,13 @@
     <hotKey>Misc7</hotKey>
     <statBases>
       <Ability_EntropyGain>30</Ability_EntropyGain>
+      <Ability_PsyfocusCost>0.02</Ability_PsyfocusCost>
       <Ability_Duration>20</Ability_Duration>
       <Ability_EffectRadius>3.9</Ability_EffectRadius>
     </statBases>
     <verbProperties>
       <warmupTime>1</warmupTime>
-      <range>19.9</range>
+      <range>24.9</range>
       <targetParams>
         <canTargetSelf>True</canTargetSelf>
         <canTargetAnimals>True</canTargetAnimals>
@@ -241,9 +281,11 @@
     <hotKey>Misc8</hotKey>
     <statBases>
       <Ability_EntropyGain>18</Ability_EntropyGain>
+      <Ability_PsyfocusCost>0.02</Ability_PsyfocusCost>
     </statBases>
     <verbProperties>
       <warmupTime>0.25</warmupTime>
+      <range>24.9</range>
       <targetParams>
         <canTargetSelf>True</canTargetSelf>
         <canTargetAnimals>True</canTargetAnimals>
@@ -275,9 +317,11 @@
     <hotKey>Misc9</hotKey>
     <statBases>
       <Ability_EntropyGain>25</Ability_EntropyGain>
+      <Ability_PsyfocusCost>0.02</Ability_PsyfocusCost>
     </statBases>
     <verbProperties>
       <warmupTime>0.25</warmupTime>
+      <range>27.9</range>
       <targetParams>
         <canTargetSelf>True</canTargetSelf>
         <canTargetAnimals>True</canTargetAnimals>
@@ -289,7 +333,7 @@
         <compClass>CompAbilityEffect_Teleport</compClass>
         <destination>Selected</destination>
         <requiresLineOfSight>True</requiresLineOfSight>
-        <range>24.9</range>
+        <range>27.9</range>
         <clamorType>Ability</clamorType>
         <clamorRadius>10</clamorRadius>
         <destClamorType>Ability</destClamorType>
@@ -310,10 +354,11 @@
     <hotKey>Misc10</hotKey>
     <statBases>
       <Ability_EntropyGain>35</Ability_EntropyGain>
+      <Ability_PsyfocusCost>0.02</Ability_PsyfocusCost>
     </statBases>
     <verbProperties>
       <warmupTime>1</warmupTime>
-      <range>19.9</range>
+      <range>24.9</range>
       <targetParams>
         <canTargetPawns>False</canTargetPawns>
         <canTargetLocations>True</canTargetLocations>
@@ -346,10 +391,11 @@
     <hotKey>Misc10</hotKey>
     <statBases>
       <Ability_EntropyGain>30</Ability_EntropyGain>
+      <Ability_PsyfocusCost>0.02</Ability_PsyfocusCost>
     </statBases>
     <verbProperties>
       <warmupTime>1</warmupTime>
-      <range>19.9</range>
+      <range>24.9</range>
       <targetParams>
         <canTargetPawns>False</canTargetPawns>
         <canTargetLocations>True</canTargetLocations>
@@ -373,11 +419,12 @@
     <hotKey>Misc11</hotKey>
     <statBases>
       <Ability_EntropyGain>15</Ability_EntropyGain>
+      <Ability_PsyfocusCost>0.03</Ability_PsyfocusCost>
       <Ability_Duration>60</Ability_Duration>
     </statBases>
     <verbProperties>
       <warmupTime>0.25</warmupTime>
-      <range>24.9</range>
+      <range>27.9</range>
       <targetParams>
         <canTargetSelf>True</canTargetSelf>
         <canTargetAnimals>True</canTargetAnimals>
@@ -403,14 +450,16 @@
     <hotKey>Misc12</hotKey>
     <statBases>
       <Ability_EntropyGain>40</Ability_EntropyGain>
+      <Ability_PsyfocusCost>0.04</Ability_PsyfocusCost>
       <Ability_Duration>15</Ability_Duration>
     </statBases>
     <verbProperties>
       <warmupTime>0.25</warmupTime>
-      <range>14.9</range>
+      <range>19.9</range>
       <targetParams>
         <canTargetSelf>True</canTargetSelf>
         <canTargetAnimals>True</canTargetAnimals>
+        <neverTargetIncapacitated>True</neverTargetIncapacitated>
       </targetParams>
     </verbProperties>
     <comps>
@@ -433,11 +482,12 @@
     <hotKey>Misc12</hotKey>
     <statBases>
       <Ability_EntropyGain>45</Ability_EntropyGain>
+      <Ability_PsyfocusCost>0.03</Ability_PsyfocusCost>
       <Ability_Duration>15</Ability_Duration>
     </statBases>
     <verbProperties>
       <warmupTime>1</warmupTime>
-      <range>14.9</range>
+      <range>19.9</range>
       <onlyManualCast>True</onlyManualCast>
       <targetParams>
         <canTargetSelf>True</canTargetSelf>
@@ -463,7 +513,8 @@
     <hotKey>Misc12</hotKey>
     <statBases>
       <Ability_EntropyGain>65</Ability_EntropyGain>
-      <Ability_Duration>11</Ability_Duration>
+      <Ability_PsyfocusCost>0.06</Ability_PsyfocusCost>
+      <Ability_Duration>10</Ability_Duration>
       <Ability_EffectRadius>2.9</Ability_EffectRadius>
     </statBases>
     <verbProperties>
@@ -495,11 +546,13 @@
     <hotKey>Misc12</hotKey>
     <statBases>
       <Ability_EntropyGain>50</Ability_EntropyGain>
+      <Ability_PsyfocusCost>0.04</Ability_PsyfocusCost>
       <Ability_Duration>60</Ability_Duration>
       <Ability_EffectRadius>27.9</Ability_EffectRadius>
     </statBases>
     <verbProperties>
       <warmupTime>1</warmupTime>
+      <range>34.9</range>
       <targetParams>
         <canTargetHumans>False</canTargetHumans>
         <canTargetMechs>False</canTargetMechs>
@@ -527,6 +580,7 @@
     <hotKey>Misc12</hotKey>
     <statBases>
       <Ability_EntropyGain>40</Ability_EntropyGain>
+      <Ability_PsyfocusCost>0.03</Ability_PsyfocusCost>
       <Ability_EffectRadius>7.9</Ability_EffectRadius>
     </statBases>
     <verbProperties>
@@ -552,8 +606,97 @@
     </comps>
   </AbilityDef>
   
+  <AbilityDef ParentName="PsycastBase">
+    <defName>Waterskip</defName>
+    <label>waterskip</label>
+    <description>Douse a target area in water, extinguishing fires. The water is archotechnologically skipped from distant bodies of water or underground aquifers.</description>
+    <level>2</level>
+    <iconPath>UI/Abilities/Waterskip</iconPath>
+    <hotKey>Misc12</hotKey>
+    <canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+    <statBases>
+      <Ability_EntropyGain>25</Ability_EntropyGain>
+      <Ability_PsyfocusCost>0.015</Ability_PsyfocusCost>
+      <Ability_EffectRadius>1.9</Ability_EffectRadius>
+    </statBases>
+    <verbProperties>
+      <warmupTime>1</warmupTime>
+      <range>24.9</range>
+      <targetParams>
+        <canTargetPawns>False</canTargetPawns>
+        <canTargetLocations>True</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class = "CompProperties_AbilityWaterskip">
+        <screenShakeIntensity>0.5</screenShakeIntensity>
+        <clamorType>Ability</clamorType>
+        <clamorRadius>10</clamorRadius>
+        <sound>PsycastWallraise</sound>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef ParentName="PsycastBase">
+    <defName>Flashstorm</defName>
+    <label>flashstorm</label>
+    <description>Use differential-pressure skipgates in the atmosphere to generate a localized flashstorm. The storm will strike the area with lightning for some time before dissipating.</description>
+    <level>5</level>
+    <iconPath>UI/Abilities/Flashstorm</iconPath>
+    <hotKey>Misc12</hotKey>
+    <canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+    <statBases>
+      <Ability_EntropyGain>65</Ability_EntropyGain>
+      <Ability_PsyfocusCost>0.04</Ability_PsyfocusCost>
+      <Ability_EffectRadius>13.9</Ability_EffectRadius>
+      <Ability_Duration>164</Ability_Duration>
+    </statBases>
+    <verbProperties>
+      <warmupTime>1</warmupTime>
+      <range>19.9</range>
+      <targetParams>
+        <canTargetPawns>False</canTargetPawns>
+        <canTargetLocations>True</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityFlashstorm">
+        <goodwillImpact>-35</goodwillImpact>
+      </li>
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef ParentName="PsycastBase">
+    <defName>BulletShield</defName>
+    <label>bullet shield</label>
+    <description>Generate a spherical skipgate that sends all incoming and outgoing ground-level projectiles to some distant place. People and items are not affected.</description>
+    <level>6</level>
+    <iconPath>UI/Abilities/BulletShield</iconPath>
+    <hotKey>Misc12</hotKey>
+    <canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+    <statBases>
+      <Ability_EntropyGain>65</Ability_EntropyGain>
+      <Ability_PsyfocusCost>0.04</Ability_PsyfocusCost>
+      <Ability_EffectRadius>4.9</Ability_EffectRadius>
+      <Ability_Duration>15</Ability_Duration>
+    </statBases>
+    <verbProperties>
+      <warmupTime>1</warmupTime>
+      <range>24.9</range>
+      <targetParams>
+        <canTargetPawns>False</canTargetPawns>
+        <canTargetLocations>True</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilitySpawn">
+        <thingDef>BulletShieldPsychic</thingDef>
+      </li>
+    </comps>
+  </AbilityDef>
+
   <!-- Title related abilities -->
-  
+
   <AbilityDef Name="Speech">
     <defName>Speech</defName>
     <label>throne speech</label>

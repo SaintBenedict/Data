@@ -33,7 +33,16 @@
             <li Class="ThinkNode_Tagger">
               <tagToGive>SatisfyingNeeds</tagToGive>
               <subNodes>
-                <li Class="JobGiver_GetJoyInBed" />
+                <li Class="ThinkNode_PrioritySorter">
+                  <subNodes>
+                    <li Class="ThinkNode_Priority_GetJoy">
+                      <subNodes>
+                        <li Class="JobGiver_GetJoyInBed" />
+                      </subNodes>
+                    </li>
+                    <li Class="JobGiver_MeditateInBed"/>
+                  </subNodes>
+                </li>
               </subNodes>
             </li>
             
@@ -173,6 +182,7 @@
                         <li Class="JobGiver_GetJoyInBed"/>
                       </subNodes>
                     </li>
+                    <li Class="JobGiver_Meditate"/>
                   </subNodes>
                 </li>
               </subNodes>

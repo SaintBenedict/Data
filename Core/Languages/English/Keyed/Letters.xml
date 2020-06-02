@@ -85,6 +85,8 @@
   <ViewQuest>View quest</ViewQuest>
   <LastEventsInLife>The last events in {PAWN_definite}'s life</LastEventsInLife>
 
+  <LetterInspirationBeginThanksToHighMoodPart>Thanks to high mood, [PAWN_nameIndef] has experienced an inspiration!</LetterInspirationBeginThanksToHighMoodPart>
+
   <!-- Related pawns -->
   <LetterLabelNoticedRelatedPawns>Relationship</LetterLabelNoticedRelatedPawns>
   <LetterRelatedPawnsRaidEnemy>There are people who have relationships with your {0} or prisoners in the arriving group of {1}.\n\nKeep in mind that even though they are related, they will still attack each other because of their bad factions relations.\n\nThese people are:</LetterRelatedPawnsRaidEnemy>
@@ -216,7 +218,7 @@
 
   <!-- Hibernate complete -->
   <LetterLabelHibernateComplete>Reactor ready</LetterLabelHibernateComplete>
-  <LetterHibernateComplete>&lt;Name&gt;Charlon Whitestone&lt;/Name&gt; has finished the reactor's hibernation recovery sequence. The reactor is now ready to power a liftoff.</LetterHibernateComplete>
+  <LetterHibernateComplete>(*Name)Charlon Whitestone(/Name) has finished the reactor's hibernation recovery sequence. The reactor is now ready to power a liftoff.</LetterHibernateComplete>
   <LetterHibernateCompleteStandalone>The reactor's power up sequence is complete. It is now ready to power a liftoff.</LetterHibernateCompleteStandalone>
 
   <!-- Visitors gave gift -->
@@ -300,9 +302,9 @@
   <LetterQuestCompletedSuccess>You have successfully completed the quest '{0}'!</LetterQuestCompletedSuccess>
   <LetterQuestCompletedFail>You have failed the quest '{0}'.</LetterQuestCompletedFail>
   <LetterQuestCompletedConcluded>You have concluded the quest '{0}'.</LetterQuestCompletedConcluded>
-  
+
   <!-- Bladelink -->
-  <LetterBladelinkWeaponBondedLabel>Bladelink bond: {PAWN_labelShort}</LetterBladelinkWeaponBondedLabel>
+  <LetterBladelinkWeaponBondedLabel>Persona bond: {PAWN_labelShort}</LetterBladelinkWeaponBondedLabel>
   <LetterBladelinkWeaponBonded>{PAWN_labelShort} has established a bond with the persona of {WEAPON_labelShort}.
 \nFrom now on, {WEAPON_labelShort} will refuse to be wielded by anyone except {PAWN_labelShort}.</LetterBladelinkWeaponBonded>
   

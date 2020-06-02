@@ -165,22 +165,5 @@
       </li>
     </stages>
   </ThoughtDef>
-
-  <ThoughtDef>
-    <defName>PsychicEntropyHangover</defName>
-    <workerClass>ThoughtWorker_Hediff</workerClass>
-    <hediff>PsychicHangover</hediff>
-    <validWhileDespawned>true</validWhileDespawned>
-    <stages>
-      <li>
-        <visible>false</visible>
-      </li>
-      <li>
-        <label>psychic hangover</label>
-        <description>My body and my eyes ache, but I know it's from my brain.</description>
-        <baseMoodEffect>-12</baseMoodEffect>
-      </li>
-    </stages>
-  </ThoughtDef>
   
 </Defs>

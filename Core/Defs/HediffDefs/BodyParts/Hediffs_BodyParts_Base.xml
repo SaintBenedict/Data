@@ -83,6 +83,7 @@
   <RecipeDef Name="SurgeryRemoveImplantBase" ParentName="SurgeryFlesh" Abstract="True">
     <workerClass>Recipe_RemoveImplant</workerClass>
     <workAmount>2500</workAmount>
+    <isViolation>true</isViolation>
     <skillRequirements>
       <Medicine>5</Medicine>
     </skillRequirements>

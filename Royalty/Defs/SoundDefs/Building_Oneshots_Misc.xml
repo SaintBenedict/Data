@@ -11,8 +11,8 @@
             <clipFolderPath>Misc/MechanoidAssembler/NewMechanoidAssembled</clipFolderPath>
           </li>
         </grains>
-        <distRange>10~100</distRange>
-        <volumeRange>30~30</volumeRange>
+        <distRange>20~100</distRange>
+        <volumeRange>30</volumeRange>
       </li>
     </subSounds>
   </SoundDef>
@@ -27,7 +27,24 @@
             <clipFolderPath>Misc/Shuttle/Boarding</clipFolderPath>
           </li>
         </grains>
-        <volumeRange>30~30</volumeRange>
+        <distRange>25~50</distRange>
+        <volumeRange>14</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Shuttle_PawnExit</defName>
+    <context>MapOnly</context>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Misc/Shuttle/Boarding</clipFolderPath>
+          </li>
+        </grains>
+        <distRange>25~50</distRange>
+        <volumeRange>14</volumeRange>
       </li>
     </subSounds>
   </SoundDef>
@@ -45,7 +62,7 @@
             <clipPath>Buildings/MusicalInstruments/Harp/</clipPath>
           </li>
         </grains>
-        <volumeRange>25~25</volumeRange>
+        <volumeRange>25</volumeRange>
         <distRange>5~25</distRange>
         <sustainLoop>True</sustainLoop>
       </li>
@@ -65,7 +82,7 @@
             <clipPath>Buildings/MusicalInstruments/Harpsichord/</clipPath>
           </li>
         </grains>
-        <volumeRange>25~25</volumeRange>
+        <volumeRange>25</volumeRange>
         <distRange>5~25</distRange>
         <sustainLoop>True</sustainLoop>
       </li>
@@ -85,9 +102,61 @@
             <clipPath>Buildings/MusicalInstruments/Piano/</clipPath>
           </li>
         </grains>
-        <volumeRange>25~25</volumeRange>
+        <volumeRange>25</volumeRange>
         <distRange>5~25</distRange>
         <sustainLoop>True</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>BulletShieldGenerator_Reactivate</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Misc/BulletShieldGenerator/Reactivate</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>40</volumeRange>
+        <distRange>10~40</distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>MortarShieldGenerator_Reactivate</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Misc/MortarShieldGenerator/Reactivate</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>40</volumeRange>
+        <distRange>10~40</distRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>MechClusterDefeated</defName>
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>PlaceholderWav</clipPath> <!-- we need a new WAV -->
+          </li>
+        </grains>
+        <volumeRange>0</volumeRange>
+        <sustainLoop>false</sustainLoop>
       </li>
     </subSounds>
   </SoundDef>

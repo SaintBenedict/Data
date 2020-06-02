@@ -13,9 +13,9 @@
 
   <JobDef>
     <defName>Meditate</defName>
-    <driverClass>JobDriver_RelaxAlone</driverClass>
+    <driverClass>JobDriver_Meditate</driverClass>
     <reportString>meditating.</reportString>
-    <joyDuration>4000</joyDuration>
+    <joyDuration>5000</joyDuration>
     <joyKind>Meditative</joyKind>
     <taleOnCompletion>Meditated</taleOnCompletion>
   </JobDef>

@@ -92,10 +92,10 @@
   </StatDef>
 
   <StatDef>
-    <defName>Bladelink_DetectionChance</defName>
+    <defName>Bladelink_DetectionChance</defName> <!-- This will be removed in the future -->
     <label>detection chance</label>
     <category>Weapon</category>
-    <description>The likelihood of the bladelink implant being detected each time it is used to attack in combat.\n\nSome factions try to enforce laws restricting the use of the bladelink to those holding specific titles. Using the bladelink emits a psychic signature which has a chance of being detected at a distance. If it is used illegally and detected, there will be diplomatic consequences.\n\nThe psychic signature can be silenced by use of a psychic silencer implant.</description>
+    <description>The likelihood of the bladelink implant being detected each time it is used to attack in combat.\n\nSome factions try to enforce laws restricting the use of the bladelink to those holding specific titles. Using the bladelink emits a psychic signature which has a chance of being detected at a distance. If it is used illegally and detected, there will be diplomatic consequences.</description>
     <defaultBaseValue>0</defaultBaseValue>
     <minValue>0</minValue>
     <showIfUndefined>false</showIfUndefined>

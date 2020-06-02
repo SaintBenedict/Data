@@ -5,23 +5,31 @@
     <defName>OpportunitySite_BanditCamp</defName>
     <rootSelectionWeight>1.0</rootSelectionWeight>
     <rootMinPoints>350</rootMinPoints>
-    <autoAccept>true</autoAccept>
     <canGiveRoyalFavor>true</canGiveRoyalFavor>
+    <expireDaysRange>4~8</expireDaysRange>
     <questNameRules>
       <rulesStrings>
-        <li>questName->[asker_nameDef]'s Camp Bounty</li>
-        <li>questName->Camp of [enemyFaction_pawnsPlural]</li>
-        <li>questName->The Bandit Camp</li>
-        <li>questName->The Raider Camp</li>
-        <li>questName->Destroy the Camp</li>
-        <li>questName->Helping [asker_nameDef]</li>
+        <li>questName->The [bandit] [camp]</li>
+        <li>questName->[bandit] [camp]</li>
+        <li>questName->[asker_nameDef] and the [camp]</li>
+        <li>camp->Camp</li>
+        <li>camp->Outpost</li>
+        <li>camp->Lair</li>
+        <li>camp->Encampment</li>
+        <li>bandit->Bandit</li>
+        <li>bandit->Raider</li>
+        <li>bandit->Outlaw</li>
+        <li>bandit->Desperado</li>
+        <li>bandit->Fugitive</li>
+        <li>bandit->Marauder</li>
+        <li>bandit->Robber</li>
+        <li>bandit->Brigand</li>
       </rulesStrings>
     </questNameRules>
     <questDescriptionRules>
       <rulesStrings>
         <li>questDescription->[asker_nameFull], [asker_faction_leaderTitle] of [asker_faction_name], has sent us a message. Apparently, [siteFaction_pawnsPlural] based in a nearby camp have been raiding their caravans. The camp is controlled by [siteFaction_name].
-\n[asker_nameDef] is asking us to destroy the camp, which means eliminating all enemies and turrets. [asker_label] says that [sitePart0_description].
-\nIf we succeed, [allRewardsDescriptions]</li>
+\n[asker_nameDef] is asking us to destroy the camp, which means eliminating all enemies and turrets. [asker_label] says that [sitePart0_description].</li>
       </rulesStrings>
     </questDescriptionRules>
     <root Class="QuestNode_Sequence">
@@ -77,6 +85,14 @@
           </parms>
         </li>
 
+        <!-- Inflate reward value. Since we're basing the reward value on the threat points generated, we need to do this
+             even though the threat points was deflated from the input points already. -->
+        <li Class="QuestNode_Multiply">
+            <value1>$rewardValue</value1>
+            <value2>1.5</value2>
+            <storeAs>rewardValue</storeAs>
+        </li>
+
         <li Class="QuestNode_SubScript">
           <def>Util_GenerateSite</def>
         </li>
@@ -93,8 +109,8 @@
           <node Class="QuestNode_Sequence">
             <nodes>
               <li Class="QuestNode_Letter">
-                <label>Quest expired: [resolvedQuestName]</label>
-                <text>The bandit camp has packed up and moved on. The quest [resolvedQuestName] has expired.</text>
+                <label TKey="LetterLabelQuestExpired">Quest expired: [resolvedQuestName]</label>
+                <text TKey="LetterTextQuestExpired">The bandit camp has packed up and moved on. The quest [resolvedQuestName] has expired.</text>
               </li>
               <li Class="QuestNode_End">
                 <outcome>Fail</outcome>
@@ -109,8 +125,8 @@
           <node Class="QuestNode_Sequence">
             <nodes>
               <li Class="QuestNode_Letter">
-                <label>Quest failed: [resolvedQuestName]</label>
-                <text>The bandit camp has packed up and moved on.</text>
+                <label TKey="LetterLabelQuestFailed">Quest failed: [resolvedQuestName]</label>
+                <text TKey="LetterTextQuestFailed">After being discovered, the bandit camp has dispersed. The quest [resolvedQuestName] has ended.</text>
               </li>
               <li Class="QuestNode_End">
                 <outcome>Fail</outcome>
@@ -127,12 +143,13 @@
               <allowRoyalFavor>true</allowRoyalFavor>
               <chosenPawnSignal>ChosenPawnForReward</chosenPawnSignal>
             </parms>
-            <customLetterLabel>Payment arrived</customLetterLabel>
-            <customLetterText>You have defeated the bandit camp!\n\nThe payment from [asker_faction_name] has arrived.</customLetterText>
+            <addCampLootReward>true</addCampLootReward>
+            <customLetterLabel TKey="LetterLabelPaymentArrived">Payment arrived</customLetterLabel>
+            <customLetterText TKey="LetterTextPaymentArrived">You have defeated the bandit camp!\n\nThe payment from [asker_faction_name] has arrived.</customLetterText>
             <nodeIfChosenPawnSignalUsed Class="QuestNode_Letter">
               <letterDef>ChoosePawn</letterDef>
-              <label>[asker_faction_royalFavorLabel]</label>
-              <text>These colonists participated in the victory for the quest [resolvedQuestName]. [asker_definite] wants to know who should receive the [royalFavorReward_amount] [asker_faction_royalFavorLabel] favor for this service.</text>
+              <label TKey="LetterLabelFavorReceiver">[asker_faction_royalFavorLabel]</label>
+              <text TKey="LetterTextFavorReceiver">These colonists participated in the victory for the quest [resolvedQuestName]. [asker_definite] wants to know who should receive the [royalFavorReward_amount] [asker_faction_royalFavorLabel] favor for this service.</text>
               <useColonistsOnMap>$site</useColonistsOnMap>
               <chosenPawnSignal>ChosenPawnForReward</chosenPawnSignal>
             </nodeIfChosenPawnSignalUsed>

@@ -346,6 +346,8 @@
     <fillPercent>0.4</fillPercent>
     <killedLeavings>
       <ChunkSlagSteel>1</ChunkSlagSteel>
+      <Steel>60</Steel>
+      <Plasteel>10</Plasteel>
     </killedLeavings>
     <tickerType>Normal</tickerType>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
@@ -374,6 +376,7 @@
         <multiplier>0</multiplier>
       </li>
     </damageMultipliers>
+    <generateCommonality>4</generateCommonality> <!-- generate more often than other problem causers for mech clusters -->
     <building>
       <buildingTags>
         <li>MechClusterMember</li>

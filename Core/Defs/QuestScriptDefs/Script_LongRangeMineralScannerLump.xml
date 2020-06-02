@@ -99,8 +99,8 @@
           <node Class="QuestNode_Sequence">
             <nodes>
               <li Class="QuestNode_Letter">
-                <label>Quest expired: [resolvedQuestName]</label>
-                <text>Others have mined the lump of [targetMineable_label]. The quest [resolvedQuestName] has expired.</text>
+                <label TKey="LetterLabelQuestExpired">Quest expired: [resolvedQuestName]</label>
+                <text TKey="LetterTextQuestExpired">Others have mined the lump of [targetMineable_label]. The quest [resolvedQuestName] has expired.</text>
               </li>
               <li Class="QuestNode_End">
                 <outcome>Fail</outcome>

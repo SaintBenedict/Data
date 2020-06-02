@@ -50,7 +50,7 @@
   <ThingDef Name="MakeableDrugPillBase" ParentName="MakeableDrugBase" Abstract="True">
     <ingestible>
       <foodType>Processed</foodType>
-      <baseIngestTicks>120</baseIngestTicks>
+      <baseIngestTicks>100</baseIngestTicks>
       <chairSearchRadius>0</chairSearchRadius>
       <ingestSound>Ingest_Pill</ingestSound>
       <ingestHoldUsesTable>false</ingestHoldUsesTable>
@@ -63,7 +63,7 @@
   <ThingDef Name="DrugPillBase" ParentName="DrugBase" Abstract="True">
     <ingestible>
       <foodType>Processed</foodType>
-      <baseIngestTicks>120</baseIngestTicks>
+      <baseIngestTicks>100</baseIngestTicks>
       <chairSearchRadius>0</chairSearchRadius>
       <ingestSound>Ingest_Pill</ingestSound>
       <ingestHoldUsesTable>false</ingestHoldUsesTable>
@@ -96,11 +96,6 @@
     <stages>
       <li>
         <minSeverity>0</minSeverity>
-        <becomeVisible>false</becomeVisible>
-        <label>small</label>
-      </li>
-      <li>
-        <minSeverity>0.20</minSeverity>
         <label>small</label>
       </li>
       <li>

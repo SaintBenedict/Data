@@ -12,8 +12,8 @@
     <questDescriptionRules>
       <rulesStrings>
         <li>helpersParagraph(helpersCount==0)-></li>
-        <li>helpersParagraph(helpersCount==1)->[asker_nameDef] will send a [helperKind_label] to assist you under your control. You will have to feed and house [helpers0_objective], but [helpers0_pronoun] may die in battle without consequence.\n\n</li>
-        <li>helpersParagraph(helpersCount>=2)->[asker_nameDef] will send [helpersCount] [helperKind_labelPlural] to assist you under your control. You will have to feed and house them, but they may die in battle without consequence.\n\n</li>
+        <li>helpersParagraph(helpersCount==1)->\n\nA [helperKind_label] will be placed under your control. You will have to feed and house [helpers0_objective], but [helpers0_pronoun] may die in battle without consequence.\n\n</li>
+        <li>helpersParagraph(helpersCount>=2)->\n\n[helpersCount] [helperKind_labelPlural] will be placed under your control. You will have to feed and house them, but they may die in battle without consequence.\n\n</li>
         <li>helpersArrivalLetterEnd(helpersCount==0)-></li>
         <li>helpersArrivalLetterEnd(helpersCount>=1)->\n\n[helpersCount] [helpersLabelSingOrPlural] [helpersHasHave] been sent to assist you.</li>
 
@@ -123,9 +123,9 @@
                         <def>Util_ArriveByDropPodsOrShuttle</def>
                         <parms>
                           <arrivingPawns>$helpers</arrivingPawns>
-                          <customLetterLabel>[helpersLabelSingOrPlural] arrived</customLetterLabel>
-                          <customLetterText>The [helpersLabelSingOrPlural] sent by [asker_nameDef] [helpersHasHave] arrived to aid you with the quest '[resolvedQuestName]'.</customLetterText>
-                          <arrivingPawnsLabelDef>the [helpersLabelSingOrPlural]</arrivingPawnsLabelDef>
+                          <customLetterLabel TKey="LetterLabelHelpersArrived">[helpersLabelSingOrPlural] arrived</customLetterLabel>
+                          <customLetterText TKey="LetterTextHelpersArrived">The [helpersLabelSingOrPlural] sent by [asker_nameDef] [helpersHasHave] arrived to aid you with the quest '[resolvedQuestName]'.</customLetterText>
+                          <arrivingPawnsLabelDef TKey="ArrivingPawnsLabelDefinite">the [helpersLabelSingOrPlural]</arrivingPawnsLabelDef>
                         </parms>
                       </node>                  
                     </li>           
@@ -154,8 +154,8 @@
                             <li Class="QuestNode_AnyPawnAlive">
                               <pawns>$helpers</pawns>
                               <node Class="QuestNode_Letter">
-                                <label>[helpersLabelSingOrPlural] leaving</label>
-                                <text>The [helpersLabelSingOrPlural] sent by [asker_nameDef] to aid you [helpersHasHave] spent too much time with you, and [helpersIsAre] now leaving.</text>
+                                <label TKey="LetterLabelHelpersLeaving">[helpersLabelSingOrPlural] leaving</label>
+                                <text TKey="LetterTextHelpersLeaving">The [helpersLabelSingOrPlural] sent by [asker_nameDef] to aid you [helpersHasHave] spent too much time with you, and [helpersIsAre] now leaving.</text>
                                 <lookTargets>$helpers</lookTargets>
                                 <filterDeadPawnsFromLookTargets>true</filterDeadPawnsFromLookTargets>
                               </node>

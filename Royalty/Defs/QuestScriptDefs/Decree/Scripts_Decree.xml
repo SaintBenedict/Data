@@ -253,7 +253,7 @@
 \nYou must build a monument. It is [monumentSize] in size and will require these resources (total value [monumentRequiredResourcesMarketValue_money]):
 \n[monumentRequiredResources]
 \n[decreeThreatInfo]
-\nYou must keep the monument safe for [keepMonumentTicks_duration] days after completion, otherwise [asker_nameDef] will be unhappy.</li>
+\nYou must keep the monument safe for [keepMonumentTicks_duration] after completion, otherwise [asker_nameDef] will be unhappy.</li>
       </rulesStrings>
     </questDescriptionRules>
     <root Class="QuestNode_Sequence">
@@ -353,8 +353,8 @@
               </li>
               <li Class="QuestNode_Letter">
                 <inSignal>DroppedMonumentMarkerCopy</inSignal>
-                <label>New monument marker arrived</label>
-                <text>Since the monument marker has been destroyed, a new one has been sent.</text>
+                <label TKey="LetterLabelNewMonumentMarkerArrived">New monument marker arrived</label>
+                <text TKey="LetterTextNewMonumentMarkerArrived">Since the monument marker has been destroyed, a new one has been sent.</text>
               </li>
             </nodes>
           </node>
@@ -375,9 +375,9 @@
 
               <li Class="QuestNode_Letter">
                 <inSignal>monumentMarker.MonumentCompleted</inSignal>
-                <label>Monument completed</label>
+                <label TKey="LetterLabelMonumentCompleted">Monument completed</label>
                 <letterDef>PositiveEvent</letterDef>
-                <text>You have completed construction of the monument.\n\nYou must keep it safe for [keepMonumentTicks_duration] days, otherwise [asker_nameDef] will be displeased.</text>
+                <text TKey="LetterTextMonumentCompleted">You have completed construction of the monument.\n\nYou must keep it safe for [keepMonumentTicks_duration], otherwise [asker_nameDef] will be displeased.</text>
               </li>
 
               <li Class="QuestNode_Signal">
@@ -385,12 +385,12 @@
                 <node Class="QuestNode_Sequence">
                   <nodes>
                     <li Class="QuestNode_Letter">
-                      <text>[asker_nameDef] is offended that you allowed the monument to be ruined so soon after completion.\n\n[asker_pronoun] will be unhappy about this.</text>
-                      <label>Monument destroyed</label>
+                      <text TKey="LetterTextMonumentDestroyed">[asker_nameDef] is offended that you allowed the monument to be ruined so soon after completion.\n\n[asker_pronoun] will be unhappy about this.</text>
+                      <label TKey="LetterLabelMonumentDestroyed">Monument destroyed</label>
                     </li>
                     <li Class="QuestNode_AddMemoryThought">
                       <def>DecreeFailed</def>
-                      <pawn>$asker</pawn>
+                      <pawns>$asker</pawns>
                     </li>
                     <li Class="QuestNode_RemoveMemoryThought"> <!-- Undo mood reward -->
                       <def>DecreeMet</def>
@@ -408,9 +408,9 @@
               <li Class="QuestNode_Delay">
                 <inSignalEnable>monumentMarker.MonumentCompleted</inSignalEnable>
                 <delayTicks>$keepMonumentTicks</delayTicks>
-                <expiryInfoPart>Do not destroy the monument for {0}</expiryInfoPart>
-                <expiryInfoPartTip>Do not destroy the monument for {0}</expiryInfoPartTip>
-                <inspectString>Keep monument {0}</inspectString>
+                <expiryInfoPart TKey="DontDestroyMonumentForDays">Do not destroy the monument for {0}</expiryInfoPart>
+                <expiryInfoPartTip TKey="DontDestroyMonumentForDaysTip">Do not destroy the monument for {0}</expiryInfoPartTip>
+                <inspectString TKey="KeepMonument">Keep monument {0}</inspectString>
                 <inspectStringTargets>$monumentMarker</inspectStringTargets>
                 <node Class="QuestNode_Sequence">
                   <nodes>

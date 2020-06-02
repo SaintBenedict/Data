@@ -931,7 +931,6 @@
     <apparel>
       <tags>
         <li>SpacerMilitary</li>
-        <li>RoyalCombatGear</li>
       </tags>
     </apparel>
   </ThingDef>
@@ -1030,7 +1029,6 @@
     <apparel>
       <tags>
         <li>SpacerMilitary</li>
-        <li>RoyalCombatGear</li>
       </tags>
     </apparel>
   </ThingDef>

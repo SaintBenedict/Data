@@ -21,7 +21,7 @@
 \n[monumentRequiredResources]
 \nConstruction must be completed within [constructionTimeoutTicks_duration] of accepting the task.
 \nAfter completion, you'll have to protect the monument for [haveToProtectForTicks_duration]. If any piece of it is destroyed, [asker2]'s enforcement system will activate and [threatDescription]
-\nWhen you finish construction, [allRewardsDescriptions]</li>
+\nYou'll receive the rewards when you finish construction.</li>
 
       </rulesStrings>
     </questDescriptionRules>
@@ -48,9 +48,9 @@
         <li Class="QuestNode_Signal">
           <inSignal>monumentMarker.MonumentCompleted</inSignal>
           <node Class="QuestNode_Letter">
-            <label>Monument completed</label>
+            <label TKey="LetterLabelMonumentComplete">Monument completed</label>
             <letterDef>PositiveEvent</letterDef>
-            <text>You completed construction of the monument.\n\nYou must now protect the monument for [haveToProtectForTicks_duration]. If any piece of it is destroyed, [asker2]'s enforcement system will activate and [threatDescription]</text>
+            <text TKey="LetterTextMonumentComplete">You completed construction of the monument.\n\nYou must now protect the monument for [haveToProtectForTicks_duration]. If any piece of it is destroyed, [asker2]'s enforcement system will activate and [threatDescription]</text>
           </node>
         </li>
       </nodes>

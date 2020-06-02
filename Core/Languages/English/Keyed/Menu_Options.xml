@@ -23,6 +23,7 @@
   <RunInBackground>Run in background</RunInBackground>
   <DevelopmentMode>Development mode</DevelopmentMode>
   <ResetModsConfigOnCrash>Auto-reset mods config on crash</ResetModsConfigOnCrash>
+  <SimulateNotOwningRoyalty>Simulate not owning Royalty</SimulateNotOwningRoyalty>
   <LogVerbose>Verbose logging</LogVerbose>
   <OpenSaveGameDataFolder>Open save data folder</OpenSaveGameDataFolder>
   <ShowSaveGameDataLocation>Show save data location</ShowSaveGameDataLocation>

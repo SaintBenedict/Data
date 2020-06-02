@@ -1,27 +1,126 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ResearchProjectDef>
-    <defName>CataphractArmor</defName>
-    <label>cataphract armor</label>
-    <description>Craft cataphract armor, heavy powered armor that slows the user but which can absorb extreme punishment. Note that these also require advanced components.</description>
-    <baseCost>6000</baseCost>
-    <techLevel>Spacer</techLevel>
-    <prerequisites>
-      <li>PoweredArmor</li>
-    </prerequisites>
-    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
-    <requiredResearchFacilities>
-      <li>MultiAnalyzer</li>
-    </requiredResearchFacilities>
-    <researchViewX>17.00</researchViewX>
-    <researchViewY>1.50</researchViewY>
-    <techprintCount>2</techprintCount>
-    <techprintCommonality>3</techprintCommonality>
-    <techprintMarketValue>3000</techprintMarketValue>
-    <heldByFactionCategoryTags><li>Empire</li></heldByFactionCategoryTags>
-  </ResearchProjectDef>
+  <!-- Prestige recon armor-->
 
+  <ThingDef ParentName="ApparelArmorReconBase">
+    <defName>Apparel_ArmorReconPrestige</defName>
+    <label>prestige recon armor</label>
+    <description>A suit of light partially-powered armor, designed to permit quick movement. Plasteel-weave plates block attacks without compromising mobility, and neuro-memetic assistors in the lower body allow a human to wear the armor and still move easily.\n\nExpensive and beautiful, prestige armor like this is usually made for those of high status. Embedded eltex threads also enhance the wearer's psychic sensitivity.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/PrestigeReconArmor/PrestigeReconArmor</texPath>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <statBases>
+      <WorkToMake>90000</WorkToMake>
+    </statBases>
+    <equippedStatOffsets>
+      <PsychicSensitivity>0.05</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate>0.033</PsychicEntropyRecoveryRate>
+    </equippedStatOffsets>
+    <costList>
+      <Gold>9</Gold>
+      <Plasteel>100</Plasteel>
+    </costList>
+    <apparel>
+      <tags>
+        <li>PrestigeCombatGear</li>
+      </tags>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/PrestigeReconArmor/PrestigeReconArmor</wornGraphicPath>
+      <useWornGraphicMask>true</useWornGraphicMask>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="ApparelArmorHelmetReconBase">
+    <defName>Apparel_ArmorHelmetReconPrestige</defName>
+    <label>prestige recon helmet</label>
+    <description>A high-tech armored helmet with a built-in status computer and a protective plasteel-weave plate.\n\nExpensive and beautiful, prestige armor like this is usually made for those of high status. Embedded eltex threads also enhance the wearer's psychic sensitivity.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/PrestigeReconHelmet/PrestigeReconHelmet</texPath>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <statBases>
+      <WorkToMake>31500</WorkToMake>
+    </statBases>
+    <equippedStatOffsets>
+      <PsychicSensitivity>0.05</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate>0.033</PsychicEntropyRecoveryRate>
+    </equippedStatOffsets>
+    <costList>
+      <Gold>4</Gold>
+      <Plasteel>40</Plasteel>
+    </costList>
+    <apparel>
+      <tags>
+        <li>PrestigeCombatGear</li>
+      </tags>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/PrestigeReconHelmet/PrestigeReconHelmet</wornGraphicPath>
+      <useWornGraphicMask>true</useWornGraphicMask>
+    </apparel>
+  </ThingDef>
+
+
+  <!-- Prestige marine armor -->
+
+  <ThingDef ParentName="ApparelArmorPowerBase">
+    <defName>Apparel_ArmorMarinePrestige</defName>
+    <label>prestige marine armor</label>
+    <description>A suit of powered armor. Layered plasteel-weave plates are very effective at stopping attacks, with few vulnerable joint sections. Neuro-memetic assistors allow a human to wear the armor and still move easily.\n\nExpensive and beautiful, prestige armor like this is usually made for those of high status. Embedded eltex threads also enhance the wearer's psychic sensitivity.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/PrestigeMarineArmor/PrestigeMarineArmor</texPath>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <statBases>
+      <WorkToMake>120000</WorkToMake>
+    </statBases>
+    <equippedStatOffsets>
+      <PsychicSensitivity>0.05</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate>0.033</PsychicEntropyRecoveryRate>
+    </equippedStatOffsets>
+    <costList>
+      <Gold>10</Gold>
+      <Plasteel>120</Plasteel>
+    </costList>
+    <apparel>
+      <tags>
+        <li>PrestigeCombatGear</li>
+      </tags>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/PrestigeMarineArmor/PrestigeMarineArmor</wornGraphicPath>
+      <useWornGraphicMask>true</useWornGraphicMask>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="ApparelArmorHelmetPowerBase">
+    <defName>Apparel_ArmorMarineHelmetPrestige</defName>
+    <label>prestige marine helmet</label>
+    <description>A marine armor helmet, with a built-in status computer and layered plasteel-weave plates.\n\nExpensive and beautiful, prestige armor like this is usually made for those of high status. Embedded eltex threads also enhance the wearer's psychic sensitivity.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/PrestigeMarineHelmet/PrestigeMarineHelmet</texPath>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <statBases>
+      <WorkToMake>42000</WorkToMake>
+    </statBases>
+    <equippedStatOffsets>
+      <PsychicSensitivity>0.05</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate>0.033</PsychicEntropyRecoveryRate>
+    </equippedStatOffsets>
+    <costList>
+      <Gold>5</Gold>
+      <Plasteel>50</Plasteel>
+    </costList>
+    <apparel>
+      <tags>
+        <li>PrestigeCombatGear</li>
+      </tags>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/PrestigeMarineHelmet/PrestigeMarineHelmet</wornGraphicPath>
+      <useWornGraphicMask>true</useWornGraphicMask>
+    </apparel>
+  </ThingDef>
+  
+  
+  <!-- Cataphract armor base -->
+  
   <ThingDef Name="ApparelArmorCataphractBase" ParentName="ArmorMachineableBase" Abstract="True">
     <techLevel>Spacer</techLevel>
     <recipeMaker>
@@ -113,17 +212,6 @@
     </comps>
   </ThingDef>
 
-  <ThingDef ParentName="ApparelArmorCataphractBase">
-    <defName>Apparel_ArmorCataphract</defName>
-    <label>cataphract armor</label>
-    <description>A suit of heavy powered armor, built for maximum protection at the cost of mobility. Heavy layered plasteel-weave plates with solid ablative coatings stop all but the most well-aimed or powerful attacks. Neuro-memetic assistors prevent the suit's massive weight from immobilizing the wearer entirely, but the suit is still quite cumbersome.\n\nArmor like this is used by imperial cataphracts to break heavily fortified positions in frontal assaults when no other option is available.</description>
-    <apparel>
-      <tags>
-        <li>RoyalCombatGear</li>
-      </tags>
-    </apparel>
-  </ThingDef>
-
   <ThingDef Name="ApparelArmorHelmetCataphractBase" ParentName="ArmorHelmetMakeableBase" Abstract="True">
     <techLevel>Spacer</techLevel>
     <recipeMaker>
@@ -201,15 +289,78 @@
       <li Class="CompProperties_BiocodableApparel"/>
     </comps>
   </ThingDef>
+  
+  
+  <!-- Cataphract armor -->
+  
+  <ThingDef ParentName="ApparelArmorCataphractBase">
+    <defName>Apparel_ArmorCataphract</defName>
+    <label>cataphract armor</label>
+    <description>A suit of heavy powered armor, built for maximum protection at the cost of mobility. Heavy layered plasteel-weave plates with solid ablative coatings stop all but the most well-aimed or powerful attacks. Neuro-memetic assistors prevent the suit's massive weight from immobilizing the wearer entirely, but the suit is still quite cumbersome.\n\nArmor like this is used by imperial cataphracts to break heavily fortified positions in frontal assaults when no other option is available.</description>
+  </ThingDef>
 
   <ThingDef ParentName="ApparelArmorHelmetCataphractBase">
     <defName>Apparel_ArmorHelmetCataphract</defName>
     <label>cataphract helmet</label>
     <description>A heavily-armored high-tech helmet, with a solid plasteel-weave shell and indirect visual system for non-frontal view angles. It protects against all but the most powerful or luckily-aimed shots.\n\nArmor like this is used by imperial cataphracts to break heavily fortified positions in frontal assaults when no other option is available.</description>
+  </ThingDef>
+  
+  
+  <!-- Prestige cataphract armor -->
+  
+  <ThingDef ParentName="ApparelArmorCataphractBase">
+    <defName>Apparel_ArmorCataphractPrestige</defName>
+    <label>prestige cataphract armor</label>
+    <description>A suit of heavy powered armor, built for maximum protection at the cost of mobility. Heavy layered plasteel-weave plates with solid ablative coatings stop all but the most well-aimed or powerful attacks. Neuro-memetic assistors prevent the suit's massive weight from immobilizing the wearer entirely, but the suit is still quite cumbersome.\n\nExpensive and beautiful, prestige armor like this is usually made for those of high status. Embedded eltex threads also enhance the wearer's psychic sensitivity.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/PrestigeCataphractArmor/PrestigeCataphractArmor</texPath>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <statBases>
+      <WorkToMake>150000</WorkToMake>
+    </statBases>
+    <equippedStatOffsets>
+      <PsychicSensitivity>0.05</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate>0.033</PsychicEntropyRecoveryRate>
+    </equippedStatOffsets>
+    <costList>
+      <Gold>18</Gold>
+      <Plasteel>190</Plasteel>
+    </costList>
     <apparel>
       <tags>
-        <li>RoyalCombatGear</li>
+        <li>PrestigeCombatGear</li>
       </tags>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/PrestigeCataphractArmor/PrestigeCataphractArmor</wornGraphicPath>
+      <useWornGraphicMask>true</useWornGraphicMask>
+    </apparel>
+  </ThingDef>
+
+  <ThingDef ParentName="ApparelArmorHelmetCataphractBase">
+    <defName>Apparel_ArmorHelmetCataphractPrestige</defName>
+    <label>prestige cataphract helmet</label>
+    <description>A heavily-armored high-tech helmet, with a solid plasteel-weave shell and indirect visual system for non-frontal view angles. It protects against all but the most powerful or luckily-aimed shots.\n\nExpensive and beautiful, prestige armor like this is usually made for those of high status. Embedded eltex threads also enhance the wearer's psychic sensitivity.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/PrestigeCataphractHelmet/PrestigeCataphractHelmet</texPath>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <statBases>
+      <WorkToMake>52500</WorkToMake>
+    </statBases>
+    <equippedStatOffsets>
+      <PsychicSensitivity>0.05</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate>0.033</PsychicEntropyRecoveryRate>
+    </equippedStatOffsets>
+    <costList>
+      <Gold>9</Gold>
+      <Plasteel>75</Plasteel>
+    </costList>
+    <apparel>
+      <tags>
+        <li>PrestigeCombatGear</li>
+      </tags>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/PrestigeCataphractHelmet/PrestigeCataphractHelmet</wornGraphicPath>
+      <useWornGraphicMask>true</useWornGraphicMask>
     </apparel>
   </ThingDef>
 </Defs>

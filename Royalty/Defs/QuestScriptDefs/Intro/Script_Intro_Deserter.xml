@@ -16,9 +16,9 @@
     <questDescriptionRules>
       <rulesStrings>
         <li>questDescription->[asker_nameFull], [asker_titleIndef], is calling from nearby. [asker_pronoun] has deserted the army of [asker_factionName] and is being hunted by a loyalty squad. [asker_pronoun] wishes to join you at [map_definite].
-\n[asker_nameDef] knows the location of key outpost containing everything needed to develop secret psychic powers:\n\n[sitePart1_itemStashContents]
+\n[asker_nameDef] knows the location of key outpost containing everything needed to develop psychic powers:\n\n[sitePart1_itemStashContents]
 \nBeware - If you accept [asker_nameDef], you will become an enemy of [asker_factionName]! The pursuing loyalty squad will attack immediately. It is composed of: \n\n[raid/raidPawnKinds]
-\nOnly accept if you wish to fight against [asker_factionName] and develop your psycasters in secret without gaining royal titles. You will have one year to attack the outpost it before it is moved.</li>
+\nOnly accept if you wish to fight against [asker_factionName] and develop your psycasters on your own. You will have one year to attack the outpost it before it is moved.</li>
 
       </rulesStrings>
     </questDescriptionRules>
@@ -55,7 +55,9 @@
           <pawns>$asker</pawns>
           <walkInSpot>$walkInSpot</walkInSpot>
           <joinPlayer>true</joinPlayer>
-          <customLetterText>{BASETEXT}\n\nBecause you accepted [asker_nameDef], [asker_factionName] has become hostile.\n\nThe loyalty squad that is hunting [asker_objective] will arrive soon.</customLetterText>
+          <customLetterText TKey="LetterLabelAskerBecameHostile">{BASETEXT}\n\nBecause you accepted [asker_nameDef], [asker_factionName] has become hostile.\n\nThe loyalty squad that is hunting [asker_objective] will arrive soon.</customLetterText>
+          <isSingleReward>true</isSingleReward>
+          <rewardDetailsHidden>true</rewardDetailsHidden>
         </li>
         
         <!-- Raid -->
@@ -74,8 +76,8 @@
               <enemyFaction>Empire</enemyFaction>
               <points>$raidPoints</points>
               <walkInSpot>$walkInSpot</walkInSpot>
-              <customLetterLabel>{BASELABEL}: Loyalty squad</customLetterLabel>
-              <customLetterText>{BASETEXT}\n\nThis is the loyalty squad that was hunting [../asker_nameFull].
+              <customLetterLabel TKey="LetterLabelLoyaltySquad">{BASELABEL}: Loyalty squad</customLetterLabel>
+              <customLetterText TKey="LetterTextLoyaltySquad">{BASETEXT}\n\nThis is the loyalty squad that was hunting [../asker_nameFull].
               </customLetterText>
             </parms>
           </node>
@@ -84,16 +86,9 @@
         <!-- Site item stash contents -->
         <li Class="QuestNode_SetItemStashContents">
           <items>
-            <li>PsychicSilencer</li>
+            <li>PsychicAmplifier</li>
             <li>PsychicAmplifier</li>
           </items>
-          <categories>
-            <li>
-              <category>NeurotrainersPsycast</category>
-              <allowDuplicates>false</allowDuplicates>
-              <amount>3</amount>
-            </li>
-          </categories>
         </li>
 
         <!-- Imperial site -->
@@ -137,8 +132,8 @@
           <node Class="QuestNode_Sequence">
             <nodes>
               <li Class="QuestNode_Letter">
-                <label>Quest expired: [resolvedQuestName]</label>
-                <text>The key imperial outpost, containing items needed for secret psychic powers, has packed up and moved on.</text>
+                <label TKey="LetterLabelQuestExpired">Quest expired: [resolvedQuestName]</label>
+                <text TKey="LetterTextQuestExpired">The key imperial outpost, containing items needed for secret psychic powers, has packed up and moved on.</text>
               </li>
               <li Class="QuestNode_End">
                 <outcome>Fail</outcome>

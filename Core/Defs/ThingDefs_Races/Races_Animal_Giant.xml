@@ -535,6 +535,9 @@
       <manhunterOnDamageChance>1.00</manhunterOnDamageChance>
       <wildness>0.985</wildness>
       <lifeExpectancy>220</lifeExpectancy>
+      <willNeverEat>
+        <li MayRequire="Ludeon.RimWorld.Royalty">Plant_TreeAnima</li>
+      </willNeverEat>
       <lifeStageAges>
         <li>
           <def>AnimalBaby</def>

@@ -54,7 +54,6 @@
     </graphicData>
     <selectable>true</selectable>
     <pathCost>30</pathCost>
-    <hideAtSnowDepth>1</hideAtSnowDepth>
     <ingestible />
     <plant>
       <fertilityMin>0.05</fertilityMin>
@@ -121,7 +120,7 @@
     <ingestible />
     <plant>
       <growDays>15</growDays>
-      <harvestWork>650</harvestWork>
+      <harvestWork>750</harvestWork>
       <harvestYield>25</harvestYield>
       <wildClusterRadius>6</wildClusterRadius>
       <wildClusterWeight>3</wildClusterWeight>

@@ -14,6 +14,7 @@
   <SaveTranslationReport>Save translation report</SaveTranslationReport>
   <GeneratingTranslationReport>Generating translation report</GeneratingTranslationReport>
   <CleanupTranslationFiles>Cleanup translation files</CleanupTranslationFiles>
+  <TranslationFilesTKeyUpdate>Update translations files (TKey's)</TranslationFilesTKeyUpdate>
   <CleaningTranslationFiles>Cleaning translation files</CleaningTranslationFiles>
   <Credits>Credits</Credits>
   <QuitToMainMenu>Quit to main menu</QuitToMainMenu>
@@ -209,6 +210,7 @@
   <IncapableOfTooltipTrait>Caused by trait: {0}</IncapableOfTooltipTrait>
   <IncapableOfTooltipHediff>Caused by: {0}</IncapableOfTooltipHediff>
   <IncapableOfTooltipWorkTypes>Disabled work types:</IncapableOfTooltipWorkTypes>
+  <IncapableOfTooltipQuest>Caused by quest status: {0}</IncapableOfTooltipQuest>
   <Traits>Traits</Traits>
   <PermanentMoodEffect>Permanent mood effect</PermanentMoodEffect>
   <Skills>Skills</Skills>
@@ -247,5 +249,6 @@
   <GeneratingMapForNewEncounter>Generating map for new encounter</GeneratingMapForNewEncounter>
 
   <ClickForMoreInfo>Click for more info</ClickForMoreInfo>
+  <NoMoreInfoAvailable>No more information is available.</NoMoreInfoAvailable>
 
 </LanguageData>

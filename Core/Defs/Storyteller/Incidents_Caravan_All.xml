@@ -45,10 +45,13 @@
     <workerClass>IncidentWorker_Ambush_ManhunterPack</workerClass>
     <pointsScaleable>true</pointsScaleable>
     <minRefireDays>0.17</minRefireDays>
-    <letterText>{0} has been ambushed by manhunting {1}!</letterText>
+    <letterText>{0} has been ambushed by scaria-infected manhunting {1}!</letterText>
     <letterLabel>Caravan ambushed (manhunters)</letterLabel>
     <letterDef>ThreatBig</letterDef>
     <tale>CaravanAmbushedByManhunter</tale>
+    <letterHyperlinkHediffDefs>
+      <li>Scaria</li>
+    </letterHyperlinkHediffDefs>
     <mtbDaysByBiome>
       <TemperateForest>20</TemperateForest>
       <BorealForest>20</BorealForest>

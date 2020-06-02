@@ -88,6 +88,11 @@
   </ShaderTypeDef>
 
   <ShaderTypeDef>
+    <defName>PsyfocusMeditationPulse</defName>
+    <shaderPath>Map/PsyfocusMeditationPulse</shaderPath>
+  </ShaderTypeDef>
+
+  <ShaderTypeDef>
     <defName>MoteProximityScannerRadius</defName>
     <shaderPath>Map/MoteProximityScannerRadius</shaderPath>
   </ShaderTypeDef>

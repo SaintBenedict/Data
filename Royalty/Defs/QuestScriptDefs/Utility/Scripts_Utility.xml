@@ -24,10 +24,11 @@
               <storeAs>asker</storeAs>
               <mustBeFactionLeader>true</mustBeFactionLeader>
               <mustBeNonHostileToPlayer>$askerMustBeNonHostileToPlayer</mustBeNonHostileToPlayer>
-              <ifWorldPawnThenMustBeFree>$ifWorldPawnThenMustBeFree</ifWorldPawnThenMustBeFree>
+              <ifWorldPawnThenMustBeFreeOrLeader>$ifWorldPawnThenMustBeFreeOrLeader</ifWorldPawnThenMustBeFreeOrLeader>
               <excludeFactionDefs>$excludeFactionDefs</excludeFactionDefs>
             </li>
             <li Class="QuestNode_Sequence">
+              <selectionWeight>0.6</selectionWeight>
               <nodes>
                 <li Class="QuestNode_IsSet">
                   <name>askerSeniorityRange</name>
@@ -37,7 +38,6 @@
                   </elseNode>
                 </li>
                 <li Class="QuestNode_GetPawn">
-                  <selectionWeight>0.6</selectionWeight>
                   <storeAs>asker</storeAs>
                   <mustHaveRoyalTitleInCurrentFaction>true</mustHaveRoyalTitleInCurrentFaction>
                   <mustBeNonHostileToPlayer>$askerMustBeNonHostileToPlayer</mustBeNonHostileToPlayer>

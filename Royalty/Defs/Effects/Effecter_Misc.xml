@@ -49,6 +49,68 @@
         <spawnLocType>OnSource</spawnLocType>
       </li>
     </children>
-  </EffecterDef>  
+  </EffecterDef>
+
+  <EffecterDef>
+    <defName>Interceptor_BlockedProjectilePsychic</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_SoundTriggered</subEffecterClass>
+        <soundDef>Interceptor_BlockProjectile</soundDef>
+        <spawnLocType>OnSource</spawnLocType>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <moteDef>Mote_PsycastSkipEffect</moteDef>
+        <positionRadius>0.1</positionRadius>
+        <burstCount>1</burstCount>
+        <scale>0.5~0.75</scale>
+        <spawnLocType>OnSource</spawnLocType>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <moteDef>Mote_ExplosionFlash</moteDef>
+        <burstCount>1~1</burstCount>
+        <scale>3.0~3.0</scale>
+        <spawnLocType>OnSource</spawnLocType>
+      </li>
+    </children>
+  </EffecterDef>
+
+  <EffecterDef>
+    <defName>BulletShieldGenerator_Reactivate</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_SoundTriggered</subEffecterClass>
+        <soundDef>BulletShieldGenerator_Reactivate</soundDef>
+        <spawnLocType>OnSource</spawnLocType>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <moteDef>Mote_GrowingFlash</moteDef>
+        <burstCount>1~1</burstCount>
+        <scale>0~0</scale>
+        <spawnLocType>OnSource</spawnLocType>
+      </li>
+    </children>
+  </EffecterDef>
+  
+  <EffecterDef>
+    <defName>MortarShieldGenerator_Reactivate</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_SoundTriggered</subEffecterClass>
+        <soundDef>MortarShieldGenerator_Reactivate</soundDef>
+        <spawnLocType>OnSource</spawnLocType>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <moteDef>Mote_GrowingFlash</moteDef>
+        <burstCount>1~1</burstCount>
+        <scale>0~0</scale>
+        <spawnLocType>OnSource</spawnLocType>
+      </li>
+    </children>
+  </EffecterDef>
   
 </Defs>

@@ -5,8 +5,8 @@
     <defName>TradeRequest</defName>
     <rootSelectionWeight>1.1</rootSelectionWeight>
     <rootMinProgressScore>8</rootMinProgressScore>
-    <autoAccept>true</autoAccept>
     <defaultChallengeRating>1</defaultChallengeRating>
+    <expireDaysRange>4~8</expireDaysRange>
     <questNameRules>
       <rulesStrings>
         <li>questName->Caravan to [settlement_label]</li>
@@ -27,7 +27,6 @@
       <rulesStrings>
         <li>questDescription->A nearby settlement, [settlement_label], has a special trade request. They would like to purchase:
 \n  [requestedThingCount]x [requestedThing_label] [qualityInfo](worth [requestedThingMarketValue_money])
-\nIn return, [allRewardsDescriptions]
 \nIf you want to make the trade, send a caravan with the requested items. The estimated travel time is [estimatedTravelTime_duration].</li>
         <li>qualityInfo(requestedThingHasQuality==True,priority=1)->of normal+ quality </li>
         <li>qualityInfo-></li>
@@ -49,8 +48,8 @@
         </li>
         <li Class="QuestNode_Letter">
           <inSignal>faction.BecameHostileToPlayer</inSignal>
-          <label>Quest failed: [resolvedQuestName]</label>
-          <text>[faction_name] became hostile to you.</text>
+          <label TKey="LetterLabelQuestFailed">Quest failed: [resolvedQuestName]</label>
+          <text TKey="LetterTextQuestFailed">[faction_name] became hostile to you.</text>
         </li>
         <li Class="QuestNode_End">
           <inSignal>faction.BecameHostileToPlayer</inSignal>
@@ -119,8 +118,8 @@
           <useDifficultyFactor>false</useDifficultyFactor> <!-- we only care about requested total market value -->
           <nodeIfChosenPawnSignalUsed Class="QuestNode_Letter">
             <letterDef>ChoosePawn</letterDef>
-            <label>[asker_faction_royalFavorLabel]</label>
-            <text>Who should be credited with [asker_faction_royalFavorLabel] for fulfilling the trade request?</text>
+            <label TKey="LetterLabelFavorReceiver">[asker_faction_royalFavorLabel]</label>
+            <text TKey="LetterTextFavorReceiver">Who should be credited with [asker_faction_royalFavorLabel] for fulfilling the trade request?</text>
             <chosenPawnSignal>ChosenPawnForReward</chosenPawnSignal>
             <useColonistsFromCaravanArg>true</useColonistsFromCaravanArg>
           </nodeIfChosenPawnSignalUsed>

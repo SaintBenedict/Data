@@ -14,6 +14,7 @@
     <workTags>
       <li>Firefighting</li>
       <li>Commoner</li>
+      <li>AllWork</li>
     </workTags>
   </WorkTypeDef>
 
@@ -42,6 +43,7 @@
     <workTags>
       <li>Caring</li>
       <li>Commoner</li>
+      <li>AllWork</li>
     </workTags>
   </WorkTypeDef>
 
@@ -67,6 +69,7 @@
     <alwaysStartActive>true</alwaysStartActive>
     <workTags>
       <li>Commoner</li>
+      <li>AllWork</li>
     </workTags>
   </WorkTypeDef>
 
@@ -84,6 +87,7 @@
     </relevantSkills>
     <workTags>
       <li>Social</li>
+      <li>AllWork</li>
     </workTags>
   </WorkTypeDef>
 
@@ -101,6 +105,7 @@
     <workTags>
       <li>Animals</li>
       <li>Commoner</li>
+      <li>AllWork</li>
     </workTags>
   </WorkTypeDef>
 
@@ -119,6 +124,7 @@
       <li>Cooking</li>
       <li>ManualSkilled</li>
       <li>Commoner</li>
+      <li>AllWork</li>
     </workTags>
   </WorkTypeDef>
 
@@ -136,8 +142,9 @@
     </relevantSkills>
     <workTags>
       <li>Violent</li>
-      <li>Hunting</li>
+      <li>Hunting</li>  
       <li>Commoner</li>
+      <li>AllWork</li>
     </workTags>
   </WorkTypeDef>
 
@@ -156,6 +163,7 @@
     <workTags>
       <li>ManualSkilled</li>
       <li>Commoner</li>
+      <li>AllWork</li>
     </workTags>
   </WorkTypeDef>
 
@@ -175,6 +183,7 @@
       <li>ManualSkilled</li>
       <li>PlantWork</li>
       <li>Commoner</li>
+      <li>AllWork</li>
     </workTags>
   </WorkTypeDef>
 
@@ -194,8 +203,9 @@
       <li>ManualSkilled</li>
       <li>Mining</li>
       <li>Commoner</li>
+      <li>AllWork</li>
     </workTags>
-  </WorkTypeDef>
+  </WorkTypeDef>>
 
   <WorkTypeDef>
     <defName>PlantCutting</defName>
@@ -213,6 +223,7 @@
       <li>ManualSkilled</li>
       <li>PlantWork</li>
       <li>Commoner</li>
+      <li>AllWork</li>
     </workTags>
   </WorkTypeDef>
 
@@ -231,6 +242,7 @@
       <li>Crafting</li>
       <li>ManualSkilled</li>
       <li>Commoner</li>
+      <li>AllWork</li>
     </workTags>
   </WorkTypeDef>
 
@@ -249,6 +261,7 @@
       <li>Crafting</li>
       <li>ManualSkilled</li>
       <li>Commoner</li>
+      <li>AllWork</li>
     </workTags>
   </WorkTypeDef>
 
@@ -266,6 +279,7 @@
     <workTags>
       <li>Artistic</li>
       <li>Commoner</li>
+      <li>AllWork</li>
     </workTags>
   </WorkTypeDef>
 
@@ -285,6 +299,7 @@
       <li>Crafting</li>
       <li>ManualSkilled</li>
       <li>Commoner</li>
+      <li>AllWork</li>
     </workTags>
   </WorkTypeDef>
 
@@ -302,6 +317,7 @@
       <li>ManualDumb</li>
       <li>Hauling</li>
       <li>Commoner</li>
+      <li>AllWork</li>
     </workTags>
   </WorkTypeDef>
 
@@ -319,6 +335,7 @@
       <li>ManualDumb</li>
       <li>Cleaning</li>
       <li>Commoner</li>
+      <li>AllWork</li>
     </workTags>
   </WorkTypeDef>
 
@@ -336,6 +353,7 @@
     <workTags>
       <li>Intellectual</li>
       <li>Commoner</li>
+      <li>AllWork</li>
     </workTags>
   </WorkTypeDef>
 

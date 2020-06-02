@@ -50,6 +50,9 @@
     <defName>ManhunterPermanent</defName>
     <minTicksBeforeRecovery>99999999</minTicksBeforeRecovery>
     <unspawnedCanDo>true</unspawnedCanDo>
+    <recoverFromSleep>false</recoverFromSleep>
+    <recoverFromDowned>false</recoverFromDowned>
+    <recoverFromCollapsingExhausted>false</recoverFromCollapsingExhausted>
   </MentalStateDef>
 
   <MentalStateDef ParentName="BaseMentalState">

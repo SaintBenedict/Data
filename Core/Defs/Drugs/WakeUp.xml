@@ -4,13 +4,11 @@
   <ThingDef ParentName="MakeableDrugPillBase">
     <defName>WakeUp</defName>
     <label>wake-up</label>
-    <description>A synthetic stimulant. Wake-up fills the user's need for rest, and allows users to work for extended periods without getting tired. However, repeated use will produce an addiction which reduces mental performance and can even generate psychotic breaks.\n\nIn the most competitive universities and companies of many worlds, high-flying achievers are known for occasionally breaking down into psychosis due to wake-up addiction.</description>
+    <description>A synthetic stimulant. Wake-up fills the user's need for rest, allowing them to work for extended periods without getting tired. However, taking wake-up runs the risk of developing an addiction.\n\nIn the most competitive universities and companies of many worlds, high-achievers are sometimes called 'wake-ups' because of the association with this drug.</description>
     <descriptionHyperlinks>
       <HediffDef>WakeUpHigh</HediffDef>
-      <HediffDef>WakeUpTolerance</HediffDef>
       <HediffDef>WakeUpAddiction</HediffDef>
       <HediffDef>HeartAttack</HediffDef>
-      <HediffDef>ChemicalDamageModerate</HediffDef>
     </descriptionHyperlinks>
     <graphicData>
       <texPath>Things/Item/Drug/WakeUp</texPath>
@@ -38,11 +36,6 @@
           <offset>1.0</offset>
           <toleranceChemical>WakeUp</toleranceChemical>
         </li>
-        <li Class="IngestionOutcomeDoer_GiveHediff">
-          <hediffDef>WakeUpTolerance</hediffDef>
-          <severity>0.045</severity>
-          <divideByBodySize>true</divideByBodySize>
-        </li>
       </outcomeDoers>
     </ingestible>
     <recipeMaker>
@@ -57,13 +50,12 @@
     <comps>
       <li Class="CompProperties_Drug">
         <chemical>WakeUp</chemical>
-        <addictiveness>0.10</addictiveness>
-        <minToleranceToAddict>0.08</minToleranceToAddict>
+        <addictiveness>0.02</addictiveness>
         <existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
-        <needLevelOffset>1</needLevelOffset>
+        <needLevelOffset>0.9</needLevelOffset>
         <listOrder>210</listOrder>
         <overdoseSeverityOffset>0.18~0.35</overdoseSeverityOffset>
-        <largeOverdoseChance>0.01</largeOverdoseChance>
+        <largeOverdoseChance>0.005</largeOverdoseChance>
       </li>
     </comps>
   </ThingDef>
@@ -72,8 +64,8 @@
     <defName>WakeUpHigh</defName>
     <label>high on wake-up</label>
     <labelNoun>a wake-up high</labelNoun>
-    <description>Wake-up in the bloodstream. Fills the need for rest by stimulating the brain.</description>
-    <hediffClass>HediffWithComps</hediffClass>
+    <description>Wake-up in the bloodstream. It fills the need for rest by stimulating the brain, and increases focus, allowing faster work. It also increases the psyfocus gains from meditation.</description>
+    <hediffClass>Hediff_High</hediffClass>
     <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
     <scenarioCanAdd>true</scenarioCanAdd>
     <maxSeverity>1.0</maxSeverity>
@@ -81,6 +73,7 @@
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
         <severityPerDay>-1.5</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
       </li>
     </comps>
       <stages>
@@ -98,6 +91,7 @@
           </capMods>
           <statOffsets>
             <WorkSpeedGlobal>0.5</WorkSpeedGlobal>
+            <MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">0.4</MeditationFocusGain>
           </statOffsets>
           <hediffGivers>
             <li Class="HediffGiver_Random">
@@ -118,8 +112,6 @@
     <defName>WakeUp</defName>
     <label>wake-up</label>
     <addictionHediff>WakeUpAddiction</addictionHediff>
-    <toleranceHediff>WakeUpTolerance</toleranceHediff>
-    <onGeneratedAddictedToleranceChance>0.8</onGeneratedAddictedToleranceChance>
   </ChemicalDef>
   
   <NeedDef ParentName="DrugAddictionNeedBase">
@@ -127,32 +119,9 @@
     <needClass>Need_Chemical</needClass>
     <label>wake-up</label>
     <description>Because of an wake-up addiction, this person needs to regularly consume the drug to avoid withdrawal symptoms.</description>
+    <fallPerDay>0.333</fallPerDay>
     <listPriority>40</listPriority>
   </NeedDef>
-
-  <HediffDef ParentName="DrugToleranceBase">
-    <defName>WakeUpTolerance</defName>
-    <label>wake-up tolerance</label>
-    <description>A built-up tolerance to wake-up. The more severe this tolerance is, the more wake-up it takes to get the same effect.</description>
-    <comps>
-      <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-0.015</severityPerDay>
-      </li>
-      <li Class="HediffCompProperties_DrugEffectFactor">
-        <chemical>WakeUp</chemical>
-      </li>
-    </comps>
-    <hediffGivers>
-      <li Class="HediffGiver_RandomDrugEffect">
-        <hediff>ChemicalDamageModerate</hediff>
-        <minSeverity>0.50</minSeverity>
-        <baseMtbDays>120</baseMtbDays>
-        <partsToAffect>
-          <li>Brain</li>
-        </partsToAffect>
-      </li>
-    </hediffGivers>
-  </HediffDef>
   
   <HediffDef ParentName="AddictionBase">
     <defName>WakeUpAddiction</defName>
@@ -163,7 +132,8 @@
     <causesNeed>Chemical_WakeUp</causesNeed>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-0.0333</severityPerDay>
+        <severityPerDay>-0.045</severityPerDay>
+        <showDaysToRecover>true</showDaysToRecover>
       </li>
     </comps>
     <stages>
@@ -176,7 +146,7 @@
         <capMods>
           <li>
             <capacity>Consciousness</capacity>
-            <offset>-0.50</offset>
+            <offset>-0.30</offset>
           </li>
           <li>
             <capacity>Manipulation</capacity>
@@ -213,9 +183,34 @@
       <li>
         <label>wake-up withdrawal</label>
         <description>I feel all fuzzy and unfocused. And I'm so tired.</description>
-        <baseMoodEffect>-35</baseMoodEffect>
+        <baseMoodEffect>-22</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>
-  
+
+  <HediffDef ParentName="DrugToleranceBase">
+    <defName>WakeUpTolerance</defName>
+    <label>wake-up tolerance</label>
+    <description>A built-up tolerance to wake-up. The more severe this tolerance is, the more wake-up it takes to get the same effect.</description>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.015</severityPerDay>
+      </li>
+      <li Class="HediffCompProperties_DrugEffectFactor">
+        <chemical>WakeUp</chemical>
+      </li>
+    </comps>
+    <hediffGivers>
+      <li Class="HediffGiver_RandomDrugEffect">
+        <hediff>ChemicalDamageModerate</hediff>
+        <minSeverity>0.50</minSeverity>
+        <baseMtbDays>120</baseMtbDays>
+        <partsToAffect>
+          <li>Brain</li>
+        </partsToAffect>
+      </li>
+    </hediffGivers>
+  </HediffDef>
+
+
 </Defs>

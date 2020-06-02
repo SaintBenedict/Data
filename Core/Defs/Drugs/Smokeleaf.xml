@@ -90,7 +90,7 @@
         <addictiveness>0.020</addictiveness>
         <minToleranceToAddict>0.15</minToleranceToAddict>
         <existingAddictionSeverityOffset>0.06</existingAddictionSeverityOffset>
-        <needLevelOffset>1</needLevelOffset>
+        <needLevelOffset>0.9</needLevelOffset>
         <listOrder>20</listOrder>
       </li>
     </comps>
@@ -101,7 +101,7 @@
     <label>stoned on smokeleaf</label>
     <labelNoun>a smokeleaf high</labelNoun>
     <description>Smokeleaf's active chemical in the bloodstream. Generates a soft feeling of fuzzy well-being.</description>
-    <hediffClass>HediffWithComps</hediffClass>
+    <hediffClass>Hediff_High</hediffClass>
     <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
     <scenarioCanAdd>true</scenarioCanAdd>
     <maxSeverity>1.0</maxSeverity>
@@ -109,6 +109,7 @@
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
         <severityPerDay>-1.0</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
       </li>
     </comps>
       <stages>
@@ -205,6 +206,7 @@
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
         <severityPerDay>-0.0333</severityPerDay>
+        <showDaysToRecover>true</showDaysToRecover>
       </li>
     </comps>
     <stages>

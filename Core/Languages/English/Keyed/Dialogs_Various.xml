@@ -221,7 +221,26 @@
   <AnimalFilthRateExplanation>Animals produce filth when moving around on constructed floors.\n\nThis is the average amount of such filth produced per {0} cells walked by this creature.\n\nLarger or less pet-like animals produce more filth.</AnimalFilthRateExplanation>
   <TimeRecordsCategory>Time</TimeRecordsCategory>
   <MiscRecordsCategory>Misc</MiscRecordsCategory>
-  <Addictiveness>Addictiveness</Addictiveness>
+  <Chemical>Chemical</Chemical>
+  <HighGain>High gain per dose</HighGain>
+  <HighFallRate>High fall rate</HighFallRate>
+  <HighDuration>High duration per dose</HighDuration>
+  <ToleranceGain>Tolerance gain per dose</ToleranceGain>
+  <ToleranceFallRate>Tolerance fall rate</ToleranceFallRate>
+  <MinimumToleranceForAddiction>New addiction min tolerance</MinimumToleranceForAddiction>
+  <SafeDoseInterval>Safe dose interval</SafeDoseInterval>
+  <Addictiveness>New addiction chance</Addictiveness>
+  <AddictionSeverityInitial>Addiction initial severity</AddictionSeverityInitial>
+  <AddictionSeverityPerDose>Addiction severity per dose</AddictionSeverityPerDose>
+  <AddictionNeedOffset>Addiction need fill per dose</AddictionNeedOffset>
+  <AddictionNeedFallRate>Addiction need fall rate</AddictionNeedFallRate>
+  <AddictionNeedDoseInterval>Addiction need dose interval</AddictionNeedDoseInterval>
+  <AddictionRecoveryTime>Addiction recovery time</AddictionRecoveryTime>
+  <AddictionCost>Addiction cost</AddictionCost>
+  <RandomODChance>Random overdose chance</RandomODChance>
+  <AlwaysSafe>Always safe</AlwaysSafe>
+  <NeverSafe>Never safe</NeverSafe>
+  <PerDay>{0} / day</PerDay>
   <PackAnimal>Pack animal</PackAnimal>
   <PackAnimalExplanation>Whether this animal is appropriate to use to carry items in a caravan over long distances.</PackAnimalExplanation>
   <Skill>Skill</Skill>
@@ -252,6 +271,18 @@
   <TargetGround>ground</TargetGround>
   <ClickToLearnMore>Click to learn more.</ClickToLearnMore>
   <ClickToViewFactions>Click to view factions.</ClickToViewFactions>
+  <MeditationFocuses>meditation focus types</MeditationFocuses>
+  <MeditationFocusesUnlocked>Unlocks meditation focus types</MeditationFocusesUnlocked>
+  <MeditationFocusesPawnDesc>The types of meditation focus this person can use. When meditating, a person can focus on an obejct to boost their psyfocus gain - but only if that object offers a focus type they can use. Each person's meditation types are determined by their background, traits, social position, and so on.</MeditationFocusesPawnDesc>
+  <MeditationFocusesDesc>The types of meditation focus this object offers. A meditating person can focus on this object to boost their psyfocus gain, but only if they are able to use one of its meditation types. Each person can use different meditation types depending on their background, traits, social position, and so on.</MeditationFocusesDesc>
+  <MeditationFocusCanUse>Can use {0} focus type because</MeditationFocusCanUse>
+  <MeditationFocusObjects>{0} focus objects</MeditationFocusObjects>
+  <MeditationFocusEnabledByTitle>holds title: {TITLE} ({FACTION_name}).</MeditationFocusEnabledByTitle>
+  <MeditationFocusEnabledByChildhood>has childhood</MeditationFocusEnabledByChildhood>
+  <MeditationFocusEnabledByAdulthood>has adulthood</MeditationFocusEnabledByAdulthood>
+  <MeditationFocusEnabledByTrait>has trait</MeditationFocusEnabledByTrait>
+  <MeditationFocusDisabledByTrait>does not have trait</MeditationFocusDisabledByTrait>
+  <EnablesMeditationFocusType>Enables meditation focus types</EnablesMeditationFocusType>
   
   <!-- Trade -->
   <PositiveBuysNegativeSells>Positive numbers buy.\nNegative numbers sell.</PositiveBuysNegativeSells>
@@ -332,7 +363,9 @@
   <ItemNutritionTip>How much nutrition this food provides.\n\nFor reference: adult person needs {0} nutrition per day.</ItemNutritionTip>
   <AnimalCanGrazeTip>This animal can graze food from the environment instead of eating carried food. Grazing is only possible in some biomes and temperature ranges.</AnimalCanGrazeTip>
   <NutritionForagedPerDayTip>Nutrition foraged per day. The actual amount foraged is also affected by biome forageability.\n\n{0}</NutritionForagedPerDayTip>
-  <NutritionEatenPerDayTip>Nutrition eaten per day. For reference, simple meals have {0} nutrition.\n\nCan eat: {2}\n\nLegend:\n{1}</NutritionEatenPerDayTip>
+  <NutritionEatenPerDayTip>Nutrition eaten per day. For reference, simple meals have {0} nutrition.</NutritionEatenPerDayTip>
+  <CanEat>Can eat</CanEat>
+  <Legend>Legend</Legend>
   <MassCarriedSimple>Mass carried</MassCarriedSimple>
   <MassCapacity>Mass capacity</MassCapacity>
   <Mass>Mass</Mass>
@@ -499,12 +532,15 @@
 
   <!-- Abilities -->
   <AbilityRequiresLOS>Line of sight required</AbilityRequiresLOS>
-  <AbilityEntropyGain>Entropy gain </AbilityEntropyGain>
+  <AbilityEntropyGain>Neural heat gain</AbilityEntropyGain>
+  <AbilityPsyfocusCost>Psyfocus cost</AbilityPsyfocusCost>
   <AbilityDuration>Effect duration</AbilityDuration>
   <AbilityEffectRadius>Effect radius</AbilityEffectRadius>
   <AbilityCastingTime>Casting time</AbilityCastingTime>
   <AbilityCannotHitTarget>No line of sight to target.</AbilityCannotHitTarget>
   <AbilityOccupiedCells>{0} must target an empty area.</AbilityOccupiedCells>
   <AbilityUnwalkable>{0} must target a walkable area.</AbilityUnwalkable>
+  <AbilityRoofed>{0} must target an unroofed area.</AbilityRoofed>
+  <AbilityCantApplyToMentallyBroken>{0} is mentally broken.</AbilityCantApplyToMentallyBroken>
   
 </LanguageData>

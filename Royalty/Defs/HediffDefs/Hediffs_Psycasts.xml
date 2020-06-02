@@ -1,12 +1,106 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
+  <ThingDef ParentName="BodyPartRoyalBase">
+    <defName>PsychicAmplifier</defName>
+    <label>psylink neuroformer</label>
+    <description>A consumable archotech-created device that forms or upgrades a psylink in the user's mind.\n\nThe user presses the device over the eyes, where it links to the brain directly and restructures part of it. Afterwards, the device disintegrates into worthless ash.</description>
+    <descriptionHyperlinks><HediffDef>PsychicAmplifier</HediffDef></descriptionHyperlinks>
+    <statBases>
+      <MarketValue>1200</MarketValue>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Item/Special/PsylinkNeuroformer</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(1,1,1)</color>
+    </graphicData>
+    <thingSetMakerTags Inherit="False" />
+    <comps>
+      <li Class="CompProperties_Usable">
+        <compClass>CompUsableImplant</compClass>
+        <useJob>UseItem</useJob>
+        <useLabel>Use neuroformer to form psylink</useLabel>
+      </li>
+      <li Class="CompProperties_UseEffectInstallImplant">
+        <hediffDef>PsychicAmplifier</hediffDef>
+        <bodyPart>Brain</bodyPart>
+        <canUpgrade>true</canUpgrade>
+      </li>
+      <li Class="CompProperties_UseEffectPlaySound">
+        <soundOnUsed>MechSerumUsed</soundOnUsed>
+      </li>
+      <li Class="CompProperties_UseEffect">
+        <compClass>CompUseEffect_DestroySelf</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>PsychicAmplifier</defName>
+    <hediffClass>Hediff_Psylink</hediffClass>
+    <descriptionHyperlinks><ThingDef>PsychicAmplifier</ThingDef></descriptionHyperlinks>
+    <label>psylink</label>
+    <description>An organic connection to a larger psychic field. This allows a person to use specific psycasts that they have learned to influence reality in ways that seem impossible.\n\nHigher levels of psylink permit the use of more powerful psycasts. Regardless of psylink level, a person can only use specific psycasts that they have learned.\n\nPsylink comes from a variety of sources. Single-use psylink neuroformer devices can create a psylink. Tribal peoples also know how to develop it through ritual linking with psychically-connected lifeforms.\n\nAs a physical phenomenon in the brain, psylink is poorly-understood by scientists, not least because it seems to actively conceal itself if studied too closely. One thing most agree on is that it somehow connects people to archotechs and harnesses their power, possibly through some sort of negotiation or sympathy mechanism.</description>
+    <initialSeverity>1</initialSeverity> <!-- Severity is bound to level of implant -->
+    <minSeverity>0</minSeverity>
+    <maxSeverity>6</maxSeverity>
+    <stages>
+      <li>
+        <minSeverity>1</minSeverity>
+        <statFactors>
+          <PsychicEntropyMax>1.0</PsychicEntropyMax>
+          <PsychicEntropyRecoveryRate>1</PsychicEntropyRecoveryRate>
+        </statFactors>
+      </li>
+      <li>
+        <minSeverity>2</minSeverity>
+        <statFactors>
+          <PsychicEntropyMax>1.3334</PsychicEntropyMax>
+          <PsychicEntropyRecoveryRate>1.125</PsychicEntropyRecoveryRate>
+        </statFactors>
+      </li>
+      <li>
+        <minSeverity>3</minSeverity>
+        <statFactors>
+          <PsychicEntropyMax>1.6667</PsychicEntropyMax>
+          <PsychicEntropyRecoveryRate>1.25</PsychicEntropyRecoveryRate>
+        </statFactors>
+      </li>
+      <li>
+        <minSeverity>4</minSeverity>
+        <statFactors>
+          <PsychicEntropyMax>2.0</PsychicEntropyMax>
+          <PsychicEntropyRecoveryRate>1.375</PsychicEntropyRecoveryRate>
+        </statFactors>
+      </li>
+      <li>
+        <minSeverity>5</minSeverity>
+        <statFactors>
+          <PsychicEntropyMax>2.3334</PsychicEntropyMax>
+          <PsychicEntropyRecoveryRate>1.5</PsychicEntropyRecoveryRate>
+        </statFactors>
+      </li>
+      <li>
+        <minSeverity>6</minSeverity>
+        <statFactors>
+          <PsychicEntropyMax>2.6667</PsychicEntropyMax>
+          <PsychicEntropyRecoveryRate>1.625</PsychicEntropyRecoveryRate>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
   
   <HediffDef ParentName="DiseaseBase">
     <defName>PsychicEntropy</defName>
-    <label>psychic entropy</label>
-    <description>Chaotic psychic energy built up in the mind. Entropy falls over time. After it clears, it leaves a psychic hangover for several days. If psychic entropy becomes very high, it can cause psychosis, long-term psychic breakdown, destruction of psychic amplifiers, and even brain damage.</description>
+    <label>neural heat</label>
+    <description>Despite being called "heat", neural heat is not a measure of temperature. It refers to a type of chaotic psychic energy in the mind which is built up when using psycasts and dissipates over the course of a few seconds or minutes.\n\nIf neural heat is pushed past normal limits, it may cause temporary psychic breakdown, psylink degradation and finally unconsciousness due to psychic shock. None of these conditions cause permanent damage, but they can knock someone unconscious for days.</description>
     <isBad>true</isBad>
+    <descriptionHyperlinks>
+      <HediffDef>PsychicBreakdown</HediffDef>
+      <HediffDef>PsychicShock</HediffDef>
+    </descriptionHyperlinks>
     <comps>
+      <li Class="HediffCompProperties_DisappearsOnDeath"/>
       <li Class="HediffCompProperties_SeverityFromEntropy" />
       <li Class="HediffCompProperties_ChangeImplantLevel">
         <implant>PsychicAmplifier</implant>
@@ -16,32 +110,20 @@
             <mtbDays>-1</mtbDays>
           </li>
           <li>
-            <mtbDays>1</mtbDays>
-            <minIntervalDays>0.5</minIntervalDays>
+            <mtbDays>-1</mtbDays>
           </li>
           <li>
-            <mtbDays>0.75</mtbDays>
-            <minIntervalDays>0.375</minIntervalDays>
+            <mtbDays>-1</mtbDays>
           </li>
           <li>
             <mtbDays>0.5</mtbDays>
-            <minIntervalDays>0.25</minIntervalDays>
+            <minIntervalDays>0.5</minIntervalDays>
           </li>
           <li>
             <mtbDays>0.25</mtbDays>
-            <minIntervalDays>0.125</minIntervalDays>
+            <minIntervalDays>0.25</minIntervalDays>
           </li>
         </probabilityPerStage>
-      </li>
-      <li Class="HediffCompProperties_DamageBrain">
-        <mtbDaysPerStage>
-          <li>-1</li>
-          <li>-1</li>
-          <li>-1</li>
-          <li>0.5</li>
-          <li>0.25</li>
-        </mtbDaysPerStage>
-        <damageAmount>1~3</damageAmount>
       </li>
     </comps>
     <stages>
@@ -52,15 +134,9 @@
       <li>
         <minSeverity>1.0</minSeverity>
         <label>overloaded</label>
-        <mentalStateGivers>
-          <li>
-            <mentalState>Wander_Psychotic_Short</mentalState>
-            <mtbDays>0.208</mtbDays>
-          </li>
-        </mentalStateGivers>
         <hediffGivers>
           <li Class="HediffGiver_AddSeverity">
-            <hediff>PsychicBreakdown</hediff>
+            <hediff>PsychicBreakdown</hediff> <!-- bear in mind that when you go to a high level you also have to fall through the lower ones -->
             <severityAmount>2</severityAmount>
             <mtbHours>2</mtbHours>
           </li>
@@ -68,13 +144,7 @@
       </li>
       <li>
         <minSeverity>1.33</minSeverity>
-        <label>hyperloaded</label>
-        <mentalStateGivers>
-          <li>
-            <mentalState>Wander_Psychotic_Short</mentalState>
-            <mtbDays>0.1666</mtbDays>
-          </li>
-        </mentalStateGivers>
+        <label>very overloaded</label>
         <hediffGivers>
           <li Class="HediffGiver_AddSeverity">
             <hediff>PsychicBreakdown</hediff>
@@ -85,13 +155,7 @@
       </li>
       <li>
         <minSeverity>1.66</minSeverity>
-        <label>brain charring</label>
-        <mentalStateGivers>
-          <li>
-            <mentalState>Wander_Psychotic_Short</mentalState>
-            <mtbDays>0.125</mtbDays>
-          </li>
-        </mentalStateGivers>
+        <label>extreme</label>
         <hediffGivers>
           <li Class="HediffGiver_AddSeverity">
             <hediff>PsychicBreakdown</hediff>
@@ -102,13 +166,7 @@
       </li>
       <li>
         <minSeverity>2.0</minSeverity>
-        <label>brain roasting</label>
-        <capMods>
-          <li>
-            <capacity>Consciousness</capacity>
-            <postFactor>0.1</postFactor>
-          </li>
-        </capMods>
+        <label>overwhelming</label>
         <hediffGivers>
           <li Class="HediffGiver_Refresh">
             <hediff>PsychicShock</hediff>
@@ -126,26 +184,27 @@
   <HediffDef ParentName="DiseaseBase">
     <defName>PsychicBreakdown</defName>
     <label>psychic breakdown</label>
-    <description>Long-term psychic destabilization of the mind, usually caused by excessive psychic entropy. Even when the entropy clears, the breakdown can last for many days, causing mental disturbances of various kinds.</description>
+    <description>Deep psychic destabilization of the mind. Psychic breakdown last for days, causing mental disturbances of various kinds. It resolves itself with time.</description>
     <isBad>true</isBad>
     <initialSeverity>0</initialSeverity>
+    <maxSeverity>15</maxSeverity>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
         <severityPerDay>-1.0</severityPerDay>
         <showDaysToRecover>true</showDaysToRecover>
       </li>
+      <li Class="HediffCompProperties_DisappearsOnDeath"/>
     </comps>
     <stages>
       <li>
-        <minSeverity>0.01</minSeverity>
         <label>minor</label>
         <capMods>
           <li>
             <capacity>Consciousness</capacity>
-            <offset>-0.2</offset>
+            <offset>-0.25</offset>
           </li>
         </capMods>
-        <mentalBreakMtbDays>3</mentalBreakMtbDays>
+        <mentalBreakMtbDays>5</mentalBreakMtbDays>
         <allowedMentalBreakIntensities>
           <li>Minor</li>
         </allowedMentalBreakIntensities>
@@ -156,30 +215,24 @@
         <capMods>
           <li>
             <capacity>Consciousness</capacity>
-            <offset>-0.3</offset>
+            <offset>-0.5</offset>
           </li>
         </capMods>
-        <mentalBreakMtbDays>3</mentalBreakMtbDays>
+        <mentalBreakMtbDays>5</mentalBreakMtbDays>
         <allowedMentalBreakIntensities>
           <li>Minor</li>
           <li>Major</li>
         </allowedMentalBreakIntensities>
       </li>
       <li>
-        <minSeverity>12.0</minSeverity>
+        <minSeverity>10.0</minSeverity>
         <label>total</label>
         <capMods>
           <li>
             <capacity>Consciousness</capacity>
-            <offset>-0.4</offset>
+            <setMax>0.1</setMax>
           </li>
         </capMods>
-        <mentalBreakMtbDays>3</mentalBreakMtbDays>
-        <allowedMentalBreakIntensities>
-          <li>Minor</li>
-          <li>Major</li>
-          <li>Extreme</li>
-        </allowedMentalBreakIntensities>
       </li>
     </stages>
   </HediffDef>
@@ -190,6 +243,7 @@
       <li Class="HediffCompProperties_Disappears">
         <showRemainingTime>True</showRemainingTime>
       </li>
+      <li Class="HediffCompProperties_DisappearsOnDeath"/>
     </comps>
   </HediffDef>
 
@@ -299,7 +353,7 @@
   <HediffDef ParentName = "PsycastHediffBase">
     <defName>EntropyLink</defName>
     <label>entropy link</label>
-    <description>A psychic link with another individual. Gain or loss of psychic entropy incurred by one will be shared equally between both.</description>
+    <description>A psychic link with another individual. Gain or loss of neural heat incurred by one will be shared equally between both.</description>
     <comps>
       <li Class="HediffCompProperties_EntropyLink">
         <compClass>HediffComp_EntropyLink</compClass>

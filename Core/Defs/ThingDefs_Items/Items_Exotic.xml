@@ -60,6 +60,11 @@
     <tradeTags>
       <li>ExoticMisc</li>
     </tradeTags>
+    <comps>
+      <li Class="CompProperties_UseEffectPlaySound">
+        <soundOnUsed>MechSerumUsed</soundOnUsed>
+      </li>
+    </comps>
   </ThingDef>
 
   <ThingDef ParentName="MechSerumBase">

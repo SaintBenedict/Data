@@ -116,6 +116,11 @@
         <countRange>1~1</countRange>
       </li>
 
+      <li MayRequire="Ludeon.RimWorld.Royalty" Class="StockGenerator_SingleDef">
+        <thingDef>AnimusStone</thingDef>
+        <countRange>-3~1</countRange> <!-- 25% chance of appearing -->
+      </li>
+
       <!-- Slaves -->
       <li Class="StockGenerator_Slaves">
         <respectPopulationIntent>true</respectPopulationIntent>

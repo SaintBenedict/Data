@@ -26,8 +26,10 @@
       <Beauty>-200</Beauty>
     </statBases>
     <killedLeavings>
-      <ChunkSlagSteel>4</ChunkSlagSteel> <!-- Same as standalone defoliator building -->
+      <ChunkSlagSteel>4</ChunkSlagSteel>
+      <Steel>60</Steel>
       <ComponentIndustrial>1</ComponentIndustrial>
+      <Plasteel>10</Plasteel>
       <ComponentSpacer>1</ComponentSpacer>
     </killedLeavings>
     <damageMultipliers>

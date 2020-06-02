@@ -52,7 +52,7 @@
     <researchViewX>14.00</researchViewX>
     <researchViewY>2.90</researchViewY>
     <discoveredLetterTitle>About: Getting advanced components</discoveredLetterTitle>
-    <discoveredLetterText>You now have the technology to build a fabrication bench - but it also requires some advanced components to get started. You can collect advanced components several ways:\n\n  -All outlander settlements sell advanced components. Send a caravan to buy some.\n  -Some visiting traders sell advanced components. Invite or wait for them.\n  -Some quests are rewarded with advanced components.\n  -Some special threats drop them when defeated.</discoveredLetterText>
+    <discoveredLetterText>You now have the technology to build a fabrication bench - but it also requires some advanced components to get started. You can collect advanced components several ways:\n\n  -All outlander settlements sell advanced components. Send a caravan to buy some.\n  -Some visiting traders sell advanced components. Invite or wait for them.\n  -Some quests are rewarded with advanced components.</discoveredLetterText>
   </ResearchProjectDef>
 
   <ResearchProjectDef>

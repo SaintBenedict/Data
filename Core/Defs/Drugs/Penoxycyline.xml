@@ -47,7 +47,7 @@
   
   <HediffDef>
     <defName>PenoxycylineHigh</defName>
-    <hediffClass>HediffWithComps</hediffClass>
+    <hediffClass>Hediff_High</hediffClass>
     <label>penoxycyline</label>
     <description>Penoxycyline-induced immunity to certain illnesses. This only blocks new infections; it does nothing for those who are already infected, even if their infection is dormant.</description>
     <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
@@ -57,6 +57,7 @@
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
         <severityPerDay>-0.18</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
       </li>
     </comps>
       <stages>

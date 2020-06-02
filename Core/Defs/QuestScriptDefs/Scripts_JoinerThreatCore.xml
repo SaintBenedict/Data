@@ -96,8 +96,8 @@
               <points>$points</points>
               <enemyFaction>$enemyFaction</enemyFaction>
               <walkInSpot>$walkInSpot</walkInSpot>
-              <customLetterLabel>{BASELABEL} chasing [../joiner_nameDef]</customLetterLabel>
-              <customLetterText>{BASETEXT}
+              <customLetterLabel TKey="LetterLabelCashing">{BASELABEL} chasing [../joiner_nameDef]</customLetterLabel>
+              <customLetterText TKey="LetterTextCashing">{BASETEXT}
               \nThe [enemyFaction_pawnsPlural] have come to get [../joiner_nameDef].</customLetterText>
             </parms>
           </node>

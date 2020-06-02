@@ -21,6 +21,8 @@
     <label>execution cut</label>
     <workerClass>DamageWorker_AddInjury</workerClass>
     <execution>true</execution>
+    <hediff>ExecutionCut</hediff>
+    <hediffSkin>ExecutionCut</hediffSkin>
     <deathMessage>{0} has been executed by cutting.</deathMessage>
     <hasForcefulImpact>false</hasForcefulImpact>
     <canInterruptJobs>false</canInterruptJobs>

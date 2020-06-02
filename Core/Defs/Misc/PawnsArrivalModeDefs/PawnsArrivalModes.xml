@@ -76,13 +76,13 @@
   <PawnsArrivalModeDef>
     <defName>CenterDrop</defName>
     <workerClass>PawnsArrivalModeWorker_CenterDrop</workerClass>
-    <selectionWeightCurve> <!-- not usable in many strategies, so this gets boosted -->
+    <selectionWeightCurve> <!-- not usable in many strategies and by many factions, so this gets boosted -->
       <points>
         <li>(300, 0.0)</li>
-        <li>(700, 2.7)</li>
+        <li>(1000, 3.5)</li>
       </points>
     </selectionWeightCurve>
-    <pointsFactorCurve> 
+    <pointsFactorCurve>
       <points>
         <li>0, 0.5</li>
         <li>5000, 0.3</li>
@@ -97,10 +97,10 @@
   <PawnsArrivalModeDef>
     <defName>RandomDrop</defName>
     <workerClass>PawnsArrivalModeWorker_RandomDrop</workerClass>
-    <selectionWeightCurve> <!-- not usable in many strategies, so this gets boosted -->
+    <selectionWeightCurve> <!-- not usable in many strategies and by many factions, so this gets boosted -->
       <points>
         <li>(300, 0)</li>
-        <li>(700, 1.5)</li>
+        <li>(1000, 1.9)</li>
       </points>
     </selectionWeightCurve>
     <pointsFactorCurve>

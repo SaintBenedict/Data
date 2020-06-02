@@ -19,6 +19,7 @@
     <seniority>0</seniority>
     <favorCost>1</favorCost>
     <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+    <allowDignifiedMeditationFocus>False</allowDignifiedMeditationFocus>
   </RoyalTitleDef>
 
   <!-- ============== Empire titles - Player gettable psycaster ============================= -->
@@ -37,6 +38,7 @@
     <favorCost>6</favorCost>
     <changeHeirQuestPoints>1000</changeHeirQuestPoints>
     <commonality>1</commonality>
+    <maxPsylinkLevel>1</maxPsylinkLevel>
   </RoyalTitleDef>
 
   <RoyalTitleDef ParentName="BaseEmpireTitlePsycaster">
@@ -65,7 +67,7 @@
           <li>RoyalTier2</li>
         </requiredTags>
         <allowedTags>
-          <li>RoyalCombatGear</li>
+          <li>PrestigeCombatGear</li>
           <li>Psychic</li>
         </allowedTags>
       </li>
@@ -78,7 +80,7 @@
           <li>RoyalTier2</li>
         </requiredTags>
         <allowedTags>
-          <li>RoyalCombatGear</li>
+          <li>PrestigeCombatGear</li>
           <li>Psychic</li>
         </allowedTags>
       </li>
@@ -108,6 +110,14 @@
         <labelKey>RoomRequirementAllBraziersMustBeLit</labelKey>
         <thingDef>Brazier</thingDef>
       </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags><li>Production</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoBeds</labelKey>
+        <buildingTags><li>Bed</li></buildingTags>
+      </li>
     </throneRoomRequirements>
     <bedroomRequirements>
       <li Class="RoomRequirement_Area">
@@ -126,6 +136,10 @@
           <li>RoyalBed</li>
         </things>
       </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags><li>Production</li></buildingTags>
+      </li>
     </bedroomRequirements>
     <foodRequirement>
       <minQuality>MealSimple</minQuality>
@@ -136,6 +150,7 @@
         <li>RawBerries</li>
       </allowedDefs>
     </foodRequirement>
+    <maxPsylinkLevel>2</maxPsylinkLevel>
   </RoyalTitleDef>
 
   <RoyalTitleDef ParentName="BaseEmpireTitlePsycaster">
@@ -146,12 +161,11 @@
     <seniority>300</seniority>
     <favorCost>8</favorCost>
     <minExpectation>High</minExpectation>
-    <needFallPerDayAuthority>0.2</needFallPerDayAuthority>
     <changeHeirQuestPoints>1600</changeHeirQuestPoints>
     <recruitmentResistanceOffset>25</recruitmentResistanceOffset>
     <commonality>1</commonality>
     <canBeInherited>True</canBeInherited>
-    <decreeMtbDays>40</decreeMtbDays>
+    <decreeMtbDays>-1</decreeMtbDays> <!-- disabled -->
     <decreeMentalBreakCommonality>2</decreeMentalBreakCommonality>
     <decreeTags>
       <li>All</li>
@@ -173,7 +187,7 @@
           <li>RoyalTier2</li>
         </requiredTags>
         <allowedTags>
-          <li>RoyalCombatGear</li>
+          <li>PrestigeCombatGear</li>
           <li>Psychic</li>
         </allowedTags>
       </li>
@@ -186,7 +200,7 @@
           <li>RoyalTier2</li>
         </requiredTags>
         <allowedTags>
-          <li>RoyalCombatGear</li>
+          <li>PrestigeCombatGear</li>
           <li>Psychic</li>
         </allowedTags>
       </li>
@@ -230,6 +244,14 @@
         <labelKey>RoomRequirementAllBraziersMustBeLit</labelKey>
         <thingDef>Brazier</thingDef>
       </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags><li>Production</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoBeds</labelKey>
+        <buildingTags><li>Bed</li></buildingTags>
+      </li>
     </throneRoomRequirements>
     <bedroomRequirements>
       <li Class="RoomRequirement_Area">
@@ -257,6 +279,10 @@
       <li Class="RoomRequirement_Thing">
         <thingDef>Dresser</thingDef>
       </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags><li>Production</li></buildingTags>
+      </li>
     </bedroomRequirements>
     <foodRequirement>
       <minQuality>MealFine</minQuality>
@@ -267,6 +293,7 @@
         <li>RawBerries</li>
       </allowedDefs>
     </foodRequirement>
+    <maxPsylinkLevel>3</maxPsylinkLevel>
   </RoyalTitleDef>
 
   <RoyalTitleDef ParentName="BaseEmpireTitlePsycaster">
@@ -281,8 +308,7 @@
     <recruitmentResistanceOffset>40</recruitmentResistanceOffset>
     <commonality>1</commonality>
     <canBeInherited>True</canBeInherited>
-    <needFallPerDayAuthority>0.4</needFallPerDayAuthority>
-    <decreeMtbDays>32</decreeMtbDays>
+    <decreeMtbDays>-1</decreeMtbDays> <!-- disabled -->
     <decreeMentalBreakCommonality>4</decreeMentalBreakCommonality>
     <decreeTags>
       <li>All</li>
@@ -310,7 +336,7 @@
           <li>RoyalTier2</li>
         </requiredTags>
         <allowedTags>
-          <li>RoyalCombatGear</li>
+          <li>PrestigeCombatGear</li>
           <li>Psychic</li>
         </allowedTags>
       </li>
@@ -323,7 +349,7 @@
           <li>RoyalTier2</li>
         </requiredTags>
         <allowedTags>
-          <li>RoyalCombatGear</li>
+          <li>PrestigeCombatGear</li>
           <li>Psychic</li>
         </allowedTags>
       </li>
@@ -367,6 +393,14 @@
         <labelKey>RoomRequirementAllBraziersMustBeLit</labelKey>
         <thingDef>Brazier</thingDef>
       </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags><li>Production</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoBeds</labelKey>
+        <buildingTags><li>Bed</li></buildingTags>
+      </li>
     </throneRoomRequirements>
     <bedroomRequirements>
       <li Class="RoomRequirement_Area">
@@ -394,6 +428,10 @@
       <li Class="RoomRequirement_Thing">
         <thingDef>Dresser</thingDef>
       </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags><li>Production</li></buildingTags>
+      </li>
     </bedroomRequirements>
     <foodRequirement>
       <minQuality>MealFine</minQuality>
@@ -406,6 +444,7 @@
     </foodRequirement>
     <grantedAbilities><li>Speech</li></grantedAbilities>
     <speechCooldown>1200000</speechCooldown>
+    <maxPsylinkLevel>4</maxPsylinkLevel>
   </RoyalTitleDef>
 
   <RoyalTitleDef ParentName="BaseEmpireTitlePsycaster">
@@ -422,12 +461,11 @@
     <commonality>1</commonality>
     <canBeInherited>True</canBeInherited>
     <suppressIdleAlert>true</suppressIdleAlert>
-    <decreeMtbDays>24</decreeMtbDays>
+    <decreeMtbDays>-1</decreeMtbDays> <!-- disabled -->
     <decreeMentalBreakCommonality>8</decreeMentalBreakCommonality>
     <decreeTags>
       <li>All</li>
     </decreeTags>
-    <needFallPerDayAuthority>0.6</needFallPerDayAuthority>
     <disabledJoyKinds>
       <li>Gaming_Dexterity</li>
     </disabledJoyKinds>
@@ -454,7 +492,7 @@
           <li>RoyalTier2</li>
         </requiredTags>
         <allowedTags>
-          <li>RoyalCombatGear</li>
+          <li>PrestigeCombatGear</li>
           <li>Psychic</li>
         </allowedTags>
       </li>
@@ -466,7 +504,7 @@
           <li>RoyalTier5</li>
         </requiredTags>
         <allowedTags>
-          <li>RoyalCombatGear</li>
+          <li>PrestigeCombatGear</li>
           <li>Psychic</li>
         </allowedTags>
       </li>
@@ -479,7 +517,7 @@
           <li>RoyalTier5</li>
         </requiredTags>
         <allowedTags>
-          <li>RoyalCombatGear</li>
+          <li>PrestigeCombatGear</li>
           <li>Psychic</li>
         </allowedTags>
       </li>
@@ -522,6 +560,14 @@
         <labelKey>RoomRequirementAllBraziersMustBeLit</labelKey>
         <thingDef>Brazier</thingDef>
       </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags><li>Production</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoBeds</labelKey>
+        <buildingTags><li>Bed</li></buildingTags>
+      </li>
     </throneRoomRequirements>
     <bedroomRequirements>
       <li Class="RoomRequirement_Area">
@@ -552,6 +598,10 @@
         <thingDef>Drape</thingDef>
         <count>1</count>
       </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags><li>Production</li></buildingTags>
+      </li>
     </bedroomRequirements>
     <foodRequirement>
       <minQuality>MealLavish</minQuality>
@@ -565,6 +615,7 @@
     </foodRequirement>
     <grantedAbilities><li>Speech</li></grantedAbilities>
     <speechCooldown>900000</speechCooldown>
+    <maxPsylinkLevel>5</maxPsylinkLevel>
   </RoyalTitleDef>
 
   <RoyalTitleDef ParentName="BaseEmpireTitlePsycaster">
@@ -581,12 +632,11 @@
     <commonality>1</commonality>
     <canBeInherited>True</canBeInherited>
     <suppressIdleAlert>true</suppressIdleAlert>
-    <decreeMtbDays>16</decreeMtbDays>
+    <decreeMtbDays>-1</decreeMtbDays> <!-- disabled -->
     <decreeMentalBreakCommonality>12</decreeMentalBreakCommonality>
     <decreeTags>
       <li>All</li>
     </decreeTags>
-    <needFallPerDayAuthority>0.8</needFallPerDayAuthority>
     <disabledJoyKinds>
       <li>Gaming_Dexterity</li>
     </disabledJoyKinds>
@@ -614,7 +664,7 @@
           <li>RoyalTier2</li>
         </requiredTags>
         <allowedTags>
-          <li>RoyalCombatGear</li>
+          <li>PrestigeCombatGear</li>
           <li>Psychic</li>
         </allowedTags>
       </li>
@@ -626,7 +676,7 @@
           <li>RoyalTier5</li>
         </requiredTags>
         <allowedTags>
-          <li>RoyalCombatGear</li>
+          <li>PrestigeCombatGear</li>
           <li>Psychic</li>
         </allowedTags>
       </li>
@@ -638,7 +688,7 @@
           <li>RoyalTier6</li>
         </requiredTags>
         <allowedTags>
-          <li>RoyalCombatGear</li>
+          <li>PrestigeCombatGear</li>
           <li>Psychic</li>
         </allowedTags>
       </li>
@@ -651,7 +701,7 @@
           <li>RoyalTier5</li>
         </requiredTags>
         <allowedTags>
-          <li>RoyalCombatGear</li>
+          <li>PrestigeCombatGear</li>
           <li>Psychic</li>
         </allowedTags>
       </li>
@@ -691,6 +741,14 @@
         <labelKey>RoomRequirementAllBraziersMustBeLit</labelKey>
         <thingDef>Brazier</thingDef>
       </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags><li>Production</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoBeds</labelKey>
+        <buildingTags><li>Bed</li></buildingTags>
+      </li>
     </throneRoomRequirements>
     <bedroomRequirements>
       <li Class="RoomRequirement_Area">
@@ -720,6 +778,10 @@
         <thingDef>Drape</thingDef>
         <count>1</count>
       </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags><li>Production</li></buildingTags>
+      </li>
     </bedroomRequirements>
     <foodRequirement>
       <minQuality>MealLavish</minQuality>
@@ -733,6 +795,7 @@
     </foodRequirement>
     <grantedAbilities><li>Speech</li></grantedAbilities>
     <speechCooldown>600000</speechCooldown>
+    <maxPsylinkLevel>6</maxPsylinkLevel>
   </RoyalTitleDef>
 
   <!-- ============== Empire titles - NPC only psycaster ============================= -->
@@ -764,7 +827,7 @@
           <li>RoyalTier2</li>
         </requiredTags>
         <allowedTags>
-          <li>RoyalCombatGear</li>
+          <li>PrestigeCombatGear</li>
           <li>Psychic</li>
         </allowedTags>
       </li>
@@ -776,7 +839,7 @@
           <li>RoyalTier5</li>
         </requiredTags>
         <allowedTags>
-          <li>RoyalCombatGear</li>
+          <li>PrestigeCombatGear</li>
           <li>Psychic</li>
         </allowedTags>
       </li>
@@ -788,7 +851,7 @@
           <li>RoyalTier6</li>
         </requiredTags>
         <allowedTags>
-          <li>RoyalCombatGear</li>
+          <li>PrestigeCombatGear</li>
           <li>Psychic</li>
         </allowedTags>
       </li>
@@ -801,7 +864,7 @@
           <li>RoyalTier7</li>
         </requiredTags>
         <allowedTags>
-          <li>RoyalCombatGear</li>
+          <li>PrestigeCombatGear</li>
           <li>Psychic</li>
         </allowedTags>
       </li>
@@ -837,6 +900,14 @@
         <labelKey>RoomRequirementAllBraziersMustBeLit</labelKey>
         <thingDef>Brazier</thingDef>
       </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags><li>Production</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoBeds</labelKey>
+        <buildingTags><li>Bed</li></buildingTags>
+      </li>
     </throneRoomRequirements>
     <bedroomRequirements>
       <li Class="RoomRequirement_Area">
@@ -866,6 +937,10 @@
         <thingDef>Drape</thingDef>
         <count>1</count>
       </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags><li>Production</li></buildingTags>
+      </li>
     </bedroomRequirements>
     <foodRequirement>
       <minQuality>MealLavish</minQuality>
@@ -879,6 +954,7 @@
     </foodRequirement>
     <grantedAbilities><li>Speech</li></grantedAbilities>
     <speechCooldown>600000</speechCooldown>
+    <maxPsylinkLevel>6</maxPsylinkLevel>
   </RoyalTitleDef>
 
   <RoyalTitleDef ParentName="BaseEmpireTitleNPC">

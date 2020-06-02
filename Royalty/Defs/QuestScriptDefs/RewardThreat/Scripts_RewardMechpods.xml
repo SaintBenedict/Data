@@ -36,7 +36,7 @@
 
         <li>commonMainPart->A mechanoid swarm has been attacking [asker_possessive] settlements. [asker_pronoun] wants you to signal the mechs to distract them while [asker_pronoun] clears the hive. If you do, a mechanoid cluster will land at [map_definite].[dangersDescription]
 \nThe mechanoid cluster will be initially dormant. It may have a countdown activator, or it may stay dormant forever until disturbed.
-\n[helpersParagraph]As a reward, [allRewardsDescriptions]</li>
+\n[helpersParagraph]</li>
       </rulesStrings>
     </questDescriptionRules>
     <root Class="QuestNode_Sequence">

@@ -194,7 +194,7 @@
     <defName>PsychicShock</defName>
     <label>psychic shock</label>
     <labelNoun>a psychic shock</labelNoun>
-    <description>A state of psychic chaos in the brain and mind. Caused by psychic attacks or critical level of psychic entropy, this effect is debilitating until it wears off.</description>
+    <description>A state of psychic chaos in the brain and mind. Caused by psychic attacks or critical level of neural heat, this effect is debilitating until it wears off.</description>
     <comps>
       <li Class="HediffCompProperties_Disappears">
         <disappearsAfterTicks>7500~7500</disappearsAfterTicks>
@@ -216,7 +216,7 @@
     <defName>PsychicHangover</defName>
     <label>psychic hangover</label>
     <labelNoun>a psychic hangover</labelNoun>
-    <description>An after-effect of psychic entropy. Psychic hangover is bothersome, but not dangerous.</description>
+    <description>An after-effect of neural heat. Psychic hangover is bothersome, but not dangerous.</description>
     <comps>
       <li Class="HediffCompProperties_Disappears">
         <disappearsAfterTicks>
@@ -627,8 +627,8 @@
     <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
     <lethalSeverity>1</lethalSeverity>
     <comps>
-      <li Class="HediffCompProperties_Immunizable">
-        <severityPerDayNotImmune>-1</severityPerDayNotImmune>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1</severityPerDay>
       </li>
       <li Class="HediffCompProperties_Discoverable">
         <sendLetterWhenDiscovered>true</sendLetterWhenDiscovered>

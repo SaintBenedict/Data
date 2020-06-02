@@ -34,7 +34,7 @@
       <li Class="CompProperties_Drug">
         <chemical>Luciferium</chemical>
         <addictiveness>1.00</addictiveness>
-        <needLevelOffset>1.00</needLevelOffset>
+        <needLevelOffset>0.9</needLevelOffset>
         <listOrder>1010</listOrder>
       </li>
     </comps>
@@ -46,7 +46,7 @@
 
   <HediffDef>
     <defName>LuciferiumHigh</defName>
-    <hediffClass>HediffWithComps</hediffClass>
+    <hediffClass>Hediff_High</hediffClass>
     <label>luciferium</label>
     <description>Active luciferium mechanites in the body. They improve the body's functioning in all respects. However, if they are not regularly replenished with more doses of luciferium, they lose cohesion and drive the user insane.</description>
     <defaultLabelColor>(1,1,0.5)</defaultLabelColor>

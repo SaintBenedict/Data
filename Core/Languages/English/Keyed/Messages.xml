@@ -27,7 +27,7 @@
   <MessageShipHasLeftCommsRange>{0} has left comms range.</MessageShipHasLeftCommsRange>
 
   <MessageNeedBeaconToTradeWithShip>You need a powered orbital trade beacon to trade with a ship.</MessageNeedBeaconToTradeWithShip>
-  <MessageNeedRoyalTitleToCallWithShip>Caller must have the title of {0} or higher.</MessageNeedRoyalTitleToCallWithShip>
+  <MessageNeedRoyalTitleToCallWithShip>Caller must have the title of {0_label} or higher.</MessageNeedRoyalTitleToCallWithShip>
 
   <MessageConditionCauserDespawned>{0} has been destroyed.</MessageConditionCauserDespawned>
   
@@ -94,10 +94,10 @@
   <MessageMiscarriedPoorHealth>{0} has miscarried due to poor health.</MessageMiscarriedPoorHealth>
   <MessageGaveBirth>{0} has given birth.</MessageGaveBirth>
   
-  <MessagePsychicAmplifierNoSensitivity>{PAWN_labelShort} won't be able to use the psychic amplifier while {PAWN_pronoun} has zero psychic sensitivity.</MessagePsychicAmplifierNoSensitivity>
+  <MessagePsylinkNoSensitivity>{PAWN_labelShort} won't be able to use the psylink while {PAWN_pronoun} has zero psychic sensitivity.</MessagePsylinkNoSensitivity>
   <MessageLostImplantLevelFromHediff>{PAWN_labelShort} has lost a {1} implant level due to {2}.</MessageLostImplantLevelFromHediff>
   <MessageReceivedBrainDamageFromHediff>{PAWN_labelShort} has suffered {1} points of brain damage due to {2}.</MessageReceivedBrainDamageFromHediff>
-  <MessageWentOverPsychicEntropyLimit>{PAWN_labelShort} has exceeded the safe limit of psychic entropy.</MessageWentOverPsychicEntropyLimit>
+  <MessageWentOverPsychicEntropyLimit>{PAWN_labelShort} has exceeded the normal limit of neural heat.</MessageWentOverPsychicEntropyLimit>
 
   <MessageNuzzledPawnGaveNameTo>{NAMER_nameFull} has named {1} {NAMEE_nameFull} after being nuzzled.</MessageNuzzledPawnGaveNameTo>
 
@@ -290,6 +290,7 @@
   <GoodwillChangedReason_CapturedPawn>captured {1_labelShort}</GoodwillChangedReason_CapturedPawn>
   <GoodwillChangedReason_PawnCrushed>{1_labelShort} crushed</GoodwillChangedReason_PawnCrushed>
   <GoodwillChangedReason_PawnDied>{1_labelShort} died</GoodwillChangedReason_PawnDied>
+  <GoodwillChangedReason_PawnStripped>{0_labelShort} stripped</GoodwillChangedReason_PawnStripped>
   <GoodwillChangedReason_Traded>traded</GoodwillChangedReason_Traded>
   <GoodwillChangedReason_AttackedCaravan>attacked a caravan</GoodwillChangedReason_AttackedCaravan>
   <GoodwillChangedReason_NaturallyOverTime>natural tendency to reach {0} over time</GoodwillChangedReason_NaturallyOverTime>
@@ -343,6 +344,8 @@
   <MessageCantCleanupTranslationFilesBeucaseOfXmlError>One of the translation files ({0}) couldn't be loaded. All XML parsing errors must be resolved first.</MessageCantCleanupTranslationFilesBeucaseOfXmlError>
 
   <MessageCapturingWillAngerFaction>Warning: Capturing {PAWN_nameDef} will anger {PAWN_possessive} faction {PAWN_factionName}.</MessageCapturingWillAngerFaction>
+
+  <MessageStrippingWillAngerFaction>Warning: Stripping {PAWN_nameDef} will anger {PAWN_factionName}.</MessageStrippingWillAngerFaction>
 
   <MessageCantShootInMelee>Cannot shoot in melee.</MessageCantShootInMelee>
 

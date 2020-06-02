@@ -99,6 +99,8 @@
             <power>13</power>
             <cooldownTime>2</cooldownTime>
             <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+            <soundMeleeHit>MeleeHit_DrillArm</soundMeleeHit>
+            <soundMeleeMiss>MeleeMiss_DrillArm</soundMeleeMiss>
           </li>
         </tools>
       </li>
@@ -183,6 +185,8 @@
             <power>9</power>
             <cooldownTime>2</cooldownTime>
             <alwaysTreatAsWeapon>false</alwaysTreatAsWeapon>
+            <soundMeleeHit>MeleeHit_FieldHand</soundMeleeHit>
+            <soundMeleeMiss>MeleeMiss_FieldHand</soundMeleeMiss>
           </li>
         </tools>
       </li>
@@ -255,6 +259,8 @@
             <armorPenetration>0.15</armorPenetration>
             <cooldownTime>1.5</cooldownTime>
             <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+            <soundMeleeHit>MeleeHit_BionicSlash</soundMeleeHit>
+            <soundMeleeMiss>MeleeMiss_BionicSlash</soundMeleeMiss>
           </li>
         </tools>
       </li>
@@ -338,6 +344,8 @@
             <power>18</power>
             <cooldownTime>2</cooldownTime>
             <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+            <soundMeleeHit>MeleeHit_BionicSlash</soundMeleeHit>
+            <soundMeleeMiss>MeleeMiss_BionicSlash</soundMeleeMiss>
           </li>
         </tools>
       </li>
@@ -422,6 +430,8 @@
             <armorPenetration>0.38</armorPenetration>
             <cooldownTime>2.6</cooldownTime>
             <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+            <soundMeleeHit>MeleeHit_BionicSlash</soundMeleeHit>
+            <soundMeleeMiss>MeleeMiss_BionicSlash</soundMeleeMiss>
           </li>
         </tools>
       </li>
@@ -586,6 +596,8 @@
             <armorPenetration>0.15</armorPenetration>
             <cooldownTime>1.5</cooldownTime>
             <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+            <soundMeleeHit>MeleeHit_BionicSlash</soundMeleeHit>
+            <soundMeleeMiss>MeleeMiss_BionicSlash</soundMeleeMiss>
           </li>
         </tools>
       </li>

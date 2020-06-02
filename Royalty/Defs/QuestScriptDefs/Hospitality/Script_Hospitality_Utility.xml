@@ -62,8 +62,8 @@
         <li Class="QuestNode_GetPawnCountByPointsWeighted">
           <storeAs>lodgersCount</storeAs>
           <challengeRating>$challengeRating</challengeRating>
-          <maxCountOneStar>6</maxCountOneStar>
-          <maxCountTwoStar>10</maxCountTwoStar>
+          <maxCountOneStar>20</maxCountOneStar>
+          <maxCountTwoStar>20</maxCountTwoStar>
           <maxCountThreeStar>20</maxCountThreeStar>
           <roundRandom>True</roundRandom>
           <pointsCurve>
@@ -85,6 +85,20 @@
               <li>(20, 0)</li>
             </points>
           </chancesCurve>
+        </li>
+      </nodes>
+    </root>
+  </QuestScriptDef>
+
+  <QuestScriptDef>
+    <defName>Hospitality_Util_DecideLodgerCountFromPoints</defName>
+    <root Class="QuestNode_Sequence">
+      <nodes>
+        <li Class="QuestNode_EvaluateSimpleCurve">
+          <value>$points</value>
+          <roundRandom>true</roundRandom>
+          <storeAs>lodgersCount</storeAs>
+          <curve>$pointsCurve</curve>
         </li>
       </nodes>
     </root>
@@ -175,6 +189,325 @@
                 <weight>1</weight>
               </li>
             </options>
+          </elseNode>
+        </li>
+      </nodes>
+    </root>
+  </QuestScriptDef>
+
+  <QuestScriptDef>
+    <defName>Util_ApplyMoodThreshold</defName>
+    <root Class="QuestNode_Sequence">
+      <nodes>
+        <li Class="QuestNode_GetRandomElement">
+          <storeAs>moodThreshold</storeAs>
+          <options>
+            <li>0.25</li>
+            <li>0.3</li>
+            <li>0.35</li>
+            <li>0.4</li>
+          </options>
+        </li>
+        <li Class="QuestNode_MoodBelow">
+          <pawns>$moodThresholdPawns</pawns>
+          <threshold>$moodThreshold</threshold>
+          <node Class="QuestNode_Sequence">
+            <nodes>
+              <li Class="QuestNode_Letter">
+                <label TKey="LetterLabelGuestUnhappy">Guest unhappy: {SUBJECT_definite}</label>
+                <text TKey="LetterTextGuestUnhappy">{SUBJECT_definite}, who you were charged to protect and keep happy, has been below the minimum mood of [moodThreshold] too long.\n\n[remainingWillNowLeave]</text>
+              </li>
+              <li Class="QuestNode_End">
+                <outcome>Fail</outcome>
+              </li>
+            </nodes>
+          </node>
+        </li>
+        <li Class="QuestNode_IsSet">
+          <name>storeMoodThresholdAs</name>
+          <node Class="QuestNode_Set">
+            <name>$storeMoodThresholdAs</name>
+            <value>$moodThreshold</value>
+          </node>
+        </li>
+        <li Class="QuestNode_IsSet">
+          <name>storeNormalizedMoodThresholdAs</name>
+          <node Class="QuestNode_Set">
+            <name>$storeNormalizedMoodThresholdAs</name>
+            <value>$($moodThreshold - 0.25) / (0.4 - 0.25)</value>
+          </node>
+        </li>
+      </nodes>
+    </root>
+  </QuestScriptDef>
+
+    <QuestScriptDef>
+    <defName>Util_DecideRandomLodgerConditions</defName>
+    <root Class="QuestNode_Sequence">
+      <nodes>
+
+        <!-- Setup defaults -->
+        <li Class="QuestNode_Set">
+          <name>lodgersWillNotWork</name>
+          <value>false</value>
+        </li>
+        <li Class="QuestNode_Set">
+          <name>lodgersHaveBloodRot</name>
+          <value>false</value>
+        </li>
+        <li Class="QuestNode_Set">
+          <name>lodgersAreParalyzed</name>
+          <value>false</value>
+        </li>
+        <li Class="QuestNode_Set">
+          <name>lodgersHaveBloodRotAndParalysis</name>
+          <value>false</value>
+        </li>
+        <li Class="QuestNode_Set">
+          <name>lodgersHaveNoConditions</name>
+          <value>false</value>
+        </li>
+
+        <li Class="QuestNode_IsSet">
+          <name>noConditionsMaxPoints</name>
+          <elseNode Class="QuestNode_Set">
+            <name>noConditionsMaxPoints</name>
+            <value>500</value>
+          </elseNode>
+        </li>
+        <li Class="QuestNode_IsSet">
+          <name>noConditionsMaxPoints</name>
+          <elseNode Class="QuestNode_Set">
+            <name>noConditionsMaxPoints</name>
+            <value>500</value>
+          </elseNode>
+        </li>
+        <li Class="QuestNode_IsSet">
+          <name>bloodRotMinPoints</name>
+          <elseNode Class="QuestNode_Set">
+            <name>bloodRotMinPoints</name>
+            <value>700</value>
+          </elseNode>
+        </li>
+
+        <!-- Generate conditions -->
+        <li Class="QuestNode_RandomNode">
+          <nodes>
+
+            <!-- No conditions -->
+            <li Class="QuestNode_LessOrFail">
+              <selectionWeight>$noConditionsWeight</selectionWeight>
+              <value1>$points</value1>
+              <value2>$noConditionsMaxPoints</value2>
+              <node Class="QuestNode_Set">
+                <name>lodgersHaveNoConditions</name>
+                <value>true</value>
+              </node>
+            </li>
+
+            <!-- Mood Threshold -->
+            <li Class="QuestNode_GreaterOrFail">
+              <selectionWeight>$moodThresholdWeight</selectionWeight>
+              <value1>$points</value1>
+              <value2>240</value2>
+              <node Class="QuestNode_Set">
+                <name>lodgersHaveMoodThreshold</name>
+                <value>true</value>  
+              </node>
+            </li>
+            
+            <!-- No Work -->
+            <li Class="QuestNode_Set">
+              <selectionWeight>$noWorkWeight</selectionWeight>
+              <name>lodgersWillNotWork</name>
+              <value>true</value>
+            </li>
+            
+            <!-- Paralyzed, no mood threshold -->
+            <li Class="QuestNode_Set">
+              <selectionWeight>$paralysisWeight</selectionWeight>
+              <name>lodgersAreParalyzed</name>
+              <value>true</value>
+            </li>
+
+            <!-- Blood Rot, points > 700 -->
+            <li Class="QuestNode_GreaterOrFail">
+              <selectionWeight>$bloodRotWeight</selectionWeight>
+              <value1>$points</value1>
+              <value2>$bloodRotMinPoints</value2>
+              <node Class="QuestNode_Set">
+                <name>lodgersHaveBloodRot</name>
+                <value>true</value>
+              </node>
+            </li>
+
+            <!-- Paralyzed and Blood rot, points > 800 + no mood threshold  -->
+            <li Class="QuestNode_GreaterOrFail">
+              <selectionWeight>$bloodRotAndParalysisWeight</selectionWeight>
+              <value1>$points</value1>
+              <value2>800</value2>
+              <node Class="QuestNode_Sequence">
+                <nodes>
+                  <li Class="QuestNode_Set">
+                    <name>lodgersHaveBloodRotAndParalysis</name>
+                    <value>true</value>
+                  </li>
+                </nodes>
+              </node>
+            </li>
+              
+          </nodes>
+        </li>
+      </nodes>
+    </root>
+  </QuestScriptDef>
+
+  <QuestScriptDef>
+    <defName>Util_ApplyLodgerConditions</defName>
+    <root Class="QuestNode_Sequence">
+      <nodes>
+
+        <!-- Mood Threshold -->
+        <li Class="QuestNode_Sequence">
+          <nodes>
+            <!-- All lodgers else look for royal pawns -->
+            <li Class="QuestNode_IsTrue">
+              <value>$lodgersHaveMoodThreshold</value>
+              <node Class="QuestNode_Sequence">
+                <nodes>
+                  <li Class="QuestNode_AddRangeToList">
+                    <name>lodgersWithMoodThreshold</name>
+                    <value>$lodgers</value>
+                  </li>
+                  <li Class="QuestNode_Set">
+                    <name>lodgersCountWithMoodThreshold</name>
+                    <value>$lodgersCount</value>
+                  </li>
+                </nodes>
+              </node>
+              <elseNode Class="QuestNode_IsTrue">
+                <value>$lodgersAreParalyzed</value>
+                <elseNode Class="QuestNode_IsTrue">
+                  <value>$lodgersHaveBloodRotAndParalysis</value>
+                  <elseNode Class="QuestNode_GetPawnsWithRoyalTitle"> 
+                    <pawns>$lodgers</pawns>
+                    <storeAs>lodgersWithMoodThreshold</storeAs>
+                    <storeCountAs>lodgersCountWithMoodThreshold</storeCountAs>
+                  </elseNode>
+                </elseNode>
+              </elseNode>
+            </li>
+            <!-- Apply mood threshold -->
+            <li Class="QuestNode_IsSet">
+              <name>lodgersCountWithMoodThreshold</name>
+              <elseNode Class="QuestNode_Set">
+                <name>lodgersCountWithMoodThreshold</name>
+                <value>0</value>
+              </elseNode>
+            </li>
+            <li Class="QuestNode_Greater">
+              <value1>$lodgersCountWithMoodThreshold</value1>
+              <value2>0</value2>
+              <node Class="QuestNode_SubScript">
+                <def>Util_ApplyMoodThreshold</def>
+                <parms>
+                  <storeMoodThresholdAs>lodgersMoodThreshold</storeMoodThresholdAs>
+                  <moodThresholdPawns>$lodgersWithMoodThreshold</moodThresholdPawns>
+                  <storeNormalizedMoodThresholdAs>lodgersMoodThresholdNormalized</storeNormalizedMoodThresholdAs>
+                </parms>
+              </node>
+            </li>
+          </nodes>
+        </li>
+        
+        
+        <!-- No Work -->
+        <li Class="QuestNode_IsTrue">
+          <value>$lodgersWillNotWork</value>
+          <node Class="QuestNode_WorkDisabled">
+            <pawns>$lodgers</pawns>
+            <disabledWorkTags>
+              <li>AllWork</li>
+            </disabledWorkTags>
+          </node>
+        </li>
+        
+        <!-- Paralyzed -->
+        <li Class="QuestNode_IsTrue">
+          <value>$lodgersAreParalyzed</value>
+          <node Class="QuestNode_Sequence">
+            <nodes>
+              <li Class="QuestNode_AddHediff">
+                <pawns>$lodgers</pawns>
+                <hediffDef>Abasia</hediffDef>
+                <addToHyperlinks>true</addToHyperlinks>
+              </li>
+              <li Class="QuestNode_RemoveEquipmentFromPawns">
+                <pawns>$lodgers</pawns>
+              </li>
+            </nodes>
+          </node>
+        </li>
+
+        <!-- Blood Rot  -->
+        <li Class="QuestNode_IsTrue">
+          <value>$lodgersHaveBloodRot</value>
+          <node Class="QuestNode_AddHediff">
+            <pawns>$lodgers</pawns>
+            <hediffDef>BloodRot</hediffDef>
+            <addToHyperlinks>true</addToHyperlinks>
+          </node>
+        </li>
+
+        <!-- Blood Rot and Paralyzed  -->
+        <li Class="QuestNode_IsTrue">
+          <value>$lodgersHaveBloodRotAndParalysis</value>
+          <node Class="QuestNode_Sequence">
+            <nodes>
+              <li Class="QuestNode_AddHediff">
+                <pawns>$lodgers</pawns>
+                <hediffDef>BloodRot</hediffDef>
+                <addToHyperlinks>true</addToHyperlinks>
+              </li>
+              <li Class="QuestNode_AddHediff">
+                <pawns>$lodgers</pawns>
+                <hediffDef>Abasia</hediffDef>
+                <addToHyperlinks>true</addToHyperlinks>
+              </li>
+            </nodes>
+          </node>
+        </li>
+              
+      </nodes>
+    </root>
+  </QuestScriptDef>
+
+  <QuestScriptDef>
+    <defName>Util_MaybeApplyGoodwillForMood</defName>
+    <root Class="QuestNode_Sequence">
+      <nodes>
+        <li Class="QuestNode_GetFactionOf">
+          <thing>$asker</thing>
+          <storeAs>askerFaction</storeAs>
+        </li>
+        <li Class="QuestNode_IsNull">
+          <value>$askerFaction</value>
+          <elseNode Class="QuestNode_Chance">
+            <chance>0.5</chance>
+            <node Class="QuestNode_Sequence">
+              <nodes>
+                <li Class="QuestNode_Set">
+                  <name>goodwillRewardForMood</name>
+                  <value>true</value>
+                </li>
+                <li Class="QuestNode_FactionGoodwillForMoodChange">
+                  <inSignal>shuttle.SentSatisfied</inSignal>
+                  <outSignalSuccess>GoodwillForAverageMood.Success</outSignalSuccess>
+                  <outSignalFailed>GoodwillForAverageMood.Failed</outSignalFailed>
+                  <pawns>$lodgers</pawns>
+                </li>
+              </nodes>
+            </node>
           </elseNode>
         </li>
       </nodes>

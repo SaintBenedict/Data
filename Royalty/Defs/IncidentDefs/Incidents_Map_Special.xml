@@ -12,5 +12,31 @@
     <baseChance>0</baseChance> <!-- given by a special storyteller comp -->
     <requireColonistsPresent>True</requireColonistsPresent>
   </IncidentDef>
+
+  <IncidentDef>
+    <defName>AnimaTreeSpawn</defName>
+    <label>anima tree</label>
+    <category>Special</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <workerClass>IncidentWorker_AnimaTreeSpawn</workerClass>
+    <letterLabel>Anima tree</letterLabel>
+    <letterText>An anima tree has sprouted nearby.\n\nTribal peoples can use this as a powerful meditation focus, but only if artificial structures are not placed nearby.</letterText>
+    <letterDef>PositiveEvent</letterDef>
+    <minRefireDays>5</minRefireDays>
+    <requireColonistsPresent>true</requireColonistsPresent>
+    <allowedBiomes>
+      <li>TropicalRainforest</li>
+      <li>TropicalSwamp</li>
+      <li>TemperateForest</li>
+      <li>TemperateSwamp</li>
+      <li>BorealForest</li>
+      <li>ColdBog</li>
+      <li>AridShrubland</li>
+      <li>Tundra</li>
+      <li>Desert</li>
+    </allowedBiomes>
+  </IncidentDef>
   
 </Defs>

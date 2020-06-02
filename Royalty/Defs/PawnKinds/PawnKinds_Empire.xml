@@ -242,10 +242,6 @@
   <PawnKindDef Name="CataphractBase" Abstract="True" ParentName="ImperialFighterBase">
     <maxGenerationAge>40</maxGenerationAge>
     <apparelMoney>7000~10000</apparelMoney>
-    <apparelRequired>
-      <li>Apparel_ArmorHelmetCataphract</li>
-      <li>Apparel_ArmorCataphract</li>
-    </apparelRequired>
     <techHediffsMoney>1000~4000</techHediffsMoney>
     <techHediffsMaxAmount>4</techHediffsMaxAmount>
     <allowRoyalRoomRequirements>False</allowRoyalRoomRequirements>
@@ -265,6 +261,10 @@
       <li>SpacerGun</li>
     </weaponTags>
     <apparelColor>(250,250,250)</apparelColor>
+    <apparelRequired>
+      <li>Apparel_ArmorHelmetCataphract</li>
+      <li>Apparel_ArmorCataphract</li>
+    </apparelRequired>
     <techHediffsTags>
       <li>Advanced</li>
       <li>ImplantEmpireCommon</li>
@@ -292,6 +292,10 @@
     <itemQuality>Excellent</itemQuality>
     <weaponMoney>3000~3500</weaponMoney>
     <apparelColor>(150,50,50)</apparelColor>
+    <apparelRequired>
+      <li>Apparel_ArmorHelmetCataphractPrestige</li>
+      <li>Apparel_ArmorCataphractPrestige</li>
+    </apparelRequired>
     <specificApparelRequirements>
       <li>
         <bodyPartGroup>FullHead</bodyPartGroup>

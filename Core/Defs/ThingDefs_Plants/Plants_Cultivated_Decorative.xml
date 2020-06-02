@@ -20,7 +20,7 @@
     <plant>
       <dieIfLeafless>true</dieIfLeafless>
       <harvestTag>Standard</harvestTag>
-      <sowWork>800</sowWork>
+      <sowWork>750</sowWork> <!-- 100 ticks per live day -->
       <sowTags>
         <li>Ground</li>
         <li>Decorative</li>
@@ -54,7 +54,7 @@
     <plant>
       <dieIfLeafless>true</dieIfLeafless>
       <harvestTag>Standard</harvestTag>
-      <sowWork>800</sowWork>
+      <sowWork>540</sowWork> <!-- 120 ticks per live day for beauty -->
       <sowTags>
         <li>Ground</li>
         <li>Decorative</li>

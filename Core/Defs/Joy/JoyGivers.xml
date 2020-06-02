@@ -5,12 +5,12 @@
 
   <JoyGiverDef>
     <defName>Meditate</defName>
-    <giverClass>JoyGiver_InPrivateRoom</giverClass>
+    <giverClass>JoyGiver_Meditate</giverClass>
     <baseChance>1</baseChance>
     <pctPawnsEverDo>0.4</pctPawnsEverDo>
-    <jobDef>Meditate</jobDef>
     <joyKind>Meditative</joyKind>
     <canDoWhileInBed>true</canDoWhileInBed>
+    <jobDef>Meditate</jobDef>
   </JoyGiverDef>
 
   <JoyGiverDef>

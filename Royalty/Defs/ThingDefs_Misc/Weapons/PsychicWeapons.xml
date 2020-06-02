@@ -17,8 +17,8 @@
 
   <ThingDef ParentName="BasePsychicWeaponMelee">
     <defName>MeleeWeapon_PsyfocusStaff</defName>
-    <label>psyfocus staff</label>
-    <description>An ultratech light staff threaded with psychic focusing materials. Though it is relatively ineffective as a weapon, a psycaster wielding this will have greater psychic sensitivity and will dissipate psychic entropy faster.</description>
+    <label>eltex staff</label>
+    <description>An ultratech staff threaded with psychic focusing materials. While it is a solid melee weapon, its main purpose is to enhance the wielder's psychic sensitivity and neural heat dissipation, allowing better psycasting.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponMelee/PsyfocusStaff</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -29,13 +29,13 @@
     </tradeTags>
     <costStuffCount>50</costStuffCount>
     <statBases>
-      <MarketValue>1000</MarketValue>
+      <MarketValue>2000</MarketValue>
       <Mass>1.2</Mass>
     </statBases>
     <equippedAngleOffset>-65</equippedAngleOffset>
     <equippedStatOffsets>
       <PsychicSensitivity>0.50</PsychicSensitivity>
-      <PsychicEntropyRecoveryRate>2.5</PsychicEntropyRecoveryRate>
+      <PsychicEntropyRecoveryRate>0.083</PsychicEntropyRecoveryRate>
     </equippedStatOffsets>
     <tools>
       <li>
